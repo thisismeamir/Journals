@@ -1,11 +1,141 @@
-\documentclass[10pt,onecolumn]{article}
-
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage[top=1cm, bottom=1cm, right=1cm, left=1cm]{geometry}
-\usepackage{graphics}
-\usepackage{adjustbox}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+%Colors
+\usepackage[dvipsnames]{xcolor}
 
-\newcommand{\break}{\\ \\}
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{lecturequote}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={In Lecture \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+\begin{adjustbox}{center, nofloat=figure}
+\includegraphics[width=#2\linewidth]{./img/#1}
+\label{\thefigurecounter}
+\end{adjustbox}
+\begin{center}
+\textbf{\thefigurecounter} \textcolor{darkliver}{\small #3}
+\addtocounter{figurecounter}{1}
+\end{center}}
+
+
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
 
 \title{Nuclear Physics \\ \large Journal of Study}
 \author{Amir H. Ebrahimnezhad}
@@ -17,12 +147,14 @@
 
 \section{Introduction}
 The fundamental constituents of matter was always a question for the great minds of each era. From the greek philosophers that tried to explain the matter using four fundamental ones, to the recent years that the standard model tries to explain what are the interactions between the fundamental particles that form up the world around us.
-\break
+\\
+\\
 The physicists have found smaller and smaller particles that make up the matter around us. The atom, the substructure of the atom, electrons, nuclei, The substructure of nuclei, protons and neutrons, and the substructure of protons and neutrons which are quarks. 
-\break
-The two fundamental types of building blocks are the \texit{leptons}, which include the electron and the neutrino, and the quarks. In the scattering experiments, these were found to be smaller than $10^{-18}$m. They are possibly point-like particles.  For comparison, protons are as large as $10^{-15}$m. 
-
-\subsection{Fundamental Interactions}
+\\
+\\
+The two fundamental types of building blocks are the \textit{leptons}, which include the electron and the neutrino, and the quarks. In the scattering experiments, these were found to be smaller than $10^{-18}$m. They are possibly point-like particles.  For comparison, protons are as large as $10^{-15}$m. 
+\\
+\\
 By the end of 19th-century there were two known forces in the world. Gravity and electromagnetism, the first described all the observed motions in the night sky and the macroscopic objects around, while the latter explained the interactions causing chemical reactions. With the development of nuclear physics two new forces were introduced. The reason behind the absence of these forces was the short-range nature of them.
 
 Thus the four fundamental interactions on which all physical interactions are based upon are:
@@ -33,7 +165,7 @@ Thus the four fundamental interactions on which all physical interactions are ba
      \item Strong interaction
 \end{itemize}
 
-According the today's conceptions, we tend to assing a mediator for each interaction. Thus except from gravitation which is still a mistery in fundamental physics we have:
+According the today's conceptions, we tend to assign a mediator for each interaction. Thus except from gravitation which is still a mistery in fundamental physics we have:
 
 \begin{itemize}
      \item Weak interactions mediators are \textbf{W-Boson} and \textbf{Z-Boson}.
@@ -41,7 +173,41 @@ According the today's conceptions, we tend to assing a mediator for each interac
      \item Electromagnetic interactions mediatos is the photon.
 \end{itemize}
 
+The question to be raised is that why two electrons share electromagnetic interactions while a photon and an electron would not. This would raise the assumption that electrons should have a property that is only to the particles, which can share such interactions. Thus we would associate a property named charge for any interactions. For electromagnetic interactions an \textit{electric} charge, for weak and strong we would also have weak and strong charges. The latter is also called colour charge or colour for short.
 
+\begin{callout}
+     A particle is subjected to an interaction if and only if it carries the corresponding charge!
+\end{callout}
+
+\section{The Building Blocks of Matter}
+\subsection{Atomic Theory and The Constituents of Matter}
+People have questioned the very nature of matte for a long time, whether it is possible to divide the matter infinite times and still be able to do so, or if it is made of a grane-like particles which cannot be divided into substructures. The question was an open one, though philosophers like Democritus or physicists like Boltzmann believed in an atomic (atomos means uncuttable in greek.) theory along the way. 
+\\
+\\
+\textbf{The Philosophy:} The idea was simple, matter is made up of discrete units that cannot be more divided into substructures. Democritus came out to be seen as the first person, who believed in such idea. But it was well forgotten until the newly found works of Aristotle in 12th century which was exactly the opposite. That the matter was continuous and infinite and could be subdivied without limit.
+\\
+\\
+Later on the discovery of major works describing atomist teachings gave more attention to the subject, but since the Epicureanism contradicted orthodox Christian teachings, The teachings was considered unacceptable by most philosophers. The French Catholic priest Pierre Gassendi revived the theory by some modification, that the God created the atoms.
+\\
+\\
+\textbf{John Dalton:} At the end of 18th century there were two laws arising in chemistry, which were silently pointing towards the atomic nature of the matter. 
+
+\begin{enumerate}
+    \item The first one was the conservation of mass, which states that the total mass of the reactants must be equal to the total mass of the products.
+    \item Second one was the law of definite proportions. This law states that if a compound is broken down into its constituet chemical elements, then the masses of the constituents will always have the same proportions by weight, regardless of the quantity or sourve of the original substance.
+\end{enumerate}
+
+Dalton proposed that each chemical element is composed of atoms of a single, unique type, and though they cannot be altered or destrozed by chemical means, they can combine to form more complex structures. This marked the first truly scientific theory of the atom, since Dalton reached his conclusions by experimentation and examination of the results in an empirical fashion.
+\\
+\\
+\textbf{Brownian Motion:} In 1827, the British botanist Robert Brown observed that dust particles inside pollen grains floating in water constantly jiggled about for no apparent reason. In 1905, Albert Einstein theorized that this Brownian motion was baused by the water molecules continuously knocking the grains about, and develiped a hypothetical mathematical model to describe it. The model was validated experimentally in 1908 by French physicist Jean Perrin, thus providing additional validation for particle theory (and by extension atomic theory).
+\\
+\\
+\textbf{Statistical Mechanics:} In 1738, Daniel Bernoulli postulated that the pressure of gases and heat were both caused by the underlying motion of molecules. Nonetheless for the theory of ideal gases it was also necessary to postulate the existence of atoms.
+\\
+\\
+James Clerk Maxwell used statisitcal mechanics in physics, a notion which Boltzmann and Rudolf Clausius used to expand and work on thermodynamics, and especially the law of entropy (2nd law of thermodynamics). All of statistical mechanics and the laws of heat, gas, and entropy were necessarily postulated upon the existence of atoms.
+\subsection{Subatomic Particles}
 
 
 
