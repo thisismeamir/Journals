@@ -9,6 +9,9 @@
 \usepackage{graphicx, adjustbox}
 \usepackage{lmodern}
 \usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
 \usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=2cm]{geometry}
 \usepackage{multicol}
 \usepackage{soul}
@@ -121,16 +124,32 @@
 \setcounter{figurecounter}{1}
 
 \newcommand{\img}[3]{
-\begin{adjustbox}{center, nofloat=figure}
-\includegraphics[width=#2\linewidth]{./img/#1}
-\label{\thefigurecounter}
-\end{adjustbox}
-\begin{center}
-    \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{\small #3}
-    \addtocounter{figurecounter}{1}
-\end{center}}
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
 
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}}
 
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\linewidth}
+        \centering
+        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
+        \includegraphics[width=0.8\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}}
 
 % New commands
 \newenvironment{callout}
@@ -264,6 +283,7 @@ where
 \textbf{Semi-Empirical Mass Fromula (SEMF):} Apart from the lightest elements, the binding energy per nucleon for most nuclei is about $8-9\mev$. The parametrisation of nuclear masses as a function of $A$ and $Z$, which is known as the \textit{Weizsäcker formula}, or the semi empirical mass formula, is used to approximate the mass and various other properties of an atomic nucleus form its number of protons and neutrons. As the name suggests, it is based partly on theory and partly on empirical measurements. The formula represents the \textbf{liquid-drop model} proposed by George Gamow.
 
 \textbf{Liquid-Drop Model:} The liquid-drop model was first proposed by George Gamow and furthur developed by Nield Bohr and John Archibald Wheeler. It treats the nucleus as a drop of incompressible fluid of very high density, held together by the nuclear force, there is similarity to the structure of a spherical liquid drop. While a crude model, the liquid-drop model accounts for the spherical shape of most nuclei and makes a rough prediction of binding energy.
+
 \img{liquiddropmodel}{0.7}{Illustration of the terms of the semi-empirical mass formula in the liquid-drop model of the atomic nucleus.}
 
 \begin{enumerate}
@@ -273,7 +293,9 @@ where
     \item \textbf{Asymmetry energy} (also called Pauli energy), which accounts for the Pauli exclusion principle. Unequal numbers of neutrons and protons imply filling higher energy levels for one type of particle, while leaving lower energy levels vacant for the other type.
     \item \textbf{Pairing energy}, which accounts for the tendency of proton pairs and neutron pairs to occur. An even number of particles is more stable than an odd number due to spin coupling.
 \end{enumerate}
+
 \img{bindingenergies}{0.5}{The binding energy per nucleon (in $\mev$) shown as a function of the neutron number $N$ and atomic number $Z$ as given by the semi-empirical mass formula. A dashed line is included to show nuclides that have been discovered by experiment.}
+
 \textbf{The Formula:} Nuclear fussion and fission and other nuclear reactions, or measuring the mass of nucleus and comparing it with the mass of protons and neutrons it contains reveals that the mass of the nucleus as a whole is smaller than the sum of its consittuents, This is because the binding energies between the neuleons are yet to be considered. From this we would write:
 \begin{equation}
     M = ZM_p + NM_n - \frac{E_B(N,Z)}{c^2}
@@ -298,11 +320,61 @@ If the volume of the nucleus is proportional to $A$, then the radius should be p
 $$
 E = \frac35 \frac{1}{\fpe}\frac{Q^2}{R}
 $$
+
 Using an empirical nuclear radius of $R\approx r_0 A^{1/3}$ and $Q=Ze$ since the repulsion will only exist for more than one proton, $Z^2$ becomes $Z(Z-1)$:
+
 \begin{equation}
     E \approx \frac{3e^2Z(Z-1)}{20\pi\epsilon_0r_0 A^{1/3}} = a_C \frac{Z(Z-1)}{A^{1/3}}
 \end{equation}
+
 Thus the term $a_C\frac{Z(Z-1)}{A^{1/3}}$ is known as the Coulomb or Electrostatic term.
+\newpage
+
+\imgl{asymmetry}{0.5}{Asymmetry Term}
+\textbf{Asymmetry Term:} The term $a_A\frac{(N-Z)^2}{A}$ is known as the asymmetry term (or Pauli term). The Theoretical justification for this term is more complex. The pauli exlusion principle states that no two identical fermions can occupy exactly the same quantum state in an atom. At a given energy leve, there are only finitely many quantum states available for particles. What this means in the nucleus is that as more particles are added, thses partices must occupy higher energy levels, increasing the total energy of the nucleus. Note that this effect is not based on any of the fundamental forces, only the Pauli exclusion principle. 
+
+Protons and neutrons, being distinct types of particles, occupy different quantum states. One can think of two different "pools" of states – one for protons and one for neutrons. Now, for example, if there are significantly more neutrons than protons in a nucleus, some of the neutrons will be higher in energy than the available states in the proton pool. If we could move some particles from the neutron pool to the proton pool, in other words, change some neutrons into protons, we would significantly decrease the energy. The imbalance between the number of protons and neutrons causes the energy to be higher than it needs to be, for a given number of nucleons. This is the basis for the asymmetry term.
 
 
+\textbf{Pairing Term:} The last term $\delta(A,Z)$ is known as the pairing term. This term captures the effect of spin coupling. It is given by:
+\begin{equation}
+    \delta(A,Z) =\left\{ 
+    \begin{array}{ll}
+        +\delta_0 & \text{for even } Z, N\\
+        0 & \text{for odd } A\\
+        -\delta_0 & \text{for odd } Z, N\\
+    \end{array}\right.
+\end{equation}
+
+\subsection{Isospin and The Charge  Independence of the Nuclear Force}
+Protons and Neutrons not only have nearly equal masses, they also have similar nuclear interactions. This is oarticularly visible in the study of mirror nuclei.
+
+\textbf{Isospin:} Isospin was introduced as a concept in 1932, well before the 1960s development of the quark model. The man who introduced it, Werner Heisenberg, did so to explain symmetries of the then newly discovered neutron (symbol $n$):
+\begin{itemize}
+    \item The mass of the neutron and the proton (symbol p) are almost identical: they are nearly degenerate, and both are thus often called nucleons. Although the proton has a positive electric charge, and the neutron is neutral, they are almost identical in all other aspects.
+    \item The mass of the neutron and the proton (symbol p) are almost identical: they are nearly degenerate, and both are thus often called nucleons. Although the proton has a positive electric charge, and the neutron is neutral, they are almost identical in all other aspects.
+\end{itemize}
+
+This behavior is not unlike the electron, where there are two possible states based on their spin. Other properties of the particle are conserved in this case. Heisenberg introduced the concept of another conserved quantity that would cause the proton to turn into a neutron and vice versa. In 1937, Eugene Wigner introduced the term "isospin" to indicate how the new quantity is similar to spin in behavior, but otherwise unrelated. Protons and neutrons were then grouped together as nucleons because they both have nearly the same mass and interact in nearly the same way, if the (much weaker) electromagnetic interaction is neglected. In particle physics, the near mass-degeneracy of the neutron and proton points to an approximate symmetry of the Hamiltonian describing the strong interactions. It was thus convenient to treat them as being different states of the same particle.
+
+Although the neutron does in fact have a slightly higher mass due to isospin breaking (this is now understood to be due to the difference in the masses of the up and down quarks and the effects of the electromagnetic interaction), the appearance of an approximate symmetry is useful even if it does not exactly hold; the small symmetry breakings can be described by a perturbation theory, which gives rise to slight differences between the near-degenerate states.
+\begin{callout}
+    Isospin is similar to, but should not be confused with weak isospin. Briefly, weak isospin is the gauge symmetry of the weak interaction which connects quark and lepton doublets of left-handed particles in all generations; for example, up and down quarks, top and bottom quarks, electrons and electron neutrinos. By contrast (strong) isospin connects only up and down quarks, acts on both chiralities (left and right) and is a global (not a gauge) symmetry.
+\end{callout}
+
+The symmetry between protons and neutrons may therefore be described by this formalism. The proton and Neutron are treated as two states of the nucleon which form a doublet:
+\begin{equation}
+\text{Nucleon} \ \ I :1/2 \ \ \left\{
+    \begin{array}{ll}
+        \text{proton:} & I_3 = +1/2\\
+        \text{neutron:} & I_3 = -1/2
+    \end{array}\right.
+\end{equation}
+
+Formally, isospin is treated as a quantum mechanical angular momentum:
+\begin{equation}
+    I_3^{\text{nucleus}}= \sum  I_3^{\text{nucleons}} = \frac{Z-N}{2}
+\end{equation}
+
+\section{Nuclear Stability}
 \end{document}
