@@ -126,8 +126,8 @@
 \label{\thefigurecounter}
 \end{adjustbox}
 \begin{center}
-\textbf{\thefigurecounter} \textcolor{darkliver}{\small #3}
-\addtocounter{figurecounter}{1}
+    \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{\small #3}
+    \addtocounter{figurecounter}{1}
 \end{center}}
 
 
@@ -137,9 +137,12 @@
 	{\begin{calloutbox}\color{charcoal}\textbf\textit}
 	{\end{calloutbox}}
 
+\newcommand{\mev}{\text{MeV}}
+\newcommand{\fpe}{4\pi\epsilon_0}
+
 \title{Nuclear Physics \\ \large Journal of Study}
 \author{Amir H. Ebrahimnezhad}
-
+\parskip=12pt % adds vertical space between paragraphs
 
 \begin{document}
 
@@ -150,14 +153,11 @@
 \newpage
 \section{Introduction}
 The fundamental constituents of matter was always a question for the great minds of each era. From the greek philosophers that tried to explain the matter using four fundamental ones, to the recent years that the standard model tries to explain what are the interactions between the fundamental particles that form up the world around us.
-\\
-\\
+
 The physicists have found smaller and smaller particles that make up the matter around us. The atom, the substructure of the atom, electrons, nuclei, The substructure of nuclei, protons and neutrons, and the substructure of protons and neutrons which are quarks. 
-\\
-\\
+
 The two fundamental types of building blocks are the \textit{leptons}, which include the electron and the neutrino, and the quarks. In the scattering experiments, these were found to be smaller than $10^{-18}$m. They are possibly point-like particles.  For comparison, protons are as large as $10^{-15}$m. 
-\\
-\\
+
 By the end of 19th-century there were two known forces in the world. Gravity and electromagnetism, the first described all the observed motions in the night sky and the macroscopic objects around, while the latter explained the interactions causing chemical reactions. With the development of nuclear physics two new forces were introduced. The reason behind the absence of these forces was the short-range nature of them.
 
 Thus the four fundamental interactions on which all physical interactions are based upon are:
@@ -185,14 +185,11 @@ The question to be raised is that why two electrons share electromagnetic intera
 \section{The Building Blocks of Matter}
 \subsection{Atomic Theory and The Constituents of Matter}
 People have questioned the very nature of matte for a long time, whether it is possible to divide the matter infinite times and still be able to do so, or if it is made of a grane-like particles which cannot be divided into substructures. The question was an open one, though philosophers like Democritus or physicists like Boltzmann believed in an atomic (atomos means uncuttable in greek.) theory along the way. 
-\\
-\\
+
 \textbf{The Philosophy:} The idea was simple, matter is made up of discrete units that cannot be more divided into substructures. Democritus came out to be seen as the first person, who believed in such idea. But it was well forgotten until the newly found works of Aristotle in 12th century which was exactly the opposite. That the matter was continuous and infinite and could be subdivied without limit.
-\\
-\\
+
 Later on the discovery of major works describing atomist teachings gave more attention to the subject, but since the Epicureanism contradicted orthodox Christian teachings, The teachings was considered unacceptable by most philosophers. The French Catholic priest Pierre Gassendi revived the theory by some modification, that the God created the atoms.
-\\
-\\
+
 \textbf{John Dalton:} At the end of 18th century there were two laws arising in chemistry, which were silently pointing towards the atomic nature of the matter. 
 
 \begin{enumerate}
@@ -201,27 +198,111 @@ Later on the discovery of major works describing atomist teachings gave more att
 \end{enumerate}
 
 Dalton proposed that each chemical element is composed of atoms of a single, unique type, and though they cannot be altered or destrozed by chemical means, they can combine to form more complex structures. This marked the first truly scientific theory of the atom, since Dalton reached his conclusions by experimentation and examination of the results in an empirical fashion.
-\\
-\\
+
 \textbf{Brownian Motion:} In 1827, the British botanist Robert Brown observed that dust particles inside pollen grains floating in water constantly jiggled about for no apparent reason. In 1905, Albert Einstein theorized that this Brownian motion was baused by the water molecules continuously knocking the grains about, and develiped a hypothetical mathematical model to describe it. The model was validated experimentally in 1908 by French physicist Jean Perrin, thus providing additional validation for particle theory (and by extension atomic theory).
-\\
-\\
+
 \textbf{Statistical Mechanics:} In 1738, Daniel Bernoulli postulated that the pressure of gases and heat were both caused by the underlying motion of molecules. Nonetheless for the theory of ideal gases it was also necessary to postulate the existence of atoms.
-\\
-\\
+
 James Clerk Maxwell used statisitcal mechanics in physics, a notion which Boltzmann and Rudolf Clausius used to expand and work on thermodynamics, and especially the law of entropy (2nd law of thermodynamics). All of statistical mechanics and the laws of heat, gas, and entropy were necessarily postulated upon the existence of atoms.
 
 \subsection{Subatomic Particles}
 \textbf{Electron:}  After the discovery of electric force and the existence of two types of charges, in 1859 Julius Plücker observed the radiation emitted from the cathode caused phosphorescent light. The first building block of the atom to be identified was the electron. Later on Arthur Schuster expanded upon the experiments by placing metal plates parallel to the cathode rays and applying an electric potential between the plates. The field deflected the rays toward the positively charged plate, providing further evidence that the rays carried negative charge. By measuring the amount of deflection for a given level of current, in 1890 Schuster was able to estimate the charge-to-mas ratio of the ray components.
-\\
-\\
+
 While studying naturally fluorescing minerals in 1896, the French physicist Henri Becquerel discovered that they emitted radiation without any exposure to an external energy source. These radioactive materials became the subject of much interest. J. J. Thomson performed experiments that indicated the particles were unique, rather than waves, atoms, or molecules as was believed earlier. The electron's charge was more carefully measured by the American Physicist Robert Millikan.
-\\
-\\
+
 In the Standard Model of particle physics, electrons belong to the group of subatomic particles called leptons, which are believed to be fundamental or elementary particles with no substructure. Electrons have the lowest mass of any charged lepton and belong to the first-generation of fundamental particles. Leptons differ from the other basic constituent of matter, the quarks, by their lack of strong interaction. All members of the lepton group are fermions, because they all have half-off integer spin; the electron has spin $\frac12$.
-\\
-\\
-\textbf{Nuclei:} The atomic nucleus is the samll dense region consisting of protons and neutrons at the center of an atom, which was discovered by Ernest Rutherford based on the 1909 Geiger-Marsden gold foil experiment.
+
+\textbf{Nuclei:} In the Atom model of Thomson, the electrons, and an equivalent number of positively charged particles were unifomly distributed thoughout the atom. The resulting atom was electrically neutral. Later on the Geiger-Marsden Experiment with Rutherford showed the image to be wrong. By shooting alpha particles to a thin golden foil. The explanation of the scattering data wasa  central Coulomb field caused by a massive, positively charged nucleus. Thus the atomic model had another step towards modeling reality more precisely.
+
+\textbf{Proton:} Since the mass of a proton can be approximately of a hydrogen atom (the electron contributes really samll to the total mass.) the concept of a hydrogen-like partcile as a constituent of other atoms was developed over time. Because there were some indications such as the periodic table, the ratio of mass between different atoms, etc... 
+
+
+In 1927, Rutherford proved that the hydrogen nucleus is present in other nuclei, While bombarding nitrogen with $\alpha$-particles, he observed positively charged particles with an unusually long range, which must have been ejected from the atom as well. From this he concluded that the nitrogen atom had been destroyed in these reactions and a light constituent of the nucleus had been ejected. He had already discovered similar long-ranged particles when bombarding hydrogen. From this he concluded that these partocles were hydrogen nuclei which, therefore, had to be constituents of nitrogen as well:
+$$
+^{14}\text{N} + ^4\text{He} \rightarrow ^{17}\text O + \text p
+$$ 
+
+Protons are spin $\frac12$ fermions and are not elementary particles, which mean they have substructures, quarks that make up the proton are held together with strong interaction.
+
+\textbf{Neutron:} The Neutron was also detected by bombarding nuclei with $\alpha$-particles. Chadwick in 1932 found an appropriate experimental approach. He used the irradiation of beryllium with $\alpha$-particles from a polonium source, and thereby established the neutron as a fundamental consituent of nuclei.
+
+\subsection{Nuclides}
+
+\textbf{The Atomic and Mass Number: } Knowing that the nuclei is consists of positively charged particles (protons) the atomic number is the number of protons the nuclei has. Denoted by $Z$, the charge of the nucleus therefore is $Q = Ze$, the elementary charge $e \approx 1.6 \time 10^{-19}$, for neutral atoms this is also the number of electrons orbiting around the nucleus. 
+
+\begin{callout}
+    The Chemical properties of an atom is determined by its atomic number.
+\end{callout}
+\begin{callout}
+    The classical method of determining the charge of the nucleus is the measurement of the characteristic $X$-rays of the atom to be studied. Moseley's law states that the energy of the $K_\alpha$-line is proportional to $(Z-1)^2$. Nowdaysm the detection of these catacteristic $X$-rays are being used in material analysis.
+\end{callout}
+
+In addition to the atomic number we define $N$ at the number of neutrons, then the mass number is defined as:
+\begin{equation}
+    A = Z+N
+\end{equation}
+\begin{itemize}
+    \item Nuclides with the same mass number $A$ are called isobars.
+    \item Nuclides with the same atomic number $Z$ are called isotopes.
+    \item Nuclides with the same neutron number $N$ are called isotones.
+\end{itemize}
+
+We define the binding energy as:
+
+\begin{equation}
+    B(Z,A) = \left[ZM(^1\text H) + (A -Z)M_n - M(A, Z)\right]\cdot c^2
+\end{equation}
+where 
+\begin{align*}
+    M(^1H) &= M_p + m_e \\
+    M_p &= 938.272 \ \mev/c^2 = 1836.153 m_e\\
+    M_n &= 939.565\mev/c^2 = 1838.684 m_e \\
+    m_e &= 0.511\mev/c^2
+\end{align*}
+
+\subsection{Parametrisation of Binding Energies}
+\textbf{Semi-Empirical Mass Fromula (SEMF):} Apart from the lightest elements, the binding energy per nucleon for most nuclei is about $8-9\mev$. The parametrisation of nuclear masses as a function of $A$ and $Z$, which is known as the \textit{Weizsäcker formula}, or the semi empirical mass formula, is used to approximate the mass and various other properties of an atomic nucleus form its number of protons and neutrons. As the name suggests, it is based partly on theory and partly on empirical measurements. The formula represents the \textbf{liquid-drop model} proposed by George Gamow.
+
+\textbf{Liquid-Drop Model:} The liquid-drop model was first proposed by George Gamow and furthur developed by Nield Bohr and John Archibald Wheeler. It treats the nucleus as a drop of incompressible fluid of very high density, held together by the nuclear force, there is similarity to the structure of a spherical liquid drop. While a crude model, the liquid-drop model accounts for the spherical shape of most nuclei and makes a rough prediction of binding energy.
+\img{liquiddropmodel}{0.7}{Illustration of the terms of the semi-empirical mass formula in the liquid-drop model of the atomic nucleus.}
+
+\begin{enumerate}
+    \item \textbf{Volume Energy}, when an assembly of nucleons of the same size is packed together into the smallest volume, each interior nucleon has a certain number of other nucleons in contact with it. So, this nuclear energy is proportional to the volume.
+    \item \textbf{Surface Energy} corrects for the previous assumption made that every nucleon interacts with the same number of other nucleons. This term is negative and proportional to the surface area, and is therefore roughly equivalent to liquid surface tension.
+    \item \textbf{Coulomb Energy} the potential energy from each pair of protons. As this is a repulsive force, the binding energy is reduced.
+    \item \textbf{Asymmetry energy} (also called Pauli energy), which accounts for the Pauli exclusion principle. Unequal numbers of neutrons and protons imply filling higher energy levels for one type of particle, while leaving lower energy levels vacant for the other type.
+    \item \textbf{Pairing energy}, which accounts for the tendency of proton pairs and neutron pairs to occur. An even number of particles is more stable than an odd number due to spin coupling.
+\end{enumerate}
+\img{bindingenergies}{0.5}{The binding energy per nucleon (in $\mev$) shown as a function of the neutron number $N$ and atomic number $Z$ as given by the semi-empirical mass formula. A dashed line is included to show nuclides that have been discovered by experiment.}
+\textbf{The Formula:} Nuclear fussion and fission and other nuclear reactions, or measuring the mass of nucleus and comparing it with the mass of protons and neutrons it contains reveals that the mass of the nucleus as a whole is smaller than the sum of its consittuents, This is because the binding energies between the neuleons are yet to be considered. From this we would write:
+\begin{equation}
+    M = ZM_p + NM_n - \frac{E_B(N,Z)}{c^2}
+\end{equation}
+
+The semi-empirical mass formula states the binding energy as:
+\begin{equation}
+    E_B = a_V A - a_S A^{2/3} - a_C\frac{Z(Z-1)}{A^{1/3}}-a_A\frac{(N-Z)^2}{A} +\delta(N,Z)
+\end{equation}
+
+\textbf{Volume Term:} The term $a_V A$ is known as the volume term. The volume of the nucleus is proportional to $A$, so this term is proportional to the volume, hence the name.
+
+The basis for this term is the strong nuclear force. The strong force affects both protons and neutrons, and as expected, this term is independent of $Z$. Because the number of pairs that can be taken from $A$ particles is $A(A-1)/2$, one might expect a term proportional to $A^2$. However, the strong force has a very limited range, and a given nucleon may only interact strongly with its nearest neighbors and next nearest neighbors. Therefore, the number of pairs of particles that actually interact is roughly proportional to $A$, giving the volume term its form.
+
+\textbf{Surface Term:} The term $a_S A^{2/3}$ is known as the surface term. This term, also based on the strong force, is a correction to the volume term.
+
+The volume term suggests that each nucleon interacts with a constant number of nucleons, independent of A. While this is very nearly true for nucleons deep within the nucleus, those nucleons on the surface of the nucleus have fewer nearest neighbors, justifying this correction. This can also be thought of as a surface-tension term, and indeed a similar mechanism creates surface tension in liquids.
+
+If the volume of the nucleus is proportional to $A$, then the radius should be proportional to $A^{1/3}$ and the surface area to $A^{2/3}$. This explains why the surface term is proportional to $A^{2/3}$. It can also be deduced that $a_S$ should have a similar order of magnitude to $a_V$.
+
+\textbf{Coulomb Term:} The basis for this term is the electrostatic repulsion between the protons. The potential energy of sphere of uniform charge density is:
+$$
+E = \frac35 \frac{1}{\fpe}\frac{Q^2}{R}
+$$
+Using an empirical nuclear radius of $R\approx r_0 A^{1/3}$ and $Q=Ze$ since the repulsion will only exist for more than one proton, $Z^2$ becomes $Z(Z-1)$:
+\begin{equation}
+    E \approx \frac{3e^2Z(Z-1)}{20\pi\epsilon_0r_0 A^{1/3}} = a_C \frac{Z(Z-1)}{A^{1/3}}
+\end{equation}
+Thus the term $a_C\frac{Z(Z-1)}{A^{1/3}}$ is known as the Coulomb or Electrostatic term.
 
 
 \end{document}
