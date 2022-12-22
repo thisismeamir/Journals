@@ -9,3 +9,4 @@
 \contentsline {subsection}{\numberline {3.1}Beta Decay}{11}{}%
 \contentsline {subsection}{\numberline {3.2}Electron Capture}{13}{}%
 \contentsline {subsection}{\numberline {3.3}Alpha Decay}{13}{}%
+\contentsline {subsection}{\numberline {3.4}Nuclear Fission}{14}{}%
