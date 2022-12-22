@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  16 DEC 2022 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  22 DEC 2022 11:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -413,50 +413,112 @@ Package caption Info: float package is loaded.
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/mhchem\mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-11-02 L3 programming layer (loader) 
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
+ex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
+\l__pdf_internal_box=\box58
+))
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3ke
+ys2e.sty
+Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count279
+\calc@Bcount=\count280
+\calc@Adimen=\dimen176
+\calc@Bdimen=\dimen177
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count281
+\calc@Cskip=\skip55
+)
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgreek.sty
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
+ in chemistry (CN)
+\l__chemgreek_tmpa_int=\count282
+\g__chemgreek_tmpa_int=\count283
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count284
+\__mhchem_arrow_extPgfLength_skip=\skip56
+\mhchem@minispace@tmp=\skip57
+\mhchem@minibackspace@tmp=\skip58
+\mhchem@bondwidth=\skip59
+\mhchem@bondheight=\skip60
+\mhchem@smallbondwidth@tmpA=\skip61
+\mhchem@smallbondwidth@tmpB=\skip62
+\mhchem@smallbondwidth=\skip63
+\mhchem@bondtmp@minussidebearingleft=\skip64
+\mhchem@bondtmp@minussidebearingright=\skip65
+\l__mhchem_option_version_int=\count285
+\mhchem@option@minusmathsidebearingleft=\dimen178
+\mhchem@option@minusmathsidebearingright=\dimen179
+\mhchem@option@minustextsidebearingleft=\dimen180
+\mhchem@option@minustextsidebearingright=\dimen181
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. Please write \usepackage[version=4]{mhchem}
+(mhchem)                in your preamble (or any lower number for
+(mhchem)                compatibility mode), because you might get slightly
+(mhchem)                different output with the same input in future versions
+.
+
+) (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count278
-\Gm@cntv=\count279
-\c@Gm@tempcnt=\count280
-\Gm@bindingoffset=\dimen176
-\Gm@wd@mp=\dimen177
-\Gm@odd@mp=\dimen178
-\Gm@even@mp=\dimen179
-\Gm@layoutwidth=\dimen180
-\Gm@layoutheight=\dimen181
-\Gm@layouthoffset=\dimen182
-\Gm@layoutvoffset=\dimen183
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen182
+\Gm@wd@mp=\dimen183
+\Gm@odd@mp=\dimen184
+\Gm@even@mp=\dimen185
+\Gm@layoutwidth=\dimen186
+\Gm@layoutheight=\dimen187
+\Gm@layouthoffset=\dimen188
+\Gm@layoutvoffset=\dimen189
 \Gm@dimlist=\toks29
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count281
-\mult@box=\box58
-\multicol@leftmargin=\dimen184
-\c@unbalance=\count282
-\c@collectmore=\count283
-\doublecol@number=\count284
-\multicoltolerance=\count285
-\multicolpretolerance=\count286
-\full@width=\dimen185
-\page@free=\dimen186
-\premulticols=\dimen187
-\postmulticols=\dimen188
-\multicolsep=\skip53
-\multicolbaselineskip=\skip54
-\partial@page=\box59
-\last@line=\box60
-\maxbalancingoverflow=\dimen189
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@firstbox=\box63
-\mult@gfirstbox=\box64
-\@tempa=\box65
+\c@tracingmulticols=\count289
+\mult@box=\box59
+\multicol@leftmargin=\dimen190
+\c@unbalance=\count290
+\c@collectmore=\count291
+\doublecol@number=\count292
+\multicoltolerance=\count293
+\multicolpretolerance=\count294
+\full@width=\dimen191
+\page@free=\dimen192
+\premulticols=\dimen193
+\postmulticols=\dimen194
+\multicolsep=\skip66
+\multicolbaselineskip=\skip67
+\partial@page=\box60
+\last@line=\box61
+\maxbalancingoverflow=\dimen195
+\mult@rightbox=\box62
+\mult@grightbox=\box63
+\mult@firstbox=\box64
+\mult@gfirstbox=\box65
 \@tempa=\box66
 \@tempa=\box67
 \@tempa=\box68
@@ -492,15 +554,16 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box98
 \@tempa=\box99
 \@tempa=\box100
-\c@minrows=\count287
-\c@columnbadness=\count288
-\c@finalcolumnbadness=\count289
-\last@try=\dimen190
-\multicolovershoot=\dimen191
-\multicolundershoot=\dimen192
-\mult@nat@firstbox=\box101
-\colbreak@box=\box102
-\mc@col@check@num=\count290
+\@tempa=\box101
+\c@minrows=\count295
+\c@columnbadness=\count296
+\c@finalcolumnbadness=\count297
+\last@try=\dimen196
+\multicolovershoot=\dimen197
+\multicolundershoot=\dimen198
+\mult@nat@firstbox=\box102
+\colbreak@box=\box103
+\mc@col@check@num=\count298
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
@@ -509,10 +572,10 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks32
 \SOUL@buffer=\toks33
 \SOUL@token=\toks34
-\SOUL@spaceskip=\skip55
-\SOUL@ttwidth=\dimen193
-\SOUL@uldp=\dimen194
-\SOUL@ulht=\dimen195
+\SOUL@spaceskip=\skip68
+\SOUL@ttwidth=\dimen199
+\SOUL@uldp=\dimen256
+\SOUL@ulht=\dimen257
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
@@ -545,14 +608,14 @@ Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
 common.tex
 \pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen196
-\pgfutil@tempdimb=\dimen197
+\pgfutil@tempdima=\dimen258
+\pgfutil@tempdimb=\dimen259
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
 common-lists.tex))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-
 latex.def
-\pgfutil@abb=\box103
+\pgfutil@abb=\box104
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.c
 ode.tex
@@ -578,26 +641,26 @@ code.tex
 iltered.code.tex
 \pgfkeys@tmptoks=\toks38
 ))
-\pgf@x=\dimen198
-\pgf@y=\dimen199
-\pgf@xa=\dimen256
-\pgf@ya=\dimen257
-\pgf@xb=\dimen258
-\pgf@yb=\dimen259
-\pgf@xc=\dimen260
-\pgf@yc=\dimen261
-\pgf@xd=\dimen262
-\pgf@yd=\dimen263
+\pgf@x=\dimen260
+\pgf@y=\dimen261
+\pgf@xa=\dimen262
+\pgf@ya=\dimen263
+\pgf@xb=\dimen264
+\pgf@yb=\dimen265
+\pgf@xc=\dimen266
+\pgf@yc=\dimen267
+\pgf@xd=\dimen268
+\pgf@yd=\dimen269
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count291
-\c@pgf@countb=\count292
-\c@pgf@countc=\count293
-\c@pgf@countd=\count294
+\c@pgf@counta=\count299
+\c@pgf@countb=\count300
+\c@pgf@countc=\count301
+\c@pgf@countd=\count302
 \t@pgf@toka=\toks39
 \t@pgf@tokb=\toks40
 \t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count295
+\pgf@sys@id@count=\count303
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cf
 g
@@ -616,8 +679,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
 softpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count296
-\pgfsyssoftpath@bigbuffer@items=\count297
+\pgfsyssoftpath@smallbuffer@items=\count304
+\pgfsyssoftpath@bigbuffer@items=\count305
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys
 protocol.code.tex
@@ -635,9 +698,9 @@ ode.tex
 ode.tex)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser
 .code.tex
-\pgfmath@dimen=\dimen264
-\pgfmath@count=\count298
-\pgfmath@box=\box104
+\pgfmath@dimen=\dimen270
+\pgfmath@count=\count306
+\pgfmath@box=\box105
 \pgfmath@toks=\toks42
 \pgfmath@stack@operand=\toks43
 \pgfmath@stack@operation=\toks44
@@ -662,59 +725,59 @@ ons.misc.code.tex)
 ons.integerarithmetics.code.tex)))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.
 code.tex
-\c@pgfmathroundto@lastzeros=\count299
+\c@pgfmathroundto@lastzeros=\count307
 ))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.t
 ex)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 points.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen265
-\pgf@picmaxx=\dimen266
-\pgf@picminy=\dimen267
-\pgf@picmaxy=\dimen268
-\pgf@pathminx=\dimen269
-\pgf@pathmaxx=\dimen270
-\pgf@pathminy=\dimen271
-\pgf@pathmaxy=\dimen272
-\pgf@xx=\dimen273
-\pgf@xy=\dimen274
-\pgf@yx=\dimen275
-\pgf@yy=\dimen276
-\pgf@zx=\dimen277
-\pgf@zy=\dimen278
+\pgf@picminx=\dimen271
+\pgf@picmaxx=\dimen272
+\pgf@picminy=\dimen273
+\pgf@picmaxy=\dimen274
+\pgf@pathminx=\dimen275
+\pgf@pathmaxx=\dimen276
+\pgf@pathminy=\dimen277
+\pgf@pathmaxy=\dimen278
+\pgf@xx=\dimen279
+\pgf@xy=\dimen280
+\pgf@yx=\dimen281
+\pgf@yy=\dimen282
+\pgf@zx=\dimen283
+\pgf@zy=\dimen284
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 pathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen279
-\pgf@path@lasty=\dimen280
+\pgf@path@lastx=\dimen285
+\pgf@path@lasty=\dimen286
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 pathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen281
-\pgf@shorten@start@additional=\dimen282
+\pgf@shorten@end@additional=\dimen287
+\pgf@shorten@start@additional=\dimen288
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 scopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box105
-\pgf@hbox=\box106
-\pgf@layerbox@main=\box107
-\pgf@picture@serial@count=\count300
+\pgfpic=\box106
+\pgf@hbox=\box107
+\pgf@layerbox@main=\box108
+\pgf@picture@serial@count=\count308
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 graphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen283
+\pgflinewidth=\dimen289
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 transformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen284
-\pgf@pt@y=\dimen285
-\pgf@pt@temp=\dimen286
+\pgf@pt@x=\dimen290
+\pgf@pt@y=\dimen291
+\pgf@pt@temp=\dimen292
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 quick.code.tex
@@ -731,14 +794,14 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 arrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen287
+\pgfarrowsep=\dimen293
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 shade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen288
-\pgf@sys@shading@range@num=\count301
-\pgf@shadingcount=\count302
+\pgf@max=\dimen294
+\pgf@sys@shading@range@num=\count309
+\pgf@shadingcount=\count310
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 image.code.tex
@@ -747,7 +810,7 @@ File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 external.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box108
+\pgfexternal@startupbox=\box109
 ))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore
 layers.code.tex
@@ -768,7 +831,7 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodules
 hapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box109
+\pgfnodeparttextbox=\box110
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulep
 lot.code.tex
@@ -777,8 +840,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
 p-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen289
-\pgf@nodesepend=\dimen290
+\pgf@nodesepstart=\dimen295
+\pgf@nodesepend=\dimen296
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcom
 p-version-1-18.sty
@@ -799,30 +862,40 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count303
+\etb@tempcnta=\count311
 )
-\tcb@titlebox=\box110
-\tcb@upperbox=\box111
-\tcb@lowerbox=\box112
-\tcb@phantombox=\box113
-\c@tcbbreakpart=\count304
-\c@tcblayer=\count305
-\c@tcolorbox@number=\count306
-\tcb@temp=\box114
+\tcb@titlebox=\box111
+\tcb@upperbox=\box112
+\tcb@lowerbox=\box113
+\tcb@phantombox=\box114
+\c@tcbbreakpart=\count312
+\c@tcblayer=\count313
+\c@tcolorbox@number=\count314
 \tcb@temp=\box115
 \tcb@temp=\box116
 \tcb@temp=\box117
+\tcb@temp=\box118
 )
-\c@theo=\count307
-\c@examplecounter=\count308
-\c@figurecounter=\count309
+\c@theo=\count315
+\c@examplecounter=\count316
+\c@figurecounter=\count317
 
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
-ex.def
-File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box118
-) (J-NuclearPhysics.aux
+(J-NuclearPhysics.aux
+
+LaTeX Warning: Label `figure' multiply defined.
+
+
+LaTeX Warning: Label `figure' multiply defined.
+
+
+LaTeX Warning: Label `figure' multiply defined.
+
+
+LaTeX Warning: Label `figure' multiply defined.
+
+
+LaTeX Warning: Label `figure' multiply defined.
+
 
 LaTeX Warning: Label `figure' multiply defined.
 
@@ -832,57 +905,57 @@ LaTeX Warning: Label `figure' multiply defined.
 )
 \openout1 = `J-NuclearPhysics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 170.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-166.
+170.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 170.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-166.
+170.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 170.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-166.
+170.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    ... okay on input line 170.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen291
+\scratchcounter=\count318
+\scratchdimen=\dimen297
 \scratchbox=\box119
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count319
+\nofMParguments=\count320
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen292
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen298
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
 \everyMPtoPDFconversion=\toks48
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -895,11 +968,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 166.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 166.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 170.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 170.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
+
+Package chemgreek Info: Activating mapping `fourier' on line 170.
+
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -936,72 +1012,73 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 168.
+ 172.
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 168.
+(Font)              scaled to size 11.03998pt on input line 172.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 168.
+(Font)              scaled to size 8.27998pt on input line 172.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 168.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 168
+(Font)              scaled to size 6.43999pt on input line 172.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 168
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 168.
+(Font)              scaled to size 11.03998pt on input line 172.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 168.
+(Font)              scaled to size 8.27998pt on input line 172.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 168.
+(Font)              scaled to size 6.43999pt on input line 172.
 
 [1
 
 {C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(J-NuclearPhysics.toc)
+(J-NuclearPhysics.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+)
 \tf@toc=\write4
 \openout4 = `J-NuclearPhysics.toc'.
 
  [2]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 178.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 178.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 178.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 178.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 178.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 178.
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-184.
+188.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-Overfull \hbox (1.0pt too wide) in paragraph at lines 202--202
+Overfull \hbox (1.0pt too wide) in paragraph at lines 206--206
 [] 
  []
 
 [3] [4]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 254--254
+Overfull \hbox (1.0pt too wide) in paragraph at lines 258--258
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 257--257
+Overfull \hbox (1.0pt too wide) in paragraph at lines 261--261
 [] 
  []
 
@@ -1009,12 +1086,12 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 257--257
 <./img/liquiddropmodel.png, id=26, 907.39pt x 234.8775pt>
 File: ./img/liquiddropmodel.png Graphic file (type png)
 <use ./img/liquiddropmodel.png>
-Package pdftex.def Info: ./img/liquiddropmodel.png  used on input line 287.
+Package pdftex.def Info: ./img/liquiddropmodel.png  used on input line 291.
 (pdftex.def)             Requested size: 318.66948pt x 82.4879pt.
 <./img/bindingenergies.png, id=28, 513.117pt x 289.08pt>
 File: ./img/bindingenergies.png Graphic file (type png)
 <use ./img/bindingenergies.png>
-Package pdftex.def Info: ./img/bindingenergies.png  used on input line 297.
+Package pdftex.def Info: ./img/bindingenergies.png  used on input line 301.
 (pdftex.def)             Requested size: 227.62206pt x 128.23657pt.
 
 
@@ -1024,26 +1101,88 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./img/asymmetry.png, id=38, 602.25pt x 508.90125pt>
 File: ./img/asymmetry.png Graphic file (type png)
 <use ./img/asymmetry.png>
-Package pdftex.def Info: ./img/asymmetry.png  used on input line 333.
-(pdftex.def)             Requested size: 182.09833pt x 153.87515pt.
+Package pdftex.def Info: ./img/asymmetry.png  used on input line 337.
+(pdftex.def)             Requested size: 227.62206pt x 192.34395pt.
  [8 <./img/asymmetry.png>]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 363--363
+Overfull \hbox (1.0pt too wide) in paragraph at lines 377--377
 [] 
  []
 
-[9] (J-NuclearPhysics.aux)
+<./img/ptableradioactive.png, id=43, 2508.37125pt x 836.12375pt>
+File: ./img/ptableradioactive.png Graphic file (type png)
+<use ./img/ptableradioactive.png>
+Package pdftex.def Info: ./img/ptableradioactive.png  used on input line 406.
+(pdftex.def)             Requested size: 455.24411pt x 151.74608pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (1.79535pt too wide) in paragraph at lines 412--413
+[]\T1/futs/m/n/10 beta-minus de-cay, when the nu-cleus emits an elec-tron and a
+n an-tineu-trino in a pro-cess that changes
+ []
+
+[9]
+<./img/radioactivecurves.png, id=47, 462.72874pt x 665.48625pt>
+File: ./img/radioactivecurves.png Graphic file (type png)
+<use ./img/radioactivecurves.png>
+Package pdftex.def Info: ./img/radioactivecurves.png  used on input line 425.
+(pdftex.def)             Requested size: 136.57462pt x 196.41827pt.
+ [10 <./img/ptableradioactive.png> <./img/radioactivecurves.png>]
+<./img/betaminus.png, id=53, 2007.5pt x 2007.5pt>
+File: ./img/betaminus.png Graphic file (type png)
+<use ./img/betaminus.png>
+Package pdftex.def Info: ./img/betaminus.png  used on input line 454.
+(pdftex.def)             Requested size: 136.57462pt x 136.5572pt.
+<./img/betapositive.png, id=54, 1284.8pt x 1284.8pt>
+File: ./img/betapositive.png Graphic file (type png)
+<use ./img/betapositive.png>
+Package pdftex.def Info: ./img/betapositive.png  used on input line 464.
+(pdftex.def)             Requested size: 136.57462pt x 136.56456pt.
+ [11 <./img/betaminus.png> <./img/betapositive.png>]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 520--520
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 536--536
+[] 
+ []
+
+<./img/massparabolaA106.jpeg, id=60, 992.70876pt x 798.985pt>
+File: ./img/massparabolaA106.jpeg Graphic file (type jpg)
+<use ./img/massparabolaA106.jpeg>
+Package pdftex.def Info: ./img/massparabolaA106.jpeg  used on input line 538.
+(pdftex.def)             Requested size: 136.57462pt x 109.91869pt.
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 550--550
+[] 
+ []
+
+[12 <./img/massparabolaA106.jpeg>]
+<./img/typeofdecay.png, id=64, 1027.84pt x 1470.49374pt>
+File: ./img/typeofdecay.png Graphic file (type png)
+<use ./img/typeofdecay.png>
+Package pdftex.def Info: ./img/typeofdecay.png  used on input line 566.
+(pdftex.def)             Requested size: 136.57462pt x 195.38922pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 56
+7.
+
+[13 <./img/typeofdecay.png>] (J-NuclearPhysics.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17355 strings out of 475281
- 341089 string characters out of 2774536
- 662746 words of memory out of 3000000
- 38490 multiletter control sequences out of 15000+600000
- 550873 words of font info for 113 fonts, out of 8000000 for 9000
+ 18527 strings out of 475281
+ 368621 string characters out of 2774536
+ 710544 words of memory out of 3000000
+ 39620 multiletter control sequences out of 15000+600000
+ 558165 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,117p,927b,474s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 83i,10n,117p,927b,535s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
 Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex
 .pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fo
@@ -1052,9 +1191,9 @@ fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1
 /adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/adobe/utopia/putri8a.pfb>
-Output written on J-NuclearPhysics.pdf (9 pages, 395777 bytes).
+Output written on J-NuclearPhysics.pdf (13 pages, 845519 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

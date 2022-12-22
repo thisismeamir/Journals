@@ -12,6 +12,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{wrapfig}
+\usepackage{mhchem}
 \usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=2cm]{geometry}
 \usepackage{multicol}
 \usepackage{soul}
@@ -126,30 +127,32 @@
 \newcommand{\img}[3]{
     \begin{figure}[h!]
         \centering
-        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
+        \captionsetup{justification=centering,margin=0.5cm,labelformat=empty}
         \includegraphics[width=#2\linewidth]{./img/#1}
         \label{figure}
-        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+        \caption{\small\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
     \end{figure}
     \addtocounter{figurecounter}{1}}
 
 \newcommand{\imgr}[3]{
     \begin{wrapfigure}{r}{#2\textwidth}
         \centering
-        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
+        \captionsetup{justification=centering,margin=0.5cm,labelformat=empty}
         \includegraphics[width=\linewidth]{./img/#1}
         \label{figure}
-        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
-    \end{wrapfigure}}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
 
 \newcommand{\imgl}[3]{
-    \begin{wrapfigure}{l}{#2\linewidth}
+    \begin{wrapfigure}{l}{#2\textwidth}
         \centering
-        \captionsetup{justification=centering,margin=2cm,labelformat=empty}
-        \includegraphics[width=0.8\linewidth]{./img/#1}
+        \captionsetup{justification=centering,margin=0.5cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
         \label{figure}
-        \caption{\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
-    \end{wrapfigure}}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
 
 % New commands
 \newenvironment{callout}
@@ -158,6 +161,7 @@
 
 \newcommand{\mev}{\text{MeV}}
 \newcommand{\fpe}{4\pi\epsilon_0}
+\newcommand{\ch}[5]{{}^{#2}_{#3}\!\text{#1}^{#4}_{#5}}
 
 \title{Nuclear Physics \\ \large Journal of Study}
 \author{Amir H. Ebrahimnezhad}
@@ -303,7 +307,7 @@ where
 
 The semi-empirical mass formula states the binding energy as:
 \begin{equation}
-    E_B = a_V A - a_S A^{2/3} - a_C\frac{Z(Z-1)}{A^{1/3}}-a_A\frac{(N-Z)^2}{A} +\delta(N,Z)
+    E_B = a_V A - a_S A^{2/3} - a_C\frac{Z(Z-1)}{A^{1/3}}-a_A\frac{(N-Z)^2}{4A} +\delta(N,Z)
 \end{equation}
 
 \textbf{Volume Term:} The term $a_V A$ is known as the volume term. The volume of the nucleus is proportional to $A$, so this term is proportional to the volume, hence the name.
@@ -346,6 +350,16 @@ Protons and neutrons, being distinct types of particles, occupy different quantu
     \end{array}\right.
 \end{equation}
 
+\textbf{Constants}
+The constants of this section are:
+\begin{align*}
+    a_V = 15.67\mev/c^2\\
+    a_S = 17.23\mev/c^2\\
+    a_C = 0.714\mev/c^2\\
+    a_A = 93.15\mev/c^2\\
+    \delta_0 = -11.2\mev/c^2
+\end{align*}
+
 \subsection{Isospin and The Charge  Independence of the Nuclear Force}
 Protons and Neutrons not only have nearly equal masses, they also have similar nuclear interactions. This is oarticularly visible in the study of mirror nuclei.
 
@@ -377,4 +391,178 @@ Formally, isospin is treated as a quantum mechanical angular momentum:
 \end{equation}
 
 \section{Nuclear Stability}
+There are only a samll number of nuclei, which are stable, the other are unstable and would decay in various ways. As the number of protons increases there would be more electric repulsion between the protons that would lower the binding energy in total. The Iron an Nickel isotopes possess the maximum binding energy per nucleon, thus they are the most stable nuclides. For still heavier masses nuclei becomes unstable to fission and decay spontaneously into two or more lighter nuclei. Because of released energy in the process the mass of the original atom must be larger than the sum of the masses of the daughter atoms. For a two body decay thus, the inequality below must apply:
+\begin{equation}
+    M(A,Z) > M(A-A',Z-Z') + M(A', Z')
+\end{equation}
+
+\begin{itemize}
+    \item An isotope is said to be stable if its lifetime is considerably larger than the age of the solar system.
+    \item It is very oftern the case that one of the daughter nuclei is a $^4\text{He}$ nucleus. This decay mode is called $\alpha$-decay and the nucleus of Hydrogen is called $\alpha$-particle.
+    \item If a heavy nucleus decays into two similarly massive daughter nuclei we speack of spontaneous fission. The probability of spontaneous fission exceeds that of $\alpha$-decay only for nuclei with $Z\leq 110$  and is a fairly unimportant process for the naturally occurring heavy elements.
+\end{itemize}
+
+\textbf{Radioactive Decay:} nuclear decay is the process in which an (unstable) nucleus losses energy by radiating particles, or light. The decaying nucleus is called the parent radionuclide, and the process produces at least one daughter nuclide, unless it decays light. There are six types for decay:
+\img{ptableradioactive}{1}{Radioactivity is characteristic of elements with large atomic numbers. Elements with at least one stable isotope are shown in light blue. Green shows elements of which the most stable isotope has a half-life measured in millions of years. Yellow and orange are progressively less stable, with half-lives in thousands or hundreds of years, down toward one day. Red and purple show highly and extremely radioactive elements where the most stable isotopes exhibit half-lives measured on the order of one day and much less.}
+\begin{enumerate}
+    \item \textbf{Alpha Decay} occurs when the nucleus ejects an alpha particle (helium nucleus).
+
+    \item \textbf{Beta Decay} occurs in two ways;
+    \begin{itemize}
+        \item beta-minus decay, when the nucleus emits an electron and an antineutrino in a process that changes a neutron to a proton.
+        \item  beta-plus decay, when the nucleus emits a positron and a neutrino in a process that changes a proton to a neutron, also known as positron emission.
+    \end{itemize}
+
+    \item In \textbf{Gamma Decay} a radioactive nucleus first decays by the emission of an alpha or beta particle. The daughter nucleus that results is usually left in an excited state and it can decay to a lower energy state by emitting a gamma ray photon.
+
+    \item In \textbf{Neutron Emission}, extremely neutron-rich nuclei, formed due to other types of decay or after many successive neutron captures, occasionally lose energy by way of neutron emission, resulting in a change from one isotope to another of the same element.
+    
+    \item In \textbf{Electron Capture}, the nucleus may capture an orbiting electron, causing a proton to convert into a neutron. A neutrino and a gamma ray are subsequently emitted.
+    
+    \item In \textbf{Cluster Decay} and nuclear fission, a nucleus heavier than an alpha particle is emitted.
+\end{enumerate}
+
+\imgr{radioactivecurves}{0.3}{Decay constant determines the rate of decay. Decay constant is denoted by $\lambda$, “lambda”. This constant probability may vary greatly between different types of nuclei, leading to the many different observed decay rates.}
+\textbf{Decay Constant:} The radioactive decay law states that the probability per unit time that a nucleus will decay is constant, independent of time. This constant is called the decay constant and is denoted by $\lambda$.
+
+THe rate of nuclear decay is also measured in terms of half-lives. The half-life is the amount of time that a given nuclei would lose half of its radioactivity. 
+
+The decay constant is related to lifetime and half-life by:
+\begin{equation}
+    \tau = \frac1\lambda \ \ \ \text{and} \ \ \ t_{1/2} = \frac{\ln 2}{\lambda}
+\end{equation}
+
+The measurement of the decay constants of radioactive nuclei is based upon finding the activity (the number of decays per unit time)
+\begin{equation}
+    A = -\frac{dN}{dt} = \lambda N
+\end{equation}
+
+where $N$ is the number of radioactive nuclei in the sample. The unit of activity is defined to became:
+\begin{equation}
+    1 \text{Bq [Becquerel]} = 1 \text{decay/s}
+\end{equation}
+
+For short-lived nuclides, the fall-off over time of the activity
+\begin{equation}
+    A(t) = \lambda N(t) = \lambda N_0e^{-\lambda t}
+\end{equation}
+may be measured using fast elecctronic counters. This method of measuring is not suitable for lifetimes larger than about a year. For longer-lived nuclei both the number of nuclei in the sample and the activity must be measured in order to obtain the decay constant from eq[11]
+
+
+
+\subsection{Beta Decay}
+\imgr{betaminus}{0.3}{Feynman digram of the $\beta^-$ decay}
+A Beta decay is a type of radioactive decay, on which one of the nucleons (proton or neutrons) transforms into the other by decaying a beta particle (positron or electron respectively) and a quasi-massless particle (neutrino or antineutrino respectively). The two types of beta decay is known as beta minus (for electron decay) and beta plus (for positron decay). 
+
+\textbf{Description:} 
+Beta decay is a consequence of the weak force, which is characterized by relatively lengthy decay times. Nucleons are composed of up quarks and down quarks, and the weak force allows a quark to change its flavour by emission of a W boson leading to creation of an electron/antineutrino or positron/neutrino pair. For example, a neutron, composed of two down quarks and an up quark, decays to a proton composed of a down quark and two up quarks.
+
+Electron capture is sometimes included as a type of beta decay, because the basic nuclear process, mediated by the weak force, is the same. In electron capture, an inner atomic electron is captured by a proton in the nucleus, transforming it into a neutron, and an electron neutrino is released.
+
+Beta decay conserves a quantum number known as the lepton number, or the number of electrons and their associated neutrinos (other leptons are the muon and tau particles). These particles have lepton number $+1$, while their antiparticles have lepton number $-1$. Since a proton or neutron has lepton number zero, $\beta^+$ decay (a positron, or antielectron) must be accompanied with an electron neutrino, while $\beta^-$ decay (an electron) must be accompanied by an electron antineutrino.
+
+\imgl{betapositive}{0.3}{Feynman digram of the $\beta^+$ decay}
+\textbf{Reaction and Phenomenology}
+The $\beta^-$ decay reaction is written as:
+\begin{equation}
+    \ch{X}{A}{Z}{}{N} \rightarrow \ch{X'}{A}{Z+1}{}{N-1} + \ch{e}{}{}{-}{} + \bar\nu
+\end{equation}
+The underlying interation as shown in figure 6 is:
+\begin{equation}
+    \ch{n}{}{}{}{} \rightarrow \ch{p}{}{}{}{} + \ch{e}{}{}{-}{} + \bar\nu
+\end{equation} 
+
+The $beta^+$ decay reaction however is:
+\begin{equation}
+    \ch{X}{A}{Z}{}{N} \rightarrow \ch{X'}{A}{Z-1}{}{N+1} + \ch{e}{}{}{-}{} + \bar\nu
+\end{equation}
+
+with the underlying reaction as shown in figure 7:
+\begin{equation}
+    \ch{p}{}{}{}{} \rightarrow \ch{n}{}{}{}{} + \ch{e}{}{}{+}{} + \bar\nu
+\end{equation} 
+
+Let us consider nuclei with equal mass number $A$ we can write the SEMF as:
+
+\begin{equation}
+    M(A,Z) = \alpha\cdot A - \beta\cdot Z + \gamma \cdot Z^2 + \delta(N,Z)
+\end{equation}
+where
+\begin{align*}
+    \alpha &= M_N -a_V +a_S A^{-1/3} + \frac{a_A}{4}\\
+    \beta  &= a_A + a_C + M_N - M_P- m_e\\
+    \gamma &= \frac{a_C}{A^{1/3}} + \frac{a_A}{A} 
+\end{align*}
+The smallest binding energy means the most stable nucleus as well. Therefore by taking the derivative and setting equal to zero we find the most stable atomic number $Z$:
+\begin{align*}
+    \frac{dM}{dZ} &= 0 \\
+    \rightarrow -\beta + 2\gamma Z &= 0
+\end{align*}
+Thus the most stable atomic number $Z$ for any given mass number is:
+\begin{equation}
+    \boxed{
+        Z_{\text{most stable}} = \frac{\beta}{2\gamma} = \frac{a_A + a_C + M_N - M_P- m_e}{2\left(\frac{a_C}{A^{1/3}} + \frac{a_A}{A}\right)} = \frac{66.2787 A}{130.462 + A^{2/3} }
+    }
+\end{equation}
+\textbf{Beta Decay in Odd Mass Nuclei}
+Let's find the most stable atom with atomic mass $A=101$ using eq[18]. The result is $Z = 44$. Isobars with more neutrons, such as $\ch{Mo}{101}{42}{}{}$ and $\ch{Tc}{101}{43}{}{}$, would have beta minus decay.
+\begin{align}
+    \ch{Mo}{101}{42}{}{}\rightarrow \ch{Tc}{101}{43}{}{} + \ch{e}{}{}{-}{}+\bar{\nu_e}\\
+    \ch{Tc}{101}{43}{}{}\rightarrow \ch{Ru}{101}{44}{}{} + \ch{e}{}{}{-}{} + \bar{\nu_e}
+\end{align}
+
+\begin{callout}
+    Energetically $\beta^-$ decay is possible whenever the mass of the daughter atom $M(A,Z+1)$ is smaller than the mass of its isobaric neighbors.
+    $$
+    M(A,Z)> M(A, Z+1)
+    $$
+    We consider here the mass of the whole atom and not just that of  the nucleus alone and so the rest mass of the electron created in the decay is automatically taken into account
+\end{callout}
+
+The reverse is possible for $\ch{Rh}{101}{45}{}{}$ and $\ch{Pd}{101}{46}{}{}$
+\begin{align}
+    \ch{Pd}{101}{46}{}{}\rightarrow \ch{Rh}{101}{45}{}{} + \ch{e}{}{}{+}{}+\bar{\nu_e}\\
+    \ch{Rh}{101}{45}{}{}\rightarrow \ch{Ru}{101}{44}{}{} + \ch{e}{}{}{-}{} + \bar{\nu_e}
+\end{align}
+
+\begin{callout}
+    Since the mass of  a free neutron is largen than the proton mass, this process is only possible inside a nucleus. By contrast, neutrons outside nuclei can and do decay (They would do a $\beta^-$ decay since neutrons are not stable particles.).
+
+    Energetically, beta plus decay is possible whenever the following relationship between masses is satisfied:
+    $$
+    M(A,Z) > M(A, Z-1) + 2m_e
+    $$
+    This relation takes into account the creation of a positron and the existence of an excess electron in the parent atom.
+\end{callout}
+
+\imgr{massparabolaA106}{0.3}{The Mass parabola of $A=106$ which shows two parabola because of even-even and odd-odd parity term.}
+\textbf{Beta Decay in even mass Nuclei:} For even mass nucleis there exist two parabolas, one for the odd-odd nuclei and one for the even-even nuclei. Often there's more than one $\beta-$stable isobar, especially in the range $A>70$. For the case of $A=106$ in figure 8. There exists two parabolas, but also to $\beta$-stable atoms.
+
+$\ch{Pd}{106}{46}{}{}$ and $\ch{Cd}{106}{48}{}{}$ isobars are on the lower parabolas, and $\ch{Pd}{106}{46}{}{}$ is the stablest. $\ch{Cd}{106}{48}{}{}$ is $\beta$-stable, since its two odd-odd neighbours both lie above it. The conversion of $\ch{Cd}{106}{48}{}{}$ is thus only opssible through a double $\beta$-decay into $\ch{Pd}{106}{46}{}{}$ 
+\begin{equation}
+    \ch{Cd}{106}{48}{}{} \rightarrow \ch{Pd}{106}{46}{}{} + 2\ch{e}{}{}{+}{} +2\nu_{\text{e}}
+\end{equation}
+
+The probabilityfor such process is so small that $\ch{Cd}{106}{48}{}{}$ may be considered to be a sstable nuclei. Odd-Odd nuclei always have at least one more strongly bound even-even neighbour. Thus they are unstable. The only exceptions are light nuclei such as $\ch{H}{2}{1}{}{}$, $\ch{Li}{6}{3}{}{}$, $\ch{B}{10}{5}{}{}$ and $\ch{N}{14}{7}{}{}$, which are stable to $\beta$-decay.
+
+\begin{callout}
+    Some odd-odd nuclei can undergo bot beta minus and beta plus decays. for example $\ch{K}{40}{19}{}{}$ and $\ch{Cu}{64}{29}{}{}$.
+\end{callout}
+\subsection{Electron Capture}
+Electron capture or K-electron capture is a process in which the nuclei would transform one proton into a neutron by capturing one of atoms electrons. The process is as below:
+
+\begin{equation}
+    \text p +\ch{e}{}{}{-}{} \rightarrow \text n + \nu_{\text e}
+\end{equation}
+
+This reaction occurs mainly in heavy nuclei where the nucelar radii are larger and the electron orbits are more compact. Usually the electrons that are captured are from the innermost (the "$K$") shell since such electrons are closest to the nucleus and their radial wave function has a maximum at the center of the nucleus.
+
+Electron-capture reactions compete with $\beta^+$-decay. The following condition is a consequence of energy conversion.
+
+\begin{equation}
+    M(A,Z) > M(A,Z-1) + \epsilon
+\end{equation}
+
+\imgr{typeofdecay}{0.3}{Graph of isotopes by type of nuclear decay. Orange and blue nuclides are unstable, with the black squares between these regions representing stable nuclides. The unbroken line passing below many of the nuclides represents the theoretical position on the graph of nuclides for which proton number is the same as neutron number. The graph shows that elements with more than 20 protons must have more neutrons than protons, in order to be stable.}
+\subsection{Alpha Decay}
 \end{document}
