@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  22 DEC 2022 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  25 DEC 2022 00:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -908,6 +908,9 @@ LaTeX Warning: Label `figure' multiply defined.
 
 LaTeX Warning: Label `figure' multiply defined.
 
+
+LaTeX Warning: Label `figure' multiply defined.
+
 )
 \openout1 = `J-NuclearPhysics.aux'.
 
@@ -1194,31 +1197,39 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 615--615
 [] 
  []
 
-[14] (J-NuclearPhysics.aux)
+[14] [15]
+<./img/scatterings.jpeg, id=78, 1986.42125pt x 1195.46625pt>
+File: ./img/scatterings.jpeg Graphic file (type jpg)
+<use ./img/scatterings.jpeg>
+Package pdftex.def Info: ./img/scatterings.jpeg  used on input line 671.
+(pdftex.def)             Requested size: 455.24411pt x 273.96642pt.
+ [16 <./img/scatterings.jpeg>] [17] (J-NuclearPhysics.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18554 strings out of 475281
- 369258 string characters out of 2774536
- 711603 words of memory out of 3000000
- 39644 multiletter control sequences out of 15000+600000
+ 18571 strings out of 475281
+ 369698 string characters out of 2774536
+ 711602 words of memory out of 3000000
+ 39660 multiletter control sequences out of 15000+600000
  558582 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,117p,927b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 83i,11n,117p,1122b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
-Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex
+Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mcl
 .pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fo
-urier-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fo
-urier/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fon
-ts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/f
-onts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX
-/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on J-NuclearPhysics.pdf (14 pages, 817703 bytes).
+urier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/f
+ourier/fourier-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/fourier/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Amir/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData
+/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on J-NuclearPhysics.pdf (17 pages, 923517 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

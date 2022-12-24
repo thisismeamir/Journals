@@ -10,3 +10,6 @@
 \contentsline {subsection}{\numberline {3.2}Electron Capture}{13}{}%
 \contentsline {subsection}{\numberline {3.3}Alpha Decay}{13}{}%
 \contentsline {subsection}{\numberline {3.4}Nuclear Fission}{14}{}%
+\contentsline {subsection}{\numberline {3.5}Gamma Decay}{15}{}%
+\contentsline {section}{\numberline {4}Scattering}{16}{}%
+\contentsline {subsection}{\numberline {4.1}Cross-Sections}{17}{}%

@@ -615,5 +615,99 @@ Where $\beta = v/c$ is the velocity ofthe ourgoing $\alpha$-particle and $R$ is 
 \end{callout}
 
 \subsection{Nuclear Fission}
+\textbf{Spontaneous Fission:} The largest binding energy is found in those nuclei in the region of $\ch{Fe}{56}{}{}{}$. For heavier nuclei, it decreases, for example a nucleus with $Z>40$ can in principle split into two lighter nuclei. The potential barrier which must be tunnelled through is, however so large that such spontaneous fission reactions are generally speaking extremely unlikely. It is interesting to find the charge $Z$ above which the nuclei becomes fission unstable, the point from which the mutual Coulombic repulsion of the protons outweights the attraction of nuclear force. And estimate can be obtained by considering the surface and the coulomb energies during the fission deformation.
 
+As the nucleus is deformed the surface energy increases, while the coulomb energy decreases. If the deformation leads to an energetically more favourable configuration, the nucleus is unstable. Quantitatively, we have consider a deformation from a sphere into an ellipsoid with axes:
+
+\begin{align*}
+    a &= R(1+\epsilon)\\
+    b = R(1+\epsilon)^{-1/2} &\approx R(1-\epsilon/2)
+\end{align*}
+
+Thus the surface energy and the coulomb energy would be:
+\begin{align}
+    E_S = a_S A^{2/3}\left(1+\frac25\epsilon^2 + \dots\right)\\
+    E_C = a_CZ^2A^{-1/3}\left(1-\frac15\epsilon^2+\dots\right)
+\end{align}
+
+Hence the deformation $\epsilon$ changes the total energy by:
+\begin{equation}
+    \Delta E = \frac{\epsilon^2}{5}\left(2a_SA^{2/3}-a_CZ^2A^{-1/3}\right)
+\end{equation}
+
+if $\Delta E<0$ the deformation is energetically favourable. Thus the fissoin barrier disappears for:
+
+\begin{equation}
+    \frac{Z^2}{A} \geq \frac{2a_S}{a_C}\approx 48:
+\end{equation}
+
+This is the case for nuclei with $Z>114$ and $A>270$.
+
+\textbf{Induced Fission:} Since the fission barrier is only about $6\mev$. This energy can be supplied by if one uses a flow of low energy neutrons to induce neutron capture reactions. These puch  the nucleus into an excited state above the fission barrier and spits up. This process is known as induced nuclear fission.
+
+\subsection{Gamma Decay}
+Gamma rays are produced during gamma decay, which normally occurs after other forms of decay occur, such as alpha or beta decay. A radioactive nucleus can decay by the emission of an $\alpha$ or $\beta$ particle. The daughter nucleus that results is usually left in an excited state. It can then decay to a lower energy state by emitting a gamma ray photon, in a process called gamma decay.
+
+The emission of a gamma ray from an excited nucleus typically requires only 10-12 seconds. Gamma decay may also follow nuclear reactions such as neutron capture, nuclear fission, or nuclear fusion. Gamma decay is also a mode of relaxation of many excited states of atomic nuclei following other types of radioactive decay, such as beta decay, so long as these states possess the necessary component of nuclear spin. When high-energy gamma rays, electrons, or protons bombard materials, the excited atoms emit characteristic "secondary" gamma rays, which are products of the creation of excited nuclear states in the bombarded atoms. Such transitions, a form of nuclear gamma fluorescence, form a topic in nuclear physics called gamma spectroscopy. Formation of fluorescent gamma rays are a rapid subtype of radioactive gamma decay.
+
+In certain cases, the excited nuclear state that follows the emission of a beta particle or other type of excitation, may be more stable than average, and is termed a metastable excited state, if its decay takes (at least) 100 to 1000 times longer than the average 10-12 seconds. Such relatively long-lived excited nuclei are termed nuclear isomers, and their decays are termed isomeric transitions. Such nuclei have half-lifes that are more easily measurable, and rare nuclear isomers are able to stay in their excited state for minutes, hours, days, or occasionally far longer, before emitting a gamma ray. The process of isomeric transition is therefore similar to any gamma emission, but differs in that it involves the intermediate metastable excited state(s) of the nuclei. Metastable states are often characterized by high nuclear spin, requiring a change in spin of several units or more with gamma decay, instead of a single unit transition that occurs in only 10-12 seconds. The rate of gamma decay is also slowed when the energy of excitation of the nucleus is small.
+
+An emitted gamma ray from any type of excited state may transfer its energy directly to any electrons, but most probably to one of the K shell electrons of the atom, causing it to be ejected from that atom, in a process generally termed the photoelectric effect (external gamma rays and ultraviolet rays may also cause this effect). The photoelectric effect should not be confused with the internal conversion process, in which a gamma ray photon is not produced as an intermediate particle (rather, a "virtual gamma ray" may be thought to mediate the process). 
+
+\section{Scattering}
+Scattering experiments are an importanttool for physics as a whole, generally we understand anything by throwing a beam of well-known things at it, and then see how they would scatter, or interact with each other. The object to be studied is called the target and is bombarded with a beam of particles with (mostly) well-defined energy. The interaction of the form
+
+$$
+a + b\rightarrow c+d
+$$
+
+occurs. where $a$ and $b$ denote the beam and the target and $c$ , $d$ are the products of the interaction. If the interaction does not change the particles themselves (they bounce each other off without changing each others properties) Then the scatterin is said to be elastic.
+
+\textbf{Elastic Scattering:} In an elastic process:
+$$
+a + b \rightarrow a' + b'
+$$
+the same particles are presented both before and after the scattering. But keep in mind that the energy and momenta would change (other wise nothing even collided), that's why the apostrophe was added to the names.
+\img{scatterings}{1}{Scattering processes: (a) elastic scattering; (b) inelastic scattering - production of an excited state which then decays into two particles; (c) inelastic production of new particles; (d) reaction of colliding beams}
+
+It is easily seen that in order to resolve small target structures, larger beam energies are required. The reduced de Broglie wavelength $\bar\lambda = \lambda /2\pi$ of a particle with momentum $p$ is given by:
+
+\begin{equation}
+    \bar\lambda = \frac{\hbar}{p}=\frac{\hbar c}{\sqrt{2mc^2E_{\text{kin}}+E^2_{\text{kin}}}}\approx \left\{
+        \begin{array}{ll}
+            \hbar/\sqrt{2mE_{\text{kin}}} & \text{for } \ E_{\text{kin}} <\!< mc^2\\
+            \hbar c/E_{\text{kin}} \approx \hbar c / E & \text{for } E_{\text{kin}} >\!> mc^2
+        \end{array}
+    \right.
+\end{equation}
+The largest wavelength that can resolve structures of linear extension $\Delta x$, is of the same order.
+
+From the uncertainty principle the corresponding particle momentum is:
+\begin{equation}
+    p \gtrsim\frac{\hbar}{\Delta x} ,  \ \ \ pc \gtrsim \frac{\hbar c}{\Delta x} \approx \frac{200\mev \text{fm}}{\Delta x}
+\end{equation}
+
+\subsection{Cross-Sections}
+The most important quantity for the description and interpretation of scattering experiments is the cross-section $\sigma$, which is a yardstick of the probability of a reaction between the two colliding particles.
+
+\textbf{Geometric reaction cross-section:} Imagine a thin scattering target of thickness $d$ with $N_b$ scattering centres and with particle density $n_b$. Each target particle has a cross-sectional area $\sigma_b$, to be determined by experiment. 
+A reaction occurs whenever a beam particle hits a target particle, and we assume that the beam particle is then removed from the beam. We do not distinguish between the final target states, i.e., whether the reaction is elastic or inelastic. The total reaction rate $N$, i.e., the total number of reactions per unit time, is given by the difference in the beam particle rate $N_a$ a upstream and downstream of the target. This is a direct measure for the cross-sectional area $\sigma_b$.
+
+We further assume that the beam has cross-sectional area $A$ and particle density na. The number of projectiles hitting the target per unit area and per unit time is called the flux $\Phi_a$. This is just the product of the particle density and the particle velocity $v_a$:
+
+\begin{equation}
+    \Phi_a = \frac{\dot{N_a}}{A}=n_a\cdot v_a
+\end{equation}
+The total number of target particles within the beam area is $N_b = n_b\cdot A\cdot d$. Hence the reaction rate $\dot{N}$ is given by the product of the incoming flux and the total cross-sectional area seen by the particles:
+
+\begin{equation} 
+    \dot{N}=\Phi_a\cdot N_b \cdot \sigma_b
+\end{equation}
+This formula is valid as long as the scattering centres do not overlap and particles are only scattered off individual scattering centres. The area presented by a single scattering centre to the incoming projectile a, will be called the geometric reaction cross-section: in what follows:
+
+\begin{equation}
+    \sigma_b = \frac{\dot{N}}{\Phi_a\cdot N_b}
+\end{equation}
+
+\subsection{{The Golden Rule}}
 \end{document}
