@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  25 DEC 2022 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.13)  26 DEC 2022 09:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -914,43 +914,43 @@ LaTeX Warning: Label `figure' multiply defined.
 )
 \openout1 = `J-NuclearPhysics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 174.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 180.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-174.
+180.
  (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 180.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-174.
+180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 174.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 180.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-174.
+180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    ... okay on input line 180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -977,13 +977,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 174.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 174.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 180.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 180.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 174.
+Package chemgreek Info: Activating mapping `fourier' on line 180.
 
 
 *geometry* driver: auto-detecting
@@ -1021,72 +1021,73 @@ Package chemgreek Info: Activating mapping `fourier' on line 174.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 176.
+ 182.
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 176.
+(Font)              scaled to size 11.03998pt on input line 182.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 176.
+(Font)              scaled to size 8.27998pt on input line 182.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 176.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 176
+(Font)              scaled to size 6.43999pt on input line 182.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 182
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 176
+LaTeX Font Info:    Trying to load font information for U+msb on input line 182
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 176.
+(Font)              scaled to size 11.03998pt on input line 182.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 176.
+(Font)              scaled to size 8.27998pt on input line 182.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 176.
+(Font)              scaled to size 6.43999pt on input line 182.
 
 [1
 
 {C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(J-NuclearPhysics.toc)
+(J-NuclearPhysics.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+)
 \tf@toc=\write4
 \openout4 = `J-NuclearPhysics.toc'.
 
  [2]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 186.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 186.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 186.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 186.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 186.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 186.
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-192.
+198.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-Overfull \hbox (1.0pt too wide) in paragraph at lines 210--210
+Overfull \hbox (1.0pt too wide) in paragraph at lines 216--216
 [] 
  []
 
 [3] [4]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 262--262
+Overfull \hbox (1.0pt too wide) in paragraph at lines 268--268
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 265--265
+Overfull \hbox (1.0pt too wide) in paragraph at lines 271--271
 [] 
  []
 
@@ -1094,12 +1095,12 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 265--265
 <./img/liquiddropmodel.png, id=26, 907.39pt x 234.8775pt>
 File: ./img/liquiddropmodel.png Graphic file (type png)
 <use ./img/liquiddropmodel.png>
-Package pdftex.def Info: ./img/liquiddropmodel.png  used on input line 295.
+Package pdftex.def Info: ./img/liquiddropmodel.png  used on input line 301.
 (pdftex.def)             Requested size: 318.66948pt x 82.4879pt.
 <./img/bindingenergies.png, id=28, 513.117pt x 289.08pt>
 File: ./img/bindingenergies.png Graphic file (type png)
 <use ./img/bindingenergies.png>
-Package pdftex.def Info: ./img/bindingenergies.png  used on input line 305.
+Package pdftex.def Info: ./img/bindingenergies.png  used on input line 311.
 (pdftex.def)             Requested size: 227.62206pt x 128.23657pt.
 
 
@@ -1109,23 +1110,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <./img/asymmetry.png, id=38, 602.25pt x 508.90125pt>
 File: ./img/asymmetry.png Graphic file (type png)
 <use ./img/asymmetry.png>
-Package pdftex.def Info: ./img/asymmetry.png  used on input line 341.
+Package pdftex.def Info: ./img/asymmetry.png  used on input line 347.
 (pdftex.def)             Requested size: 227.62206pt x 192.34395pt.
  [8 <./img/asymmetry.png>]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 381--381
+Overfull \hbox (1.0pt too wide) in paragraph at lines 387--387
 [] 
  []
 
 <./img/ptableradioactive.png, id=43, 2508.37125pt x 836.12375pt>
 File: ./img/ptableradioactive.png Graphic file (type png)
 <use ./img/ptableradioactive.png>
-Package pdftex.def Info: ./img/ptableradioactive.png  used on input line 410.
+Package pdftex.def Info: ./img/ptableradioactive.png  used on input line 416.
 (pdftex.def)             Requested size: 455.24411pt x 151.74608pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.79535pt too wide) in paragraph at lines 416--417
+Overfull \hbox (1.79535pt too wide) in paragraph at lines 422--423
 []\T1/futs/m/n/10 beta-minus de-cay, when the nu-cleus emits an elec-tron and a
 n an-tineu-trino in a pro-cess that changes
  []
@@ -1134,55 +1135,55 @@ n an-tineu-trino in a pro-cess that changes
 <./img/radioactivecurves.png, id=47, 462.72874pt x 665.48625pt>
 File: ./img/radioactivecurves.png Graphic file (type png)
 <use ./img/radioactivecurves.png>
-Package pdftex.def Info: ./img/radioactivecurves.png  used on input line 429.
+Package pdftex.def Info: ./img/radioactivecurves.png  used on input line 435.
 (pdftex.def)             Requested size: 136.57462pt x 196.41827pt.
  [10 <./img/ptableradioactive.png> <./img/radioactivecurves.png>]
 <./img/betaminus.png, id=53, 2007.5pt x 2007.5pt>
 File: ./img/betaminus.png Graphic file (type png)
 <use ./img/betaminus.png>
-Package pdftex.def Info: ./img/betaminus.png  used on input line 458.
+Package pdftex.def Info: ./img/betaminus.png  used on input line 464.
 (pdftex.def)             Requested size: 136.57462pt x 136.5572pt.
 <./img/betapositive.png, id=54, 1284.8pt x 1284.8pt>
 File: ./img/betapositive.png Graphic file (type png)
 <use ./img/betapositive.png>
-Package pdftex.def Info: ./img/betapositive.png  used on input line 468.
+Package pdftex.def Info: ./img/betapositive.png  used on input line 474.
 (pdftex.def)             Requested size: 136.57462pt x 136.56456pt.
  [11 <./img/betaminus.png> <./img/betapositive.png>]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 524--524
+Overfull \hbox (1.0pt too wide) in paragraph at lines 530--530
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 540--540
+Overfull \hbox (1.0pt too wide) in paragraph at lines 546--546
 [] 
  []
 
 <./img/massparabolaA106.jpeg, id=60, 992.70876pt x 798.985pt>
 File: ./img/massparabolaA106.jpeg Graphic file (type jpg)
 <use ./img/massparabolaA106.jpeg>
-Package pdftex.def Info: ./img/massparabolaA106.jpeg  used on input line 542.
+Package pdftex.def Info: ./img/massparabolaA106.jpeg  used on input line 548.
 (pdftex.def)             Requested size: 136.57462pt x 109.91869pt.
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 554--554
+Overfull \hbox (1.0pt too wide) in paragraph at lines 560--560
 [] 
  []
 
 <./img/electroncapture.png, id=61, 1284.8pt x 746.79pt>
 File: ./img/electroncapture.png Graphic file (type png)
 <use ./img/electroncapture.png>
-Package pdftex.def Info: ./img/electroncapture.png  used on input line 556.
+Package pdftex.def Info: ./img/electroncapture.png  used on input line 562.
 (pdftex.def)             Requested size: 227.62206pt x 132.2969pt.
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 55
-7.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 56
+3.
 
 [12 <./img/massparabolaA106.jpeg>]
-Underfull \hbox (badness 2865) in paragraph at lines 564--565
+Underfull \hbox (badness 2865) in paragraph at lines 570--571
 []\T1/futs/m/n/10 This re-ac-tion oc-curs mainly in heavy nu-clei
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 566--567
+Underfull \hbox (badness 2837) in paragraph at lines 572--573
 []\T1/futs/m/n/10 Electron-capture re-ac-tions com-pete with $\FML/futmi/m/it/1
 0 ^^L[]$\T1/futs/m/n/10 -
  []
@@ -1190,10 +1191,10 @@ Underfull \hbox (badness 2837) in paragraph at lines 566--567
 <./img/wrefandtrans.jpeg, id=65, 560.0925pt x 463.7325pt>
 File: ./img/wrefandtrans.jpeg Graphic file (type jpg)
 <use ./img/wrefandtrans.jpeg>
-Package pdftex.def Info: ./img/wrefandtrans.jpeg  used on input line 580.
+Package pdftex.def Info: ./img/wrefandtrans.jpeg  used on input line 586.
 (pdftex.def)             Requested size: 182.09486pt x 150.76787pt.
 [13 <./img/electroncapture.png> <./img/wrefandtrans.jpeg>]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 615--615
+Overfull \hbox (1.0pt too wide) in paragraph at lines 621--621
 [] 
  []
 
@@ -1201,18 +1202,18 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 615--615
 <./img/scatterings.jpeg, id=78, 1986.42125pt x 1195.46625pt>
 File: ./img/scatterings.jpeg Graphic file (type jpg)
 <use ./img/scatterings.jpeg>
-Package pdftex.def Info: ./img/scatterings.jpeg  used on input line 671.
+Package pdftex.def Info: ./img/scatterings.jpeg  used on input line 677.
 (pdftex.def)             Requested size: 455.24411pt x 273.96642pt.
- [16 <./img/scatterings.jpeg>] [17] (J-NuclearPhysics.aux)
+ [16 <./img/scatterings.jpeg>] [17] [18] (J-NuclearPhysics.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18571 strings out of 475281
- 369698 string characters out of 2774536
- 711602 words of memory out of 3000000
- 39660 multiletter control sequences out of 15000+600000
+ 18576 strings out of 475281
+ 369728 string characters out of 2774536
+ 711650 words of memory out of 3000000
+ 39665 multiletter control sequences out of 15000+600000
  558582 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,11n,117p,1122b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1227,9 +1228,9 @@ iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Amir/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData
 /Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on J-NuclearPhysics.pdf (17 pages, 923517 bytes).
+Output written on J-NuclearPhysics.pdf (18 pages, 929779 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

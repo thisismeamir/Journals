@@ -13,3 +13,4 @@
 \contentsline {subsection}{\numberline {3.5}Gamma Decay}{15}{}%
 \contentsline {section}{\numberline {4}Scattering}{16}{}%
 \contentsline {subsection}{\numberline {4.1}Cross-Sections}{17}{}%
+\contentsline {subsection}{\numberline {4.2}{The Golden Rule}}{17}{}%

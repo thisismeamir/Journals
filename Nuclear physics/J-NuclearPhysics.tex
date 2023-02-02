@@ -166,6 +166,12 @@
 \newcommand{\positron}{\ch{e}{}{}{+}{}}
 \newcommand{\proton}{\ch{p}{}{}{}{}}
 \newcommand{\neutron}{\ch{n}{}{}{}{}}
+\newcommand{\braket}[2]{\left\langle #1 \vert #2 \right\rangle}
+\newcommand{\mbraket}[3]{\left\langle #1 \vert #2 \vert #3 \right\rangle}
+\newcommand{\ket}[1]{\left\vert #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right\vert} 
+\newcommand{\hamiltonian}{\mathcal{H}}
+
 
 \title{Nuclear Physics \\ \large Journal of Study}
 \author{Amir H. Ebrahimnezhad}
@@ -710,4 +716,43 @@ This formula is valid as long as the scattering centres do not overlap and parti
 \end{equation}
 
 \subsection{{The Golden Rule}}
+The cross-section can be experimentally determined from the reaction rate $N$ , as we saw above. We now outline how it may be found from theory.
+First, the reaction rate is dependent upon the properties of the interaction potential described by the Hamilton operator $\hamiltonian_{\text{int}}$. In reaction, this potential transforms the initial-state wave function $\psi_i$ into the final-state wave function $\psi_f$. The transition matrix element is given by:
+
+\begin{equation}
+    \mathcal{M}_{fi} = \mbraket{\psi_f}{\hamiltonian_{\text{int}}}{\psi_i} = \int \psi_f^*\hamiltonian_{\text{int}} \psi_i dV 
+\end{equation}
+
+The matrix element is also called the probability amplitude for the transition. Furthermore, the reaction rate will depend upon the number of final states available to the reaction. According to the uncertainty principle, each particle occupies a volume $h^3 = (2\pi\hbar)^3$ in phase space, the six-dimensional space of momentum and position. Consider a particle scattered into a volume $V$ and into a momentum interval between $p'$ and $p' + dp'$. In momentum space, the interval corresponds to a spherical shell with inner radius $p'$ and thickness $dp'$ which has a volume $4\pi p'^2dp'$. Excluding processes where the spin changes, the number of final states available is:
+
+\begin{equation}
+    dn(p')=\frac{V\cdot 4\pi p'^2}{(2\pi\hbar)^3}dp'
+\end{equation}
+
+The energy and momentum of a particle are connected By
+\begin{equation}
+    dE' = v'dp'
+\end{equation}
+Hence:
+\begin{equation}
+    \rho(E') = \frac{dn(E')}{dE'} = \frac{C\cdot 4\pi p'^2}{v'\cdot(2\pi\hbar)^3}
+\end{equation}
+
+The connection between the reaction rate, the transition matrix element and the density of final states is expressed by Fermi's second golden rule. Its derivation can be found in quantum mechanics textbooks. It expresses the reaction rate W per target particle and per beam particle in the form:
+
+\begin{equation}
+    W = \frac{2\pi}{\hbar}|\mathcal{M}_{if}|^2\cdot \rho(E')
+\end{equation}
+
+Thus
+
+\begin{equation}
+    \sigma=\frac{2\pi}{\hbar\cdot v_a}|\mathcal{M}_{if}|^2\cdot \rho(E')\cdot V
+\end{equation}
+
+The golden rule applies to both scattering and spectroscopic processes. Examples of the latter are the decay of unstable particles, excitation of particle resonances and transitions between different atomic or nuclear energy states. In these cases we have
+\begin{equation}
+    W = \frac{1}{\tau}
+\end{equation}
+and the transition probability per unit time can be either directly determined by measuring the lifetime $\tau$ or indirectly read off from the energy width of the state $\Delta E = \hbar /\tau$
 \end{document}
