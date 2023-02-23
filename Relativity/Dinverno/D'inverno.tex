@@ -1,0 +1,214 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+\title{Reading Journal of Relativity \\ \large Summary of d'Inverno book on relativity}
+\author{Amir H. Ebrahimnezhad}
+\date{}
+\begin{document}
+          \maketitle
+          \tableofcontents
+          \section{K-calculus}
+               \textbf{Model Building:} Model building is the essential activity of mathematical physics. It is at first a great thing that the world is made of mostly computable systems, and secondly that the formulas are not really complicated.
+               \begin{qt}
+                    The Most incomprehensible thing about the world is that it's comprehensible - \textit{Albert Einstein}
+               \end{qt}
+               \indent The very success of the activity of modelling has throughout the history of science, turned out to be counterproductive. For instance the Newtons theory had so much success that after two centuries, when at the end of nineteenth century it was vecoming increasingly clear that something was fundamentally wrong with the current theories, there was considerable reluctance to make any fundamental changes to them.
+               \\
+               \\
+               \indent It eventually required the genius of Einstein to overthrow the prejudices of centuries and demonstrate in a number of simple thought experiments that some of the most cherished assumptions of Newtonian theory were untenable.
+               \\
+               \\
+               \indent This he diid in a number of brilliant papers written in 1905, proposing a theory which has become known today as the Special Theory of Relativity.
+               \begin{callout}
+                    Together with every Theory, there should go it's range of validity; The Newton't theory is not wrong. It is an excellentt theory in its range of validity.
+               \end{callout}
+               \textbf{Newtonian Framework: } An event intuitively means something happening in a fairly limited region of space for a short duration of time, mathematically it becomes a point in space and an instance of time. Everything that happens in the universe is either an event or a collection of events.
+               \\
+               \\
+               \indent One of the central assumptions of the Newtonian Framework is that two observers will, once they have synchronized their clocks, always agree about the time of an event, irrespective of their relative motion. This implies that, for all observers, time is an absolute concept. In particular, all observers can agree to synchronize their clocks so that they all agree on the time of an event.
+               \begin{callout}
+                    \begin{itemize}
+                         \item We are assuming clocks tick the same way as eachother.
+                         \item We are assuming the synchronization won't change by moving.
+                         \item We are assuming that there takes no time for information about an event to arrive to us.
+                    \end{itemize}
+               \end{callout}
+               \textbf{Galilean Transformation:} \textit{Q:} Are the laws of physics the same for all observers ir are there preferred states of motion, preferred refrence systems, and so on?\textit{A:} Newton's theory postulates the existence of preferred frames of reference. The existence of this is essentially implied by the first law:
+               \begin{callout}
+                    Every body continues in its state of rest or uniform motion in a straight line, unless it is compelled to change that state by forces acting on it.
+               \end{callout}
+               Thus, thereexists a privileged set of bodies, namely, those not acted on by forces. The frame of reference of a co-moving observer is called an \hldb{inertial frame}. The transformation which connects two inertial frames together is called \hldb{Galilean Transformation}. Consider to inertial frames one stationary and one moving with velocity $\vec v$ with respect to the other. Then the Galilean Transformations are as below:
+               \begin{equation}
+                    \begin{pmatrix}
+                         x' \\ y' \\ z' 
+                    \end{pmatrix}
+                    =
+                    \begin{pmatrix}
+                         x \\ y \\ z
+                    \end{pmatrix}
+                    -
+                    \begin{pmatrix}
+                         v_x \\ v_y \\ v_z
+                    \end{pmatrix}t
+               \end{equation}
+               where $t$ is the time in both frames since in Newton's theory we can assume absolute time. From a mathematical viewpoint this means that Newton's laws mus be \hldb{invariant} under a Galilean Transformation.
+
+\end{document}
