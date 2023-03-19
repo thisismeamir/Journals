@@ -94,6 +94,17 @@
     sharpish corners,
     enlarge by=0.5pt}
 
+\newcounter{def}
+\newtcolorbox[use counter=def]{definition}
+	{center,%
+    colframe =richblack!100,%
+    colback=cultured,
+    title={Definition \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
 \newcounter{examplecounter}
 \newtcolorbox[use counter=examplecounter]{example}
 	{center,%
@@ -163,52 +174,69 @@
 \author{Amir H. Ebrahimnezhad}
 \date{}
 \begin{document}
-          \maketitle
-          \tableofcontents
-          \section{K-calculus}
-               \textbf{Model Building:} Model building is the essential activity of mathematical physics. It is at first a great thing that the world is made of mostly computable systems, and secondly that the formulas are not really complicated.
-               \begin{qt}
-                    The Most incomprehensible thing about the world is that it's comprehensible - \textit{Albert Einstein}
-               \end{qt}
-               \indent The very success of the activity of modelling has throughout the history of science, turned out to be counterproductive. For instance the Newtons theory had so much success that after two centuries, when at the end of nineteenth century it was vecoming increasingly clear that something was fundamentally wrong with the current theories, there was considerable reluctance to make any fundamental changes to them.
-               \\
-               \\
-               \indent It eventually required the genius of Einstein to overthrow the prejudices of centuries and demonstrate in a number of simple thought experiments that some of the most cherished assumptions of Newtonian theory were untenable.
-               \\
-               \\
-               \indent This he diid in a number of brilliant papers written in 1905, proposing a theory which has become known today as the Special Theory of Relativity.
-               \begin{callout}
-                    Together with every Theory, there should go it's range of validity; The Newton't theory is not wrong. It is an excellentt theory in its range of validity.
-               \end{callout}
-               \textbf{Newtonian Framework: } An event intuitively means something happening in a fairly limited region of space for a short duration of time, mathematically it becomes a point in space and an instance of time. Everything that happens in the universe is either an event or a collection of events.
-               \\
-               \\
-               \indent One of the central assumptions of the Newtonian Framework is that two observers will, once they have synchronized their clocks, always agree about the time of an event, irrespective of their relative motion. This implies that, for all observers, time is an absolute concept. In particular, all observers can agree to synchronize their clocks so that they all agree on the time of an event.
-               \begin{callout}
-                    \begin{itemize}
-                         \item We are assuming clocks tick the same way as eachother.
-                         \item We are assuming the synchronization won't change by moving.
-                         \item We are assuming that there takes no time for information about an event to arrive to us.
-                    \end{itemize}
-               \end{callout}
-               \textbf{Galilean Transformation:} \textit{Q:} Are the laws of physics the same for all observers ir are there preferred states of motion, preferred refrence systems, and so on?\textit{A:} Newton's theory postulates the existence of preferred frames of reference. The existence of this is essentially implied by the first law:
-               \begin{callout}
-                    Every body continues in its state of rest or uniform motion in a straight line, unless it is compelled to change that state by forces acting on it.
-               \end{callout}
-               Thus, thereexists a privileged set of bodies, namely, those not acted on by forces. The frame of reference of a co-moving observer is called an \hldb{inertial frame}. The transformation which connects two inertial frames together is called \hldb{Galilean Transformation}. Consider to inertial frames one stationary and one moving with velocity $\vec v$ with respect to the other. Then the Galilean Transformations are as below:
-               \begin{equation}
-                    \begin{pmatrix}
-                         x' \\ y' \\ z' 
-                    \end{pmatrix}
-                    =
-                    \begin{pmatrix}
-                         x \\ y \\ z
-                    \end{pmatrix}
-                    -
-                    \begin{pmatrix}
-                         v_x \\ v_y \\ v_z
-                    \end{pmatrix}t
-               \end{equation}
-               where $t$ is the time in both frames since in Newton's theory we can assume absolute time. From a mathematical viewpoint this means that Newton's laws mus be \hldb{invariant} under a Galilean Transformation.
+            \maketitle
+            \tableofcontents
+            \section{K-calculus}
+                \textbf{Model Building:} Model building is the essential activity of mathematical physics. It is at first a great thing that the world is made of mostly computable systems, and secondly that the formulas are not really complicated.
+                \begin{qt}
+                        The Most incomprehensible thing about the world is that it's comprehensible - \textit{Albert Einstein}
+                \end{qt}
+                \indent The very success of the activity of modelling has throughout the history of science, turned out to be counterproductive. For instance the Newtons theory had so much success that after two centuries, when at the end of nineteenth century it was vecoming increasingly clear that something was fundamentally wrong with the current theories, there was considerable reluctance to make any fundamental changes to them.
+                \\
+                \\
+                \indent It eventually required the genius of Einstein to overthrow the prejudices of centuries and demonstrate in a number of simple thought experiments that some of the most cherished assumptions of Newtonian theory were untenable.
+                \\
+                \\
+                \indent This he diid in a number of brilliant papers written in 1905, proposing a theory which has become known today as the Special Theory of Relativity.
+                \begin{callout}
+                        Together with every Theory, there should go it's range of validity; The Newton't theory is not wrong. It is an excellentt theory in its range of validity.
+                \end{callout}
+                \textbf{Newtonian Framework: } An event intuitively means something happening in a fairly limited region of space for a short duration of time, mathematically it becomes a point in space and an instance of time. Everything that happens in the universe is either an event or a collection of events.
+                \\
+                \\
+                \indent One of the central assumptions of the Newtonian Framework is that two observers will, once they have synchronized their clocks, always agree about the time of an event, irrespective of their relative motion. This implies that, for all observers, time is an absolute concept. In particular, all observers can agree to synchronize their clocks so that they all agree on the time of an event.
+                \begin{callout}
+                        \begin{itemize}
+                            \item We are assuming clocks tick the same way as eachother.
+                            \item We are assuming the synchronization won't change by moving.
+                            \item We are assuming that there takes no time for information about an event to arrive to us.
+                        \end{itemize}
+                \end{callout}
+                \textbf{The Principle of Special Relativity:} \textit{Q:} Are the laws of physics the same for all observers ir are there preferred states of motion, preferred refrence systems, and so on?\textit{A:} Newton's theory postulates the existence of preferred frames of reference. The existence of this is essentially implied by the first law:
+                \begin{callout}
+                        Every body continues in its state of rest or uniform motion in a straight line, unless it is compelled to change that state by forces acting on it.
+                \end{callout}
+                Thus, thereexists a privileged set of bodies, namely, those not acted on by forces. The frame of reference of a co-moving observer is called an \hldb{inertial frame}. The transformation which connects two inertial frames together is called \hldb{Galilean Transformation}. Consider to inertial frames one stationary and one moving with velocity $\vec v$ with respect to the other. Then the Galilean Transformations are as below:
+                \begin{equation}
+                        \begin{pmatrix}
+                            x' \\ y' \\ z' 
+                        \end{pmatrix}
+                        =
+                        \begin{pmatrix}
+                            x \\ y \\ z
+                        \end{pmatrix}
+                        -
+                        \begin{pmatrix}
+                            v_x \\ v_y \\ v_z
+                        \end{pmatrix}t
+                \end{equation}
+                \indent where $t$ is the time in both frames since in Newton's theory we can assume absolute time. From a mathematical viewpoint this means that Newton's laws mus be \hldb{invariant} under a Galilean Transformation. Which means that, if one inertial observer carries out come dynamical experiments and discovers a physical law, then any other inertial observer performing the same experiments must discover the same law. Put another way, these laws must be invariant under Galilean transformation. 
+                \\
+                \\
+                \indent Einstein realized that the principle as stated above is empty because there is no such thing as a purely dynamical experiment. Even on a very elementary level, any dynamical experiment we think of performing involves observation, and looking is a part of optics, not dynamics. Thus Einstein took the logical step of removing the restriction of dynamics in the principle and took the following as his first postulate:
+                \begin{definition}\textit{
+                    All inertial observers are equivalent.}
+                \end{definition}
+                \indent \textbf{The Constancy of the Velocity of Light:} The concept of a 'rigid ruler' is introduced to measure distances and times, and to map the events of the universe. However, as pointed out by Bondi, the concept of a 'rigid rules' is hard to consider. It's hard to define rigidity in a world of frames which with respect to others appears non-rigid. 
+                \\
+                \\
+                \indent The approach of the $k$-calculus is to dispense with the rigid ruler and use radar methods for measuring distances. In the radar methodm an observer measures the distance of an object by sending out a light signel which is reflected off the object and received back by the observer. THe distance is then simply defined as half the time difference between emission and reception. 
+                \\
+                \\
+                \indent But why do we use light? The reason is that its velocity is independent of many things. There are many experiments that would confirm the constancy of the velocity of light. Howeverm these were not known to Einstein in 1905, who adopted the second postulate mainly on philosophical grounds. We state the second postulate in the following form.
+                \begin{definition}
+                    \textit{The velocity of light is the same in all inertial systems.}
+                \end{definition}
+                \textbf{The K-factor:}
 
 \end{document}

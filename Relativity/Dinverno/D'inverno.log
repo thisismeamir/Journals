@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  20 FEB 2023 01:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  3 MAR 2023 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -879,64 +879,65 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box118
 )
 \c@theo=\count315
-\c@examplecounter=\count316
-\c@figurecounter=\count317
+\c@def=\count316
+\c@examplecounter=\count317
+\c@figurecounter=\count318
 
 (D'inverno.aux)
 \openout1 = `D'inverno.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 176.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-165.
+176.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 176.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-165.
+176.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 176.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-165.
+176.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    ... okay on input line 176.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
+\scratchcounter=\count319
 \scratchdimen=\dimen297
 \scratchbox=\box119
-\nofMPsegments=\count319
-\nofMParguments=\count320
+\nofMPsegments=\count320
+\nofMParguments=\count321
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count321
+\MPscratchCnt=\count322
 \MPscratchDim=\dimen298
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
 \everyMPtoPDFconversion=\toks48
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -949,13 +950,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 165.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 165.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 176.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 176.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 165.
+Package chemgreek Info: Activating mapping `fourier' on line 176.
 
 
 *geometry* driver: auto-detecting
@@ -993,97 +994,62 @@ Package chemgreek Info: Activating mapping `fourier' on line 165.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 166.
+ 177.
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 166.
+(Font)              scaled to size 11.03998pt on input line 177.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 166.
+(Font)              scaled to size 8.27998pt on input line 177.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 166.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 166
+(Font)              scaled to size 6.43999pt on input line 177.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 177
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 166
+LaTeX Font Info:    Trying to load font information for U+msb on input line 177
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 166.
+(Font)              scaled to size 11.03998pt on input line 177.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 166.
+(Font)              scaled to size 8.27998pt on input line 177.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 166.
+(Font)              scaled to size 6.43999pt on input line 177.
 
 (D'inverno.toc)
 \tf@toc=\write4
 \openout4 = `D'inverno.toc'.
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 172--172
+Overfull \hbox (1.0pt too wide) in paragraph at lines 183--183
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
+Underfull \hbox (badness 10000) in paragraph at lines 184--193
 
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 173--182
+Underfull \hbox (badness 1540) in paragraph at lines 184--193
 []\T1/futs/m/n/10 It even-tu-ally re-quired the ge-nius of Ein-stein to
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 173--182
+Underfull \hbox (badness 2005) in paragraph at lines 184--193
 \T1/futs/m/n/10 that some of the most cher-ished as-sump-tions of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
+Underfull \hbox (badness 10000) in paragraph at lines 184--193
 
- []
-
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 182--182
-[] 
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-189.
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-Underfull \hbox (badness 3375) in paragraph at lines 190--191
-[]\T1/futs/m/n/10 We are as-sum-ing the syn-chro-niza-tion
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 183--193
-[]\T1/futs/b/n/10 Newtonian Frame-work:  \T1/futs/m/n/10 An event in-tu-itively
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--193
-
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 183--193
-[]\T1/futs/m/n/10 One of the cen-tral as-sump-tions of the New-to-
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 183--193
-\T1/futs/m/n/10 the time of an event, ir-re-spec-tive of their rel-a-tive
  []
 
 
@@ -1091,53 +1057,135 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 193--193
 [] 
  []
 
-
-Underfull \hbox (badness 4217) in paragraph at lines 194--197
-[]\T1/futs/b/n/10 Galilean Trans-for-ma-tion: \T1/futs/m/it/10 Q: \T1/futs/m/n/
-10 Are the laws of
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+200.
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Underfull \hbox (badness 3375) in paragraph at lines 201--202
+[]\T1/futs/m/n/10 We are as-sum-ing the syn-chro-niza-tion
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 197--197
+Underfull \hbox (badness 2980) in paragraph at lines 194--204
+[]\T1/futs/b/n/10 Newtonian Frame-work:  \T1/futs/m/n/10 An event in-tu-itively
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--204
+
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 194--204
+[]\T1/futs/m/n/10 One of the cen-tral as-sump-tions of the New-to-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 194--204
+\T1/futs/m/n/10 the time of an event, ir-re-spec-tive of their rel-a-tive
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 204--204
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 208--208
 [] 
  []
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 198.
+(Font)              scaled to size 9.19998pt on input line 209.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 198.
+(Font)              scaled to size 6.99199pt on input line 209.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 198.
+(Font)              scaled to size 5.51999pt on input line 209.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 198.
+(Font)              scaled to size 9.19998pt on input line 209.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 198.
+(Font)              scaled to size 6.99199pt on input line 209.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 198.
+(Font)              scaled to size 5.51999pt on input line 209.
+
+Underfull \hbox (badness 1178) in paragraph at lines 222--229
+\T1/futs/m/n/10 way, these laws must be in-vari-ant un-der Galilean
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--229
+
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 222--229
+[]\T1/futs/m/n/10 Einstein re-al-ized that the prin-ci-ple as stated
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 222--229
+\T1/futs/m/n/10 a purely dy-nam-i-cal ex-per-i-ment. Even on a very
+ []
+
 [1{C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
 ]
-(D'inverno.aux) ) 
+Overfull \hbox (1.0pt too wide) in paragraph at lines 229--229
+[] 
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 230--239
+[]\T1/futs/b/n/10 The Con-stancy of the Ve-loc-ity of Light: \T1/futs/m/n/10 Th
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
+
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 230--239
+[]\T1/futs/m/n/10 The ap-proach of the $\FML/futmi/m/it/10 k$\T1/futs/m/n/10 -c
+alculus is to dis-pense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 239--239
+[] 
+ []
+
+[2
+
+] (D'inverno.aux) ) 
 Here is how much of TeX's memory you used:
- 18376 strings out of 476374
- 364871 string characters out of 5789326
- 1869340 words of memory out of 5000000
- 38408 multiletter control sequences out of 15000+600000
+ 18403 strings out of 476374
+ 365447 string characters out of 5789326
+ 1872340 words of memory out of 5000000
+ 38435 multiletter control sequences out of 15000+600000
  588906 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,8n,117p,486b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/b
-ase/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/four
-ier/fourier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/fourier/fourier-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTe
-X/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiK
-TeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/M
-iKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on D'inverno.pdf (1 page, 64380 bytes).
+ 83i,8n,117p,557b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fo
+urier/fourier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/fourier/fourier-ml.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/font
+s/type1/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiK
+TeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/M
+iKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs
+/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on D'inverno.pdf (2 pages, 71242 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

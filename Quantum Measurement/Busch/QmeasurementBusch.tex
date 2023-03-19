@@ -1,0 +1,246 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{qu}{center,%
+    colframe =red!0,%
+    colback=spanishgray!25,
+    title={My Question},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+%%% Commands for this file only
+\newcommand{\hamil}{\mathcal{H}}
+\newcommand{\braket}[2]{\left\langle#1\vert#2 \right\rangle}
+\newcommand{\ket}[1]{\left\vert#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right\vert}
+\newcommand{\specproj}[2]{\textbf{E}^{#1}(#2)}
+\newcommand{\trace}[1]{\text{Tr}\left[#1\right]}
+\newcommand{\sys}{\mathcal{S}}
+\newcommand{\m}{\mathcal{A}}
+\newcommand{\state}{\textbf{\textit{S}}}
+\newcommand{\observable}{\textbf{\textit{O}}}
+
+\title{Quantum Measurement \\ \large Mathematics}
+\author{Amir H. Ebrahimnezhad}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section{Introduction}
+    \indent The Book of Nature, already according to Galileo Galilei, is written in the language of mathematics. The formulation of the thoery of quantum mechanics as it emerged was considered successfully completed only when appropriate mathematical tools had been identified.
+    \\
+    \indent The mathematical groundwork for von Neumann's book was laid down in a couple of papers from the year 1927. There he undertakes an analysis of general statistical aspects of a physical experiment using the concepts of states and observables, with the requirement that these entities determine the respective probabilities for the registration of measurement outcomes. This fundamental investigation led to the following result, summarised here in present-day terminology:
+     
+    \begin{callout}
+        It is assumed that the description of a physical system is based on a comlpex seperable Hilbert space $\hamil$ with inner product $\braket{\cdot}{\cdot}$ and that the pure states of the system are represented by unit vectors $\psi$ (modulo a phase factor) of $\hamil$. It is required further that the measurement outcome probabilities for a given observable are to be given in terms of a single (linear) operator acting in $\hamil$. It follows that this operator must be a selfadjoint operator $A$ in a state described by $\psi$ leads to a result in a (real Borel) set $X$ is given the number $\braket{\psi}{\specproj{A}{X}}$ where $\specproj{A}{X}$ is the spectral projection of $A$ associated with the set $X$.
+    \end{callout}
+     
+    \indent In addition, von Neumann showed that the most comprehensive representation of states is given in terms of the positive operators $\rho$ of trace one acting on $\hamil$ called states of density operators; The pure states are idempotent elements among these operators, $\rho^2=\rho$, hence the projections onto one-dimensional subspaces of $\hamil$. Thus he already deduced the trace formula $\trace{\rho\specproj{A}{X}}$ for the measurement outcome probabilities.
+
+    \subsection{Statistical Duality}
+    \indent The duality of states and observables, concepts that are fundamental to the formalisation of any probabilistic physical theory. We also indicate some of the prominent probabilistic features that distinguish theory.
+    \\
+    \\
+    \textbf{The Duality:}  In von Neumann's formulation of quantum mechanics one meets states and observables as positive trace-one operators and general selfadjoint operators (or the assiciated spectral measures), respectively. The states and the projections that figure in the description of standard observables are elements of the real vector space of selfadjoint trace class operators and of selfadjoint bounded oerators, respectively, where latter is the dual space of the former. The extension of the notion of observable towards including general normalised positive operator measures is found to be both natural and comprehensive when considered from the prespective of a general statistical duality.
+    \\
+    \\
+    In a typical experiment one can distiguish three steps: the preparation of a physical system, followed by a measurement which is preformed on it, and finally the registration of a result. The physical systems $\sys$ under consideraton can be prepared in various ways and then subjected to one or more of a range of different measurements. We take the terms, \textit{systems, preparation} and \textit{measurement} to be intuitively understood without trying to explicate them at this stage.
+    \\
+    \\
+    Let $\pi$ denote a preparation and $\Pi$ the collection of all possible preparations of the system $\sys$. Further let $\sigma$ stand for a measurement and $\Sigma$ denote the collection of all conceivable measurements that can be performed on $\sys$. By fixing a measurement $\sigma$ one also specifies the range of its possible outcomes. We identify these outcomes as memebers of a set $\Omega$ which can typically be thought of as a set of real numbers, and for the purpose of counting statistics a sigma-algebra $\m{A}$ of subsets of $\Sigma$  will be specified consisting of the test sets, that is, bins within which groups of outcomes are counted. \textbf{Thus a measurement is prepresented as a triple $(\sigma, \Omega, \m{A})$}, which we will often simply denote by $\sigma$.
+    \\
+    \\
+    The notion of statistical causality specifies that any preparation $\pi$ and measurement $\sigma$ determine a probability distribution for the possible measurement outcomes. Thus there is a probability measure $p_\pi^\sigma:\m{A}\rightarrow [0,1]$, with the heuristic understanding that if one makes a large number, $N$, of repetitions of the same measurement $\sigma$ under the same considtions $\pi$, and a result $\omega\in \Omega$ is registered $n(X)$ times in a test set $X$ then:
+    \begin{equation}
+        \frac{n(X)}{N}\simeq p_\pi^\sigma(X)
+    \end{equation}
+    \indent Two preparations are said to be equivalent, if they give the same measurement outcome probabilities for all measurements, that is, $p_{\pi_1}^\sigma = p_{\pi_2}^{\sigma}$ for all $\sigma$. Then we may consider the collection $\Pi$ of all preparations to be separated into two equivalence classes: $[\pi] = \{\pi'\in \Pi | \pi'\equiv \pi\}$. These classes are called states of the system. We let $\state$ denote the set of states of $\sys$. Thus the formal concept of state represents those aspects of a physical process applied as a preparation of a system that determine the outcome probabilities of any subsequent measurement.
+    \\
+    \\
+    \indent Similarly, two measurements are considered equivalent if they give if $p_\pi^{\sigma_1} = p_\pi^{\sigma_2}$ for all preparations $\pi$. Afterward we can define equivalent classes of measurements as observables; we let $\observable$ denote the collection of all observables. The notion of observable, as delineated here, embodies the idea that a physical quantity is uniquely determined through its probabilistic signature. We shall refer to the pair $(\state,\observable)$ as a statisical duality.
+    \begin{theobox}
+        For any state $s\in\state$ and observable $O\in\observable$ one defines:
+        \begin{equation}
+            p_s^O = p_\pi^\sigma, \ \ \pi\in s, \sigma\in O
+        \end{equation}
+    \end{theobox}
+    \begin{callout}
+        This is a well-defined probability measure with the following minimal interpretation. The number $p_s^O(X)$ is the probability that a measurement of the observable $O$ leads to ta result in the set $X$ when the system is in the state $s$.
+    \end{callout}
+    \textbf{Elementary Structures: } There are two basic structural properties that the statistical duality $(\state, \observable)$ may always be assumed to possess. 
+    \begin{enumerate}
+        \item Since a convex combination fo two or more probability measures is a probability measure, the set $\state$ of states can be equipped with a convex structure. Indeed, if $s_1, s_2\in \state$ and $0\leq \lambda \geq 1$, then for any $O\in \observable$, the convex combination:
+        \begin{align*}
+            \lambda p_{s_1}^O + (1-\lambda)p_{s_2}^O
+        \end{align*}
+        is a probability measure. One may thus pose the requirement that there is a (necessarily unique) $s\in\state$ such that:
+        \begin{align*}
+            p_{s}^O = \lambda p_{s_1}^O +(1-\lambda)p_{s_2}^O
+        \end{align*}
+        for all $O \in \observable$. The assumption that $\state$ is closed under convex combinations corresponds to the idea that nay two preparations $\pi_1\in s_1, \pi_2\in s_2$ can be combined into a new preparation, for instance by applying $\pi_1$ and $\pi_2$ in random order with frequencies $\lambda N, (1-\lambda)N$, respectively; upon measurement one obtains outcome distributions that are given by the convex combination $\lambda p_{s_1}^O +(1-\lambda)p_{s_2}^O$.
+        \begin{callout}
+            An important feature of the convex structure of the set of states $\state$ is the possibility of distinguishing pure states as those that cannot be expressed as as convex combinations of other states;  all other states are referred to as mixed states. Thus, the second assumption concerning the set of states one may adopt is that it contains a sufficiently rich set of pure states, which embody maximal information one may have about the system, so that all other states can be obtained as convex combinations of them. This si realised in the classical and quantum mechanical probabilistic theories.
+            \\
+            \\
+            A classical  theory is distinguished by the fact that every mixed stated can be generalised as a convex combination of pure states in one and only one way. In contrast, a mixed quantum state has infinitely many differenc deocompositions into pure states.
+            \\
+            \\
+            This formal difference between the quantum and classical statistical dualities is closely related to the fundamental phenomenon of quantum indeterminacy, usually referred to by the term uncertainty principle.
+        \end{callout}
+        Broadly, this is the statement that there is no state in which all observables would have definite values. This fundamental quantum indeterminacy or preparation uncertainty is often quantified by means of the preparation uncertainty relations.
+        
+
+
+\end{document}

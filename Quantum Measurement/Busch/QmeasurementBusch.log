@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  2 MAR 2023 10:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  26 FEB 2023 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./EPD.tex
-(EPD.tex
+**./QmeasurementBusch.tex
+(QmeasurementBusch.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-02>
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -23,11 +23,6 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
-)
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip50
@@ -38,7 +33,7 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
+\@emptytoks=\toks16
 \ex@=\dimen141
 ))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -78,23 +73,28 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count266
 \dspbrk@lvl=\count267
-\tag@help=\toks19
+\tag@help=\toks17
 \row@=\count268
 \column@=\count269
 \maxfields@=\count270
-\andhelp@=\toks20
+\andhelp@=\toks18
 \eqnshift@=\dimen144
 \alignsep@=\dimen145
 \tagshift@=\dimen146
 \tagwidth@=\dimen147
 \totwidth@=\dimen148
 \lineht@=\dimen149
-\@envbody=\toks21
+\@envbody=\toks19
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -496,28 +496,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks29
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count289
@@ -599,8 +577,31 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen256
 \SOUL@ulht=\dimen257
 )
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.s
-ty
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
 
@@ -844,151 +845,10 @@ Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 p-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.st
-y
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.
-code.tex))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.
-tex))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.c
-ode.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen297
-\pgffor@skip=\dimen298
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
-))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-\tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
-ryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count311
-\pgfplotmarksize=\dimen299
-)
-\tikz@lastx=\dimen300
-\tikz@lasty=\dimen301
-\tikz@lastxsaved=\dimen302
-\tikz@lastysaved=\dimen303
-\tikz@lastmovetox=\dimen304
-\tikz@lastmovetoy=\dimen305
-\tikzleveldistance=\dimen306
-\tikzsiblingdistance=\dimen307
-\tikz@figbox=\box111
-\tikz@figbox@bg=\box112
-\tikz@tempbox=\box113
-\tikz@tempbox@bg=\box114
-\tikztreelevel=\count312
-\tikznumberofchildren=\count313
-\tikznumberofcurrentchild=\count314
-\tikz@fig@count=\count315
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulem
-atrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count316
-\pgfmatrixcurrentcolumn=\count317
-\pgf@matrix@numberofcolumns=\count318
-)
-\tikz@expandcount=\count319
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tikz-feynman\tikz-feynma
-n.sty
-Package: tikz-feynman 2016/02/05v1.1.0Feynman diagrams with TikZ
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks47
-\pgfopts@list@add@b@toks=\toks48
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tikz-feynman\tikzlibrary
-feynman.code.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
-ryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen308
-\pgfarrowlength=\dimen309
-\pgfarrowwidth=\dimen310
-\pgfarrowlinewidth=\dimen311
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduled
-ecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen312
-\pgfdecoratedremainingdistance=\dimen313
-\pgfdecoratedinputsegmentcompleteddistance=\dimen314
-\pgfdecoratedinputsegmentremainingdistance=\dimen315
-\pgf@decorate@distancetomove=\dimen316
-\pgf@decorate@repeatstate=\count320
-\pgfdecorationsegmentamplitude=\dimen317
-\pgfdecorationsegmentlength=\dimen318
-)
-\tikz@lib@dec@box=\box115
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarydecorations.markings.code.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorati
-ons\pgflibrarydecorations.markings.code.tex))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorati
-ons\pgflibrarydecorations.pathmorphing.code.tex))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarydecorations.pathreplacing.code.tex
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorati
-ons\pgflibrarydecorations.pathreplacing.code.tex))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries/graphs\tikzlibrarygraphs.code.tex
-File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\tikz@lib@auto@number=\count321
-\tikz@qnode@count=\count322
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibra
-rypatterns.code.tex
-File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz
-/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\p
-gflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tikz-feynman\tikzfeynman
-.keys.code.tex)))
-(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
-Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
-
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks49
-\verbatim@line=\toks50
+\every@verbatim=\toks45
+\verbatim@line=\toks46
 \verbatim@in@stream=\read3
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
@@ -1000,86 +860,80 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count323
+\etb@tempcnta=\count311
 )
-\tcb@titlebox=\box116
-\tcb@upperbox=\box117
-\tcb@lowerbox=\box118
-\tcb@phantombox=\box119
-\c@tcbbreakpart=\count324
-\c@tcblayer=\count325
-\c@tcolorbox@number=\count326
-\tcb@temp=\box120
-\tcb@temp=\box121
-\tcb@temp=\box122
-\tcb@temp=\box123
+\tcb@titlebox=\box111
+\tcb@upperbox=\box112
+\tcb@lowerbox=\box113
+\tcb@phantombox=\box114
+\c@tcbbreakpart=\count312
+\c@tcblayer=\count313
+\c@tcolorbox@number=\count314
+\tcb@temp=\box115
+\tcb@temp=\box116
+\tcb@temp=\box117
+\tcb@temp=\box118
 )
-\c@theo=\count327
-\c@examplecounter=\count328
-\c@figurecounter=\count329
+\c@theo=\count315
+\c@examplecounter=\count316
+\c@figurecounter=\count317
 
-(EPD.aux
+(QmeasurementBusch.aux)
+\openout1 = `QmeasurementBusch.aux'.
 
-LaTeX Warning: Label `figure' multiply defined.
-
-
-LaTeX Warning: Label `figure' multiply defined.
-
-)
-\openout1 = `EPD.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 183.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 178.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-183.
- (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
+178.
+
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 178.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-183.
+178.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 178.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-183.
+178.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    ... okay on input line 178.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen319
-\scratchbox=\box124
-\nofMPsegments=\count331
-\nofMParguments=\count332
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen320
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count318
+\scratchdimen=\dimen297
+\scratchbox=\box119
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen298
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks48
 )
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
 se.sty
@@ -1091,29 +945,29 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 183.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 183.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 178.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 178.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 183.
+Package chemgreek Info: Activating mapping `fourier' on line 178.
 
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(28.45274pt, 759.6886pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=759.6886pt
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(28.45274pt, 709.61174pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=709.61174pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-80.81725pt
@@ -1121,7 +975,7 @@ Package chemgreek Info: Activating mapping `fourier' on line 183.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -1134,89 +988,112 @@ Package chemgreek Info: Activating mapping `fourier' on line 183.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
-utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 183.
-
-
-Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
-mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
- input line 183.
-
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 184.
+ 179.
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 184.
+(Font)              scaled to size 11.03998pt on input line 179.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 184.
+(Font)              scaled to size 8.27998pt on input line 179.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 184.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 184
+(Font)              scaled to size 6.43999pt on input line 179.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 179
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 184
+LaTeX Font Info:    Trying to load font information for U+msb on input line 179
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 184.
+(Font)              scaled to size 11.03998pt on input line 179.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 184.
+(Font)              scaled to size 8.27998pt on input line 179.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 184.
+(Font)              scaled to size 6.43999pt on input line 179.
 
-(EPD.toc)
+(QmeasurementBusch.toc)
 \tf@toc=\write4
-\openout4 = `EPD.toc'.
+\openout4 = `QmeasurementBusch.toc'.
 
-<./img/pfinteraction.png, id=4, 180.675pt x 89.33376pt>
-File: ./img/pfinteraction.png Graphic file (type png)
-<use ./img/pfinteraction.png>
-Package pdftex.def Info: ./img/pfinteraction.png  used on input line 191.
-(pdftex.def)             Requested size: 136.57462pt x 67.52902pt.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 187.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 187.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 187.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 187.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 187.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 187.
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Overfull \hbox (1.0pt too wide) in paragraph at lines 188--188
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--206
 
  []
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 193.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 193.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 193.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 193.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 193.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 193.
-<./img/mollerscattering.png, id=5, 1927.2pt x 1707.37875pt>
-File: ./img/mollerscattering.png Graphic file (type png)
-<use ./img/mollerscattering.png>
-Package pdftex.def Info: ./img/mollerscattering.png  used on input line 195.
-(pdftex.def)             Requested size: 91.04742pt x 80.65843pt.
-<./img/bhabhascattering.png, id=7, 1927.2pt x 1927.2pt>
-File: ./img/bhabhascattering.png Graphic file (type png)
-<use ./img/bhabhascattering.png>
-Package pdftex.def Info: ./img/bhabhascattering.png  used on input line 199.
-(pdftex.def)             Requested size: 91.04742pt x 91.04303pt.
 
-! LaTeX Error: \begin{tcb@savebox} on input line 202 ended by \end{document}.
+Underfull \hbox (badness 10000) in paragraph at lines 193--206
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \end{document}
-                    
-? 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--206
+
+ []
+
+[1
+
+{C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 208--218
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 218--218
+[] 
+ []
+
+[2] (QmeasurementBusch.aux) ) 
+Here is how much of TeX's memory you used:
+ 18381 strings out of 476374
+ 365122 string characters out of 5789326
+ 1863340 words of memory out of 5000000
+ 38411 multiletter control sequences out of 15000+600000
+ 610397 words of font info for 121 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,7n,117p,841b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts
+/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/fourier/fourier-mcl.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/fourier/fourier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/Amir/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/Amir/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/Am
+ir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/
+Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putbi8a.pfb><C:/Use
+rs/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/U
+sers/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on QmeasurementBusch.pdf (2 pages, 88462 bytes).
+PDF statistics:
+ 58 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  20 FEB 2023 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  25 FEB 2023 10:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,27 +1070,30 @@ Overfull \hbox (1.0pt too wide) in paragraph at lines 239--239
 [1{C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
-] [2
-
 ]
-(rel.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+\T1/futs/m/n/10 Where $\FML/futmi/m/it/10 n$ \T1/futs/m/n/10 is the diffrac-tio
+n con-stant [zarib
+ []
+
+[2] (rel.aux) ) 
 Here is how much of TeX's memory you used:
- 18387 strings out of 476374
- 364777 string characters out of 5789326
+ 18392 strings out of 476374
+ 364827 string characters out of 5789326
  1869340 words of memory out of 5000000
  38418 multiletter control sequences out of 15000+600000
- 585254 words of font info for 112 fonts, out of 8000000 for 9000
+ 586630 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,8n,117p,452b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r
-.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fo
-urier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/f
-ourier/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
-nts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/
-fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTe
-X/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on rel.pdf (2 pages, 67379 bytes).
+ 83i,14n,117p,452b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/bas
+e/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
+r/fourier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/fourier/fourier-mlit.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTe
+X/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiK
+TeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/M
+iKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on rel.pdf (2 pages, 73666 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
