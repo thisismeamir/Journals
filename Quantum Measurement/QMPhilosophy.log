@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  26 FEB 2023 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.19)  11 APR 2023 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./QmeasurementBusch.tex
-(QmeasurementBusch.tex
+**./Philosophy/QMPhilosophy.tex
+(Philosophy/QMPhilosophy.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-02>
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -878,47 +878,47 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \c@examplecounter=\count316
 \c@figurecounter=\count317
 
-(QmeasurementBusch.aux)
-\openout1 = `QmeasurementBusch.aux'.
+(QMPhilosophy.aux)
+\openout1 = `QMPhilosophy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 178.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 180.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-178.
+180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 180.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-178.
+180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 180.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-178.
+180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    ... okay on input line 180.
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -945,13 +945,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 178.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 178.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 180.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 180.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 178.
+Package chemgreek Info: Activating mapping `fourier' on line 180.
 
 
 *geometry* driver: auto-detecting
@@ -989,111 +989,209 @@ Package chemgreek Info: Activating mapping `fourier' on line 178.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 179.
+ 181.
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 179.
+(Font)              scaled to size 11.03998pt on input line 181.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 179.
+(Font)              scaled to size 8.27998pt on input line 181.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 179.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 179
+(Font)              scaled to size 6.43999pt on input line 181.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 181
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 179
+LaTeX Font Info:    Trying to load font information for U+msb on input line 181
 .
 
 (C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 179.
+(Font)              scaled to size 11.03998pt on input line 181.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 179.
+(Font)              scaled to size 8.27998pt on input line 181.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 179.
+(Font)              scaled to size 6.43999pt on input line 181.
 
-(QmeasurementBusch.toc)
+(QMPhilosophy.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+)
 \tf@toc=\write4
-\openout4 = `QmeasurementBusch.toc'.
-
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 187.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 187.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 187.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 187.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 187.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 187.
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 188--188
-[] 
- []
+\openout4 = `QMPhilosophy.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--206
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--206
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--206
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--206
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--206
 
  []
 
 [1
 
 {C:/Users/Amir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 208--218
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+207.
 
+(C:\Users\Amir\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Overfull \hbox (7.75139pt too wide) in paragraph at lines 207--208
+[]\T1/futs/m/n/10 This con-cep-tion was re-jected first by Fichte, in 1794, in 
+his ^^PDoc-trine of Sci-ence^^Q. He ar-gued that the knowledge-
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 218--218
+Overfull \hbox (1.0pt too wide) in paragraph at lines 213--213
 [] 
  []
 
-[2] (QmeasurementBusch.aux) ) 
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 217--217
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--224
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 224--224
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--233
+
+ []
+
+[2]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 233--233
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--254
+
+ []
+
+[3]
+Overfull \hbox (1.0pt too wide) in paragraph at lines 258--258
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 261--261
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--282
+
+ []
+
+[4] [5] (QMPhilosophy.aux) ) 
 Here is how much of TeX's memory you used:
- 18381 strings out of 476374
- 365122 string characters out of 5789326
- 1863340 words of memory out of 5000000
- 38411 multiletter control sequences out of 15000+600000
- 610397 words of font info for 121 fonts, out of 8000000 for 9000
+ 18388 strings out of 476374
+ 365144 string characters out of 5789326
+ 1869340 words of memory out of 5000000
+ 38424 multiletter control sequences out of 15000+600000
+ 587554 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,7n,117p,841b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts
-/enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/fourier/fourier-mcl.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/fourier/fourier-mex.pfb><C:/Users/Amir/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/Amir/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/Amir/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/Am
-ir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/
-Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putbi8a.pfb><C:/Use
-rs/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/U
-sers/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on QmeasurementBusch.pdf (2 pages, 88462 bytes).
+ 83i,6n,117p,1286b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/
+enc/dvips/base/8r.enc}<C:/Users/Amir/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/fourier/fourier-ms.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/font
+s/type1/adobe/utopia/putb8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/fo
+nts/type1/adobe/utopia/putr8a.pfb><C:/Users/Amir/AppData/Local/Programs/MiKTeX/
+fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on QMPhilosophy.pdf (5 pages, 78734 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

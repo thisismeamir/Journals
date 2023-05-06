@@ -1,0 +1,227 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+\newcommand{\liver}[1]{\textcolor{darkliver}{#1}}
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theobox}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{def}
+\newtcolorbox[use counter=def]{definition}
+	{center,%
+    colframe =richblack!100,%
+    colback=cultured,
+    title={Definition \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\\ \ \\$\blacktriangleright$ \textbf{#1}}
+\newcommand{\mos}{$\blacktriangleright$}
+
+\title{Classical Optics \\ \large Reading Notes of Quantum Optics by M. Fox}
+\author{Amir H. Ebrahimnezhad}
+\date{}
+\begin{document}
+          \maketitle
+          \tableofcontents 
+          \section{Maxwell's Equations and Electromagnetic Waves}
+        \indent The classical description, which is based on the theory of electromagnetic waves governed by Maxwell's equations, is adequate to explain the majority of optical phenomena and forms a very persuasive body of evidence in its favour. It is for this reason that most optics texts are developed in terms of wave and ray theory, with only a brief mention of quantum optics, only when classical explanations are inadequate.
+
+        The Theory of light as electromagnetic waves was developed by Maxwell in the second half of the nineteenth century and is considered as one of the great triumphs of classical physics.
+        \newpoint{Electromagnetic Fields: }Maxwell's equations describe two fundamental electromagnetic fields. Hence the name, electric and magnetic fields are the two. With two other variables related to these fiellds, Electric Displacement $D$ and Magnetic Displacement $H$. These two are where we included the effects and response of the medium that the fields are propagating into.
+
+        \begin{equation}
+            D =\epsilon_0 E +P
+        \end{equation}
+
+        In an isotropic medium, the microscopic dipoles align along the direction of the applied electric field, so that we  write:
+        \begin{equation}
+            P = \epsilon_0 \chi E
+        \end{equation}
+        Thus one can write the eq.1 as:
+        \begin{equation}
+            D = \epsilon_0\epsilon_r E
+        \end{equation}
+        where:
+        $$
+        \epsilon_r = 1 +\chi
+        $$
+        and it is the relative permittivity of the medium. We have the same equation for magnetic fields.
+        \begin{equation}
+            H = \frac1{\mu_0}B - M
+        \end{equation}
+        With some analogous steps one can have:
+        \begin{equation}
+            \mu_0\mu_r H = B
+        \end{equation}
+        where $\mu_r = 1+\chi_M$ is the relative magnetic permeability of the medium.
+        \begin{callout}
+            In optics, it is usually assumed that the magnetic dipoles that contribute to $\chi_M$ are too slow to respond, so that $\mu_r=1$. 
+        \end{callout}
+        \newpoint{Maxwell's Equations:} The laws that describe the combined electric and magnetic response of a medium are summarized un \hldb{Maxwell's equations} of electromagnetism:
+        \begin{align}
+            \nabla\cdot D &= \rho,\\
+            \nabla\cdot B &=0,\\
+            \nabla \times E &=-\frac{\partial B}{\partial t},\\
+            \nabla \times H &= j + \frac{\partial D}{\partial t},
+        \end{align}
+\end{document}
