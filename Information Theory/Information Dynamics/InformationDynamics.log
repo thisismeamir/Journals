@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  25 JUN 2023 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  25 JUN 2023 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,47 +964,47 @@ LaTeX Warning: Unused global option(s):
 (InformationDynamics.aux)
 \openout1 = `InformationDynamics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 214.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 210.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-214.
+210.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.f
 d
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 210.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-214.
+210.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.f
 d
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 210.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-214.
+210.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.f
 d
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    ... okay on input line 210.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
 pdf.mkii
@@ -1031,13 +1031,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 214.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 214.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 210.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 210.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 214.
+Package chemgreek Info: Activating mapping `fourier' on line 210.
 
 
 *geometry* driver: auto-detecting
@@ -1075,74 +1075,74 @@ Package chemgreek Info: Activating mapping `fourier' on line 214.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 215.
+ 211.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.
 fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 215.
+(Font)              scaled to size 11.03998pt on input line 211.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 215.
+(Font)              scaled to size 8.27998pt on input line 211.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 215.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 215
+(Font)              scaled to size 6.43999pt on input line 211.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 211
 .
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 215
+LaTeX Font Info:    Trying to load font information for U+msb on input line 211
 .
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 215.
+(Font)              scaled to size 11.03998pt on input line 211.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 215.
+(Font)              scaled to size 8.27998pt on input line 211.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 215.
-(InformationDynamics.toc)
+(Font)              scaled to size 6.43999pt on input line 211.
+(InformationDynamics.toc
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `InformationDynamics.toc'.
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 221--225
+Underfull \hbox (badness 1215) in paragraph at lines 217--221
 \T1/futs/m/n/10 on en-tropy and sta-tis-ti-cal me-chan-ics. Boltz-mann earns
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 221--225
+Underfull \hbox (badness 2401) in paragraph at lines 217--221
 \T1/futs/m/n/10 In physics the idea was de-vel-oped within the-o-reti-cians
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 221--225
+Underfull \hbox (badness 3118) in paragraph at lines 217--221
 \T1/futs/m/n/10 the-ory and quan-tum me-chan-ics. John Von Neu-mann
  []
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 226.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 226.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 226.
 [1{C:/Users/amirebrahim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
 ers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
-
 
 
 ]
@@ -1150,7 +1150,7 @@ ers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 Here is how much of TeX's memory you used:
  18515 strings out of 476331
  370926 string characters out of 5784933
- 1857660 words of memory out of 5000000
+ 1858660 words of memory out of 5000000
  38591 multiletter control sequences out of 15000+600000
  591922 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1159,7 +1159,7 @@ Here is how much of TeX's memory you used:
 fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Program
 s/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/amirebrahim/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on InformationDynamics.pdf (1 page, 51403 bytes).
+Output written on InformationDynamics.pdf (1 page, 51877 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
