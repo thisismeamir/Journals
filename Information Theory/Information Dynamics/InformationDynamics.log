@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  25 JUN 2023 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  1 JUL 2023 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,54 +513,31 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 .
 
 )
-(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
-.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
-y
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count286
-\Gm@cntv=\count287
-\c@Gm@tempcnt=\count288
-\Gm@bindingoffset=\dimen182
-\Gm@wd@mp=\dimen183
-\Gm@odd@mp=\dimen184
-\Gm@even@mp=\dimen185
-\Gm@layoutwidth=\dimen186
-\Gm@layoutheight=\dimen187
-\Gm@layouthoffset=\dimen188
-\Gm@layoutvoffset=\dimen189
-\Gm@dimlist=\toks29
-
-(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
-.cfg))
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.st
 y
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count289
+\c@tracingmulticols=\count286
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
 143.
 
 \mult@box=\box59
-\multicol@leftmargin=\dimen190
-\c@unbalance=\count290
-\c@collectmore=\count291
-\doublecol@number=\count292
-\multicoltolerance=\count293
-\multicolpretolerance=\count294
-\full@width=\dimen191
-\page@free=\dimen192
-\premulticols=\dimen193
-\postmulticols=\dimen194
+\multicol@leftmargin=\dimen182
+\c@unbalance=\count287
+\c@collectmore=\count288
+\doublecol@number=\count289
+\multicoltolerance=\count290
+\multicolpretolerance=\count291
+\full@width=\dimen183
+\page@free=\dimen184
+\premulticols=\dimen185
+\postmulticols=\dimen186
 \multicolsep=\skip66
 \multicolbaselineskip=\skip67
 \partial@page=\box60
 \last@line=\box61
-\maxbalancingoverflow=\dimen195
+\maxbalancingoverflow=\dimen187
 \mult@rightbox=\box62
 \mult@grightbox=\box63
 \mult@firstbox=\box64
@@ -601,41 +578,41 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box99
 \@tempa=\box100
 \@tempa=\box101
-\c@minrows=\count295
-\c@columnbadness=\count296
-\c@finalcolumnbadness=\count297
-\last@try=\dimen196
-\multicolovershoot=\dimen197
-\multicolundershoot=\dimen198
+\c@minrows=\count292
+\c@columnbadness=\count293
+\c@finalcolumnbadness=\count294
+\last@try=\dimen188
+\multicolovershoot=\dimen189
+\multicolundershoot=\dimen190
 \mult@nat@firstbox=\box102
 \colbreak@box=\box103
-\mc@col@check@num=\count298
+\mc@col@check@num=\count295
 ) (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.s
 ty
 Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
-\SOUL@word=\toks30
-\SOUL@lasttoken=\toks31
-\SOUL@syllable=\toks32
-\SOUL@cmds=\toks33
-\SOUL@buffer=\toks34
-\SOUL@token=\toks35
-\SOUL@syllgoal=\dimen199
-\SOUL@syllwidth=\dimen256
-\SOUL@charkern=\dimen257
-\SOUL@hyphkern=\dimen258
-\SOUL@dimen=\dimen259
-\SOUL@dimeni=\dimen260
-\SOUL@minus=\count299
-\SOUL@comma=\count300
-\SOUL@apo=\count301
-\SOUL@grave=\count302
+\SOUL@word=\toks29
+\SOUL@lasttoken=\toks30
+\SOUL@syllable=\toks31
+\SOUL@cmds=\toks32
+\SOUL@buffer=\toks33
+\SOUL@token=\toks34
+\SOUL@syllgoal=\dimen191
+\SOUL@syllwidth=\dimen192
+\SOUL@charkern=\dimen193
+\SOUL@hyphkern=\dimen194
+\SOUL@dimen=\dimen195
+\SOUL@dimeni=\dimen196
+\SOUL@minus=\count296
+\SOUL@comma=\count297
+\SOUL@apo=\count298
+\SOUL@grave=\count299
 \SOUL@spaceskip=\skip68
-\SOUL@ttwidth=\dimen261
-\SOUL@uldp=\dimen262
-\SOUL@ulht=\dimen263
+\SOUL@ttwidth=\dimen197
+\SOUL@uldp=\dimen198
+\SOUL@ulht=\dimen199
 )
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
 rerr.sty
@@ -645,6 +622,48 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr
+.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip69
+\f@nch@O@elh=\skip70
+\f@nch@O@erh=\skip71
+\f@nch@O@olh=\skip72
+\f@nch@O@orh=\skip73
+\f@nch@O@elf=\skip74
+\f@nch@O@erf=\skip75
+\f@nch@O@olf=\skip76
+\f@nch@O@orf=\skip77
+)
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
+y
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks35
+
+(C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.cfg)
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (766.31888pt) is ignored.
+
+)
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
@@ -958,53 +977,71 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \c@figurecounter=\count323
 
 
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 227.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 228.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 230.
+
+
 LaTeX Warning: Unused global option(s):
     [9pt].
 
 (InformationDynamics.aux)
 \openout1 = `InformationDynamics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 210.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 231.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 231.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-210.
+231.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.f
 d
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 231.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-210.
+231.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.f
 d
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 210.
+LaTeX Font Info:    ... okay on input line 231.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 231.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-210.
+231.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.f
 d
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    ... okay on input line 231.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
 pdf.mkii
@@ -1031,38 +1068,38 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 210.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 210.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 231.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 231.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `fourier' on line 210.
+Package chemgreek Info: Activating mapping `fourier' on line 231.
 
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(28.45274pt, 731.23584pt, 85.35826pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45276pt, 540.60236pt, 28.45276pt)
+* v-part:(T,H,B)=(14.22636pt, 816.59402pt, 14.22636pt)
 * \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=512.14963pt
-* \textheight=731.23584pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
-* \topmargin=-80.81725pt
-* \headheight=12.0pt
+* \paperheight=845.04675pt
+* \textwidth=540.60236pt
+* \textheight=733.14128pt
+* \oddsidemargin=-43.81723pt
+* \evensidemargin=-43.81723pt
+* \topmargin=-58.04362pt
+* \headheight=28.45274pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -1075,35 +1112,35 @@ Package chemgreek Info: Activating mapping `fourier' on line 210.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 211.
+ 232.
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.
 fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 211.
+(Font)              scaled to size 11.03998pt on input line 232.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 211.
+(Font)              scaled to size 8.27998pt on input line 232.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 211.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 211
+(Font)              scaled to size 6.43999pt on input line 232.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 232
 .
 
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 211
+LaTeX Font Info:    Trying to load font information for U+msb on input line 232
 .
 (C:\Users\amirebrahim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 211.
+(Font)              scaled to size 11.03998pt on input line 232.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 211.
+(Font)              scaled to size 8.27998pt on input line 232.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 211.
+(Font)              scaled to size 6.43999pt on input line 232.
 (InformationDynamics.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 2.
@@ -1122,23 +1159,49 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \openout4 = `InformationDynamics.toc'.
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 217--221
-\T1/futs/m/n/10 on en-tropy and sta-tis-ti-cal me-chan-ics. Boltz-mann earns
+Underfull \hbox (badness 1603) in paragraph at lines 239--243
+\T1/futs/m/n/10 pro-posed the ba-sic def-i-ni-tion which is still valid. Charle
+s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 217--221
-\T1/futs/m/n/10 In physics the idea was de-vel-oped within the-o-reti-cians
+Underfull \hbox (badness 1472) in paragraph at lines 239--243
+\T1/futs/m/n/10 rec-og-nized the cor-re-spon-dence be-tween in-for-ma-tion the-
+ory
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 217--221
-\T1/futs/m/n/10 the-ory and quan-tum me-chan-ics. John Von Neu-mann
+Underfull \hbox (badness 1199) in paragraph at lines 244--247
+\T1/futs/m/n/10 struc-ture of mes-sages. It counts signs, cir-cum-scribes their
+
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 244--247
+\T1/futs/m/n/10 Se-man-tic is ded-i-cated to re-la-tion-ship be-tween sym-bols 
+and
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 244--247
+\T1/futs/m/n/10 their mean-ing. Ob-vi-ously, to ap-ply, se-man-tic in-for-ma-ti
+on
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 244--247
+[]$\FMS/futm/m/n/10 x$ \T1/futs/b/n/10 Prag-matic In-for-ma-tion \T1/futs/m/n/1
+0 fi-nally takes into ac-count that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
+
  []
 
 [1{C:/Users/amirebrahim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Us
@@ -1146,22 +1209,24 @@ ers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-(InformationDynamics.aux) ) 
+[2
+
+] (InformationDynamics.aux) ) 
 Here is how much of TeX's memory you used:
- 18515 strings out of 476331
- 370926 string characters out of 5784933
- 1858660 words of memory out of 5000000
- 38591 multiletter control sequences out of 15000+600000
+ 18705 strings out of 476331
+ 373701 string characters out of 5784933
+ 1862660 words of memory out of 5000000
+ 38777 multiletter control sequences out of 15000+600000
  591922 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,9n,117p,697b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/
-fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Program
-s/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/amirebrahim/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on InformationDynamics.pdf (1 page, 51877 bytes).
+ 83i,11n,117p,1084b,326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/amirebrahim/AppData/Local/Programs/MiKTe
+X/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/amirebrahim/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on InformationDynamics.pdf (2 pages, 57211 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
