@@ -1,0 +1,499 @@
+\documentclass[10pt,a4pape,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathpartir}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+\newenvironment{infrule}
+    {\begin{center}\begin{tabular}{l}}{\end{tabular}\end{center}}
+
+% for this file
+\newcommand{\newpoint}[1]{\indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\conc}{\hline$\therefore \ \ $}
+
+\title{Introduction to Logic \\ \large Notes from the Stanford Course}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran}}
+\date{\today}
+\begin{document}
+        \maketitle
+        \tableofcontents
+        \section{Propositional Logic}
+          Propositional Logic deals with the relationships between propositions. The exact definition of a proposition is not possible, but generally, it refers to a potential state of the world that can be either true or false. Examples of propositions include the possibility of rain or the possibility of clouds. It's important to note that a proposition doesn't have to be true; it can also be false, depending on the truth value of another proposition.
+          \\
+          \\
+          In this chapter, we start by examining the syntax rules that establish the language of Propositional Logic. Then, we introduce the concept of a truth assignment, which helps us define the meaning of sentences in Propositional Logic. Next, we provide a systematic approach for evaluating sentences based on a given truth assignment and outline a method for finding truth assignments that satisfy sentences. Finally, we demonstrate how Propositional Logic can be used to formalize Natural Language and Digital Circuits through a series of examples.
+            \subsection{Syntax}
+                In Propositional Logic, we have two types of sentences, simple and compound. Simple sentences are the ones that express a fact about the world. Compound sentences are the ones that are made out of simple sentences and logical relationships.
+                \\
+                \textit{Simple Sentences} in Propositional Logic are often called proposition constants or, sometimes, logical constants. 
+                \begin{callout}
+                        In what follows we would write proposition constant as strings of letters, digits and underscores, which begin only by a small leter.
+                \end{callout}
+                \newpoint{Compound Sentences:} These are made out of simple sentences and logical relaitonships. 
+                \begin{itemize}
+                        \item \textit{Negation:} Consists of negation operator and a simepl sentence, called the target. For a statement $p$ it's negate is written as:
+                        \begin{equation}
+                            \neg p
+                        \end{equation}
+                        \item \textit{Conjunction:} This is a sequence of sentences separated by occurrences of the $\land$ operator and enclosed by parantheses. The constituent sentences are called \textit{conjuncts}.
+                        \begin{equation}
+                            \left(p\land q\right)
+                        \end{equation}
+                        \item \textit{Disjunction:} This is a sequence of sentences separated by occurrences of $\lor$ operator and enclosed in parentheses. This constituent sentences are called \textit{disjuncts}.  
+                        \begin{equation}
+                            \left(p\lor q\right)
+                        \end{equation}
+                        \item \textit{Implication:} This one consists of a pair of sentences separated by the $\Rightarrow$ or $\rightarrow$and enclosed in parentheses. The sentence to the left of the operator is called antecedent, and the sentece to the right is called the consequent. The implication of $p$ and $q$ is shown below:
+                        \begin{equation}
+                            p\rightarrow q
+                        \end{equation}
+                        \item \textit{Biconditional:} A biconditional is a combination of an implication and a reverse implication:
+                        \begin{equation}
+                            p\leftrightarrow q
+                        \end{equation}
+                \end{itemize}
+                \begin{callout}
+                        Note That the constituent sentences within any compund sentence can be either simple sentences or compound sentences or a mixture of the two.
+                \end{callout}
+                \newpoint{Operator Precedence:} Since more complex compund statements would eventually becom ambiguity, we have the following precedence:
+                \begin{align*}
+                        \neg \\
+                        \land \\ 
+                        \lor \\
+                        \rightarrow\\
+                        \leftrightarrow
+                \end{align*}
+
+                \begin{callout}
+                        Note that just because precedence allows us to delete parentheses in some cases does not mean that we can dispense with parentheses entirely. Consider the example shown earlier. Precedence eliminates the ambiguity by dictating that the sentence without parentheses is an implication with a disjunction as antecedent. However, this makes for a problem for those cases when we want to express a disjunction with an implication as a disjunct. In such cases, we must retain at least one pair of parentheses.
+                \end{callout}
+                We end the section with two simple definitions that are useful in discussing Propositional Logic. \textit{A propositional vocabulary} is a set of proposition constants. \textit{A propositional language} is the set of all propositional sentences that can be formed from a propositional vocabulary.
+            \subsection{Semantics}
+                The approach to semantics in Logic bears resemblance to that of Algebra. Algebra is not concerned with the real-world meaning of variables; rather, it focuses on the relationships between the values of variables as expressed in equations. Algebraic methods are designed to uphold these relationships, regardless of the interpretation of the variables.
+                \\
+                \\
+                Similarly, Logic does not concern itself with the real-world significance of proposition constants. Instead, it emphasizes the relationships between the truth values of simple sentences and compound sentences that contain them. Like Algebra, logical reasoning methods are detached from the interpretation of proposition constants; what truly matters is the structure and form of the sentences. Although the values assigned to propositions constants are not crucial in the sense just described, we sometimes would like to assign various values to them. Such assignment is called \textit{truth assignment.}
+                \\
+                \\
+                With such truth assignment we would see for each compound sentence there are different results by assigning different truth values.
+                \begin{callout}
+                    Note that for the value \textit{true} we use $1$, while for \textit{false} we use $0$.
+                \end{callout}
+                \begin{itemize}
+                        \item \textit{Negation:}
+                            \begin{center}
+                                \begin{tabular}{c||c}
+                                    $\phi$ & $\neg\phi$ \\[0.5ex]
+                                    \hline\hline 
+                                    0 & 1\\
+                                    1 & 0
+                                \end{tabular}
+                            \end{center}
+                        \item \textit{Conjunction:} 
+                            \begin{center}
+                                \begin{tabular}{c|c||c}
+                                    $\phi$ & $\psi$ & $\phi\land\psi$\\
+                                    \hline\hline
+                                    1 & 1 & 1\\
+                                    1 & 0 & 0\\
+                                    0 & 1 & 0\\
+                                    0 & 0 & 0 
+                                \end{tabular}
+                            \end{center}
+                        \item \textit{Disjunction:} 
+                            \begin{center}
+                                \begin{tabular}{c|c||c}
+                                    $\phi$ & $\psi$ & $\phi\lor\psi$\\
+                                    \hline\hline
+                                    1 & 1 & 1 \\
+                                    1 & 0 & 1 \\ 
+                                    0 & 1 & 1 \\
+                                    0 & 0 & 0 
+                                \end{tabular}
+                            \end{center}
+                        \item \textit{Implication:}
+                            \begin{center}
+                                \begin{tabular}{c|c||c}
+                                    $\phi$ & $\psi$ & $\phi\rightarrow\psi$\\
+                                    \hline\hline
+                                    1 & 1 & 1 \\
+                                    1 & 0 & 0 \\
+                                    0 & 1 & 1 \\
+                                    0 & 0 & 1
+                                \end{tabular}
+                            \end{center}
+                        \item \textit{Biconditional:}
+                            \begin{center}
+                                \begin{tabular}{c|c||c}
+                                    $\phi$ & $\psi$ & $\phi\leftrightarrow\psi$\\
+                                    \hline\hline
+                                    1 & 1 & 1 \\
+                                    1 & 0 & 0 \\
+                                    0 & 1 & 0 \\
+                                    0 & 0 & 1 \\
+                                \end{tabular}
+                            \end{center}
+                \end{itemize}
+            \subsection{Evaluation \& Satisfaction}
+                    \textit{Evaluation} is when we got the truth values of the simple statements and then try to find the truth value of a compound statement made out of those simple ones. \textit{Satisfaction} is the opposite, we try to find the truth values that woudl make a statement false or true, in other sense we consider all the possible truth value combinations for the simple sentences in the compound sentence and evaluate each one.
+        \section{Propositional Analysis}
+            Satisfaction is a relationship between specific sentences and specific truth assignments. In Logic, we are usually more interested in properties and relationships of sentences that hold across all truth assignement. In this section we will look at logical propertirs such as valudity, contingency, and unsatisfiability, then we look at three types of logical relationship between sentences, 1. Logical Entailment, Logical Equivalence and Logical Consistency.
+            \subsection{Logical Properties}
+                As there are sentences that are true or false, there are sentences that are sometimes true and sometimes false. This would lead us to categorized sentences into three types:
+                \begin{define}
+                    \textit{A Sentence is \textbf{valid} if and only if it is satisfied by every truth assignment.}
+                \end{define}
+                \begin{define}
+                    \textit{A sentence is \textbf{unsatifiable} if and only if it is not satisfied by any truth assignement.}
+                \end{define}
+                \begin{define}
+                    \textit{A sentence is \textbf{contingent} if and only if there is some truth assignment that satisfies it and some truth assignement that falsifies it.}
+                \end{define}
+                \begin{callout}
+                    As you might have guessed, in some sense the valid and unsatifiable sentences are useless because they do not rule out any truth assignment as one accepts and the other denies all.
+                \end{callout}
+                \begin{callout}
+                    For many purposes, it is useful to group valid dn continengency into one group called \textit{satisfiable}.
+                \end{callout}
+            \subsection{Logical Equivalence}
+                We say that a sentence $\phi$ is logically equivalent to a sentence $\psi$ if and only if for every truth assignment that satisfies $\phi$, $\psi$ is also satisfied and vice versa. One way of determining whether or not two sentences are logically equivalent is to check the truth table for the proposition constants in the language. This is called the truth table method:
+                \begin{enumerate}
+                    \item We forma  truth table for the propositiona constants and add a column for each of the sentences,
+                    \item we Then evaluate the two expressions,
+                    \item At the end we compare the results if the values for the two sentences are the same in every case, then the two sentences are logically equivalent, otherwise, they are not.
+                \end{enumerate}
+            \subsection{Logical Entailment}
+                We say that a sentence $\phi$ logically entails a sentence $\psi$, written ($\phi \vDash \psi$), if and only if truth assignment that satisfies $\phi$ also satisfies $\psi$. More generally, we say that a set of sentences $\Delta$ logically entails a sentence $\psi$, written $\Sigma\vDash\psi$ if and only if the truth assignment that satisfies all of the sentences in $\Delta$ also satisfies $\psi$.
+                \begin{callout}
+                    Note that the relationship of logical entailment is purely logical one. Even if the premises of a problem do not logically entail the conclusion this does not mean that the conclusion is necessarily false, even if the premises are tru. It just means that ist is possible that the conclusion is false.
+                \end{callout}
+                As with logical equibalence, we can use truth tables to determine whether or note a set of premises logically entails a possible conclusion by checking the truth table for the proposition constants in the language:
+                \begin{enumerate}
+                    \item We form atruth table for thhe proposition constants and add a column for the premisses and a columns for the conclusion. 
+                    \item We then evaluate the premises. 
+                    \item We evaluate the conclusion,
+                    \item Finally, we compare the results. If every row that satisfies the premises also satisfies the conclusion, then the premises logically entail the conclusion. 
+                \end{enumerate}
+            \subsection{Logical Consistency}
+                A sentence $\phi$ is consistent with a sentence $\psi$ if and only if there is a truth assignment that satisfies both $\phi$ and $\psi$. A sentence $\psi$ is consistent with a set of sentences $\Delta$ if and only if there is a truth assignment that satisfies both $\Delta$ and $\psi$.
+            \subsection{Connections Between Properties and Relationships}
+                Before we end this chapter, it is worth noting that there are some strong connections between logical properties like validity and satisfiability and the logical relationships introduced in the preceding sections. 
+                \\
+                \\
+                First of all, there is a connection between the logical equivalence of two sentences and the validityof the iconditional sentence built from the two sentences. In particular, we have the following theorem expressing this connection.    
+                \begin{theorem}
+                    \textit{\textbf{Equibalence Theorem:} A sentence $\phi$ and a sentence $\psi$ are logically equivalent if and only if the sentence $\psi\leftrightarrow\phi$ is valid.}
+                \end{theorem}
+                Why is this true? Consider the definition of logical equivalence. Two sentences are logically equivalent if and only if they are satisfied by the same set of truth assignement. Now recall the semantics of sentences the biconditional operator. Clearly, if two sentences are logically equivalent, they are satisfied by the same truth assignment, and so the corresponding biconditional must be valid. Conversely, if a biconditional is valid the two component sentences must be satisfied by the same truth assignments and so they are logically equivalent.
+                \\
+                \\
+                There is a similar connection between logical entailment between two sentences and the validityof the corresponding implication. And there is a natural externsion to cases of logical entailment involving finite set of sentences.
+                \begin{theorem}
+                    \textit{\textbf{Deduction Theorem:} A sentence $\phi$ logically entails a sentence $\psi$ if and only if $\phi\rightarrow\psi$ is valid. More generally, a finite set of sentences $\left\{\phi_1,\phi_2,\dots,\phi_n\right\}$ logically entails $\phi$ if and only if the compound sentence $\phi_1\land\dots\land\phi_n\rightarrow \phi$ is valid.}
+                \end{theorem}
+                If a dentence $\phi$ logically entails a sentence $\psi$, it means that any truth assignment that satisfies $\phi$ also satisfies $\psi$. Looking at the semantics of implications, we see that an implication is true if and only if every truth assignmentthat makes the antecedent true also makes the consequent true. Consequently, logical entailment holds exactly when the corresponding implication is valid.
+                \\
+                \\
+                There's also a connection betwenn logical entailment and unsatisfiability. In particular, if a set $\Delta$ of sentences logically entails a sentence $\phi$, then $\Delta$ together with the negation of $\phi$ myst be unsatifiable. The reverse is also true. 
+                \begin{theorem}
+                    \textit{\textbf{Unsatisfiability Theorem:} A set $\Delta$ of sentences logically entails a sentence $\phi$ if and only if the set of sentences $\Delta\cup\left\{\neg \phi\right\}$ is unsatisfiable.}
+                \end{theorem}
+                An interesting consequence of this result is that we can determine logical entailment by checking for unsatisfiability. This turns out to be useful in various logical proof methods.
+                \\
+                \\
+                Finally, consider the definition of logical consistency. A sentence $\phi$ is logically consistent with a sentence $\psi$ if and only if there is a truth assignment that satisfies both $\phi$ and $\psi$. This is equivalent to sayin that the sentence $\phi\land\psi$ is satisfiable.
+                \begin{theorem}
+                    \textit{\textbf{Consistency Theorem:} A sentence $\phi$ is logically consistent with a sentence $\psi$ if and only if the sentence $\psi\land\phi$ is satisfiable. More generally, a sentence $\phi$ is logically consistent with a finite set of sentences $\left\{\phi_1,\dots,\phi_n\right\}$ if and only if $\left(\phi_1\land\dots\land\phi_n\right)$}
+                \end{theorem}
+                The connections described in the preceding section are useful in solving logical problems because they allow us to transform problems of one type into problems of another type. In thinking about these various connections, the main thing to keep in mind is that logical properties and logical relationships are metalevel. They are things we assert in talking about logical sentences; they are not sentences withinour formal language; By contrast, implications and biconditionals and conjuctions are statements within our forma laguage; they are not metalevel statements. In a sense we can implicitly express some ligical relationships within our formal language by writing the corresponding biconditionals and implications and conjunctions and checking for the logical properties of these statements. 
+        \section{Direct Proofs}
+            Checking logical entailment with truth tables has merit of being conveptually simple. However, it is not very much practical in the sense that for each logical constants the process doubles. Proof methods provide an alternatice way of checking logical entailment that addresses this problem. In many cases, it is possible to create a proof of a conclusion from a set of premises that is much smaller than the truth table for the language; moreover, it is often possible to find such proofs with less wotk than is neccessary to check the entire truth table.
+            \\
+            \\
+            \subsection{Axiom Schemas}
+                \begin{define}
+                    \textit{An \textbf{Axiom Schema (Schema)} is an expression satisfying the grammatical rules of our language except for the occurrence of \textbf{metavariables} (written as greek letters) in place of various subparts of the expression.}
+                \end{define}
+                As an example the following expression is a Schema:
+                \begin{equation}
+                    \phi\Rightarrow (\psi\Rightarrow\phi)
+                \end{equation}
+                \begin{define}
+                    \textit{An instance of an axiom schema is the sentence obtained by consistently substituting sentences for the metavariables in the rule.}
+                \end{define}
+                \begin{define} 
+                    \textit{An Axiom Schema is valid of and only if every instance of the schema is valid.}
+                \end{define}
+                These schemas are all valid:
+                \begin{align}
+                    \text{Reflexivity:} \ \ \ & \phi \Rightarrow\phi \\
+                    \text{Negation Elimination:} \ \ \ & \neg\neg\phi\Rightarrow\phi  \\
+                    \text{Negation Introduction:} \ \ \ & \phi \Rightarrow \neg\neg\phi \\
+                    \text{Tautology:} \ \ \ & \phi \lor \neg\phi 
+                \end{align}
+                We use both valid and non-valid shcemas. Non-valid schemas are used in defining rules of inference and valid schemas are used as components of deductive proof systems.
+            \subsection{Rules of Inference}
+                \begin{define}
+                    \textit{A \textbf{Rule of Inference} is a pattern of reasoning consisting of some schemas, called premises, and one or more additional achemas, called conclusions.}
+                \end{define}
+                Rules of Iference are often written as below. The schemas above the line are the premises, and the schemas below the line are the conclusions. Here are some rules of inference:
+                \begin{enumerate}
+                    \item This rule of inference is called the \textit{Implication Elimination}, because it eliminates the implication from the first premise.
+                    \begin{infrule}
+                        $\phi \Rightarrow \psi$ \\
+                        $\phi$\\
+                        \conc 
+                        $\psi$
+                    \end{infrule}
+                    \item \textit{Implication Creation}, tells us that, if a sentence $\psi$ is true, we can infer $\phi\Rightarrow\psi$ for any $\phi$ whatsoever.
+                    \begin{infrule}
+                        $\psi$\\ 
+                        \conc 
+                        $\phi\Rightarrow\psi$
+                    \end{infrule}
+                    \item \textit{Implication Distribution} tells us that implication can be distributed over other implications:
+                        \begin{infrule}
+                            $\phi\Rightarrow(\psi\Rightarrow\gamma)$\\
+                            \conc
+                            $(\phi\Rightarrow\psi)\Rightarrow(\phi\Rightarrow\gamma)$
+                        \end{infrule}
+                    \item \textit{Implication Reversal} allows us to infer an implication if we have an implication with the arguments reversed and negated:
+                        \begin{infrule}
+                            $\neg \psi \Rightarrow \neg \phi$\\
+                            \conc 
+                            $\phi \Rightarrow \psi$
+                        \end{infrule}
+                \end{enumerate} 
+                \begin{callout}
+                    An instance of a rule of inference is the rule obtained by consistently substituting sentences for the metavariables in the rule. If a metavariable occurs more than once, the same expression must be used for every occurrence.
+                \end{callout}
+                Remember that there are infinitely many sentences in out anguage. Even though we start with finitely many propositional constants and finitely many operators, we can combine them in arbitrary many ways. The upshot is that there are infinitely many instances of any rule of inference involving metavariables.
+                \begin{callout}
+                    A rule \textit{applies} to a set of sentences if and only if there is an instance of the rule in which all of the premises are in the set. In this case, the conclusions of the instance are the results of the rule application. Also in using rules of inference, it is important to remember that they apply only to top-level sentences, not to components of sentences. While applying to components sometimes works, it can also lead to incorrect results.
+                \end{callout}
+            \subsection{Direct Proofs}
+                Bz writing down premises, writing instances of axiom schemas, and applzing rules of inference, it is possible to derive conclusions that cannot be derived from the premises in a single step. This idea of stringing things together in this waz leads to the notion of a direct proof.
+                \begin{define}
+                    \textit{A \textbf{Direct Proof} of a conclusion from a set of premises in a sequence of sentences terminating in the conclusion in which each item is either (1) a premise, (2) an instance of an axiom schema, (3) or the result of applying a rule of inference to earlier items in sequence.}
+                \end{define}
+                \begin{define}
+                    \textit{Let $R$ be a set of rules of inference. If there exists a prof of a sentence $\phi$ from a set $\Delta$ of premises using the rules of inference in $R$, we say that $\phi$ is provable from $\Delta$ using $R$. We usually write this as $\Delta\vdash_R\phi$, using the provability operator $\vdash$ (which is sometimes called \textbf{single turnstile}). If the set of rules is clear from context, we usually drop the subscript, writing just $\Delta\vdash \phi$.}
+                \end{define}
+            \subsection{Proof Systems}
+                \begin{define}
+                    \textit{A \textbf{Proof System} is a finite set of axiom schemas and rules of inference. Although it is interesting to consider proof systems with non-valid aciom schemata or unsound rules of inference, in this book we concentrate exclusively on proof systems with valid axiom schemata and sound rules of inference.}
+                \end{define}
+                The \textbf{Hilbert System} is a well-known proof system for Propositional Logiv. It has one rule of inference, viz. \textit{Implication Elimination}. In addition, the Hilbert systems has three axiom schemas. \textit{Implication Creation, Implication Distribution, Implication Reversal}.
+            \subsection{Soundness and Completeness}
+                We say that a proof szstem is \textit{sound} if and only if every provable conclusion is logically entailed. In other words:
+                \begin{equation}
+                    \Delta \vdash \phi \Rightarrow \Delta \vDash \phi
+                \end{equation}
+                We say that a proof system is \textit{complete} if and only if every logical conclusion is provable. In other words:
+                \begin{equation}
+                    \Delta \vDash \phi \Rightarrow \Delta \vdash \phi
+                \end{equation}
+                The Hilbert system is sound and complete for propositional logic. In other words, for this system, logical entailment and provability are identical.
+                \begin{callout}
+                    The upshot of this result is significant. On large problems, the proof method often takes fewer steps than the truth table method. (Disclaimer: In the worst case, the proof method may take just as many or more steps to find an answer as the truth table method.) Moreover, proofs are usually much smaller than the corresponding truth tables. So writing an argument to convince others does not take as much space.
+                \end{callout}
+        \section{Natural Deduction}
+
+
+
+
+
+
+
+\end{document}
