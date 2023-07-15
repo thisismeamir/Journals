@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  15 JUL 2023 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  15 JUL 2023 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1104,39 +1104,50 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 217.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 217.
-(1-LanguagesAndStructures.toc)
-\tf@toc=\write4
-\openout4 = `1-LanguagesAndStructures.toc'.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 223.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 223.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 223.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 223.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 223.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 223.
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 226.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 226.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 226.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 226.
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 238--238
+Overfull \hbox (1.0pt too wide) in paragraph at lines 234--234
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 242--242
+Overfull \hbox (1.0pt too wide) in paragraph at lines 237--237
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 246--246
+Overfull \hbox (1.0pt too wide) in paragraph at lines 240--240
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 266--266
+Overfull \hbox (1.0pt too wide) in paragraph at lines 258--258
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 261--261
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 272--272
+[] 
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 276--276
 [] 
  []
 
@@ -1145,19 +1156,84 @@ ers/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Overfull \hbox (1.0pt too wide) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 277--282
+
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 290--295
+\T1/futs/m/n/10 But now, no-tice that we know that the col-lec-tion of nat-u-ra
+l
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--295
+
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 290--295
+\T1/futs/m/n/10 with those. Now since the col-lec-tion of for-mu-las is de-fine
+d
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--295
+[]$\FMS/futm/m/n/10 x$ \T1/futs/b/n/10 Sen-tences: \T1/futs/m/n/10 As-sume the 
+lan-guage of num-ber the-ory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--311
+
+ []
+
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 311--311
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 284--284
+Overfull \hbox (1.0pt too wide) in paragraph at lines 315--315
 [] 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 290--290
+Overfull \hbox (1.0pt too wide) in paragraph at lines 326--326
 [] 
  []
 
-)
-*
+
+Overfull \hbox (1.0pt too wide) in paragraph at lines 331--331
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+[3
+
+] (1-LanguagesAndStructures.aux) ) 
+Here is how much of TeX's memory you used:
+ 18587 strings out of 476331
+ 372507 string characters out of 5784933
+ 1877660 words of memory out of 5000000
+ 38658 multiletter control sequences out of 15000+600000
+ 593832 words of font info for 114 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,9n,117p,995b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/amirebrahim/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/fourier/fourier-mcl.pfb><C:/Users/amirebrahim/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/am
+irebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.p
+fb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia
+/putb8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/type1/ado
+be/utopia/putr8a.pfb><C:/Users/amirebrahim/AppData/Local/Programs/MiKTeX/fonts/
+type1/adobe/utopia/putri8a.pfb>
+Output written on 1-LanguagesAndStructures.pdf (3 pages, 81930 bytes).
+PDF statistics:
+ 46 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
