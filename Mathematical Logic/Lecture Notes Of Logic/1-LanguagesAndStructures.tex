@@ -131,6 +131,32 @@
     boxrule=2pt}
     
 
+    \newcounter{propcount}
+    \newtcolorbox[use counter=propcount]{proposition}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Proposition}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+    \newcounter{colocount}
+    \newtcolorbox[use counter=colocount]{corollary}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Corollary}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
 \newcounter{examplecounter}
 \newtcolorbox[use counter=examplecounter]{example}
 	{center,%
@@ -346,6 +372,75 @@
                     \item if $t:\equiv ft_1t_2\dots t_n$ then $\bar s(t) = f^\curveA(\bar s(t_1),\bar s(t_2),\dots, \bar s(t_n))$
                 \end{enumerate}
             \end{define}
-            
+            Now we will describe truth (or satisfaction) for arbitrary formulas, relative to an assignment function. 
+            \begin{define}
+                Suppose that $\curveA$ is an $\curveL$-structure, $\phi$ is an $\curveL$-formula, and $s: Vars\rightarrow A$ is an assignment function. We will say that $\curveA$ satisfier $\phi$ with assignment$s$, and write $\curveA \vDash \phi[s]$ in the following circumstances:
+                \begin{enumerate}
+                    \item If $\phi:\equiv t_1t_2$ and $\bar s(t_1)$ is the same element of the universe $A$ as $\bar s(t_2)$, or
+                    \item If $\phi:\equiv Rt_1\dots t_n$ and $(\bar s(t_1) \dots \bar s(t_n)) \in R^\curveA$, or
+                    \item If $\phi:\equiv (\neg\alpha)$ and $\curveA\not\vDash \alpha[s]$, or
+                    \item If $\phi:\equiv (\alpha\lor\beta)$ and $\curveA\vDash\alpha[s]$ or $\curveA\vDash\beta[s]$ (or both), or
+                    \item If $\phi:\equiv (\forall x)(\alpha)$ and for each $a\in A$, $\curveA\vDash \alpha[s(x|a)]$.
+                \end{enumerate}
+            \end{define}
+            And if we have a set of formulas $\Gamma$, we say that $\curveA\vDash \Gamma[s]$ if for each formula $\gamma$ in $\Gamma$, $\curveA\vDash\gamma$. Now to talk about truth or falsity of a sentence in a structure, we will take our definition of satisfaction relative to an assignment function and prove that for sentences, the choice of the assignement function is inconsequential. Then we'll have shown that a sentence is true in a structure if and only if for any (therefore for all) choice of assignment function it is satisfied in structure. Here we need a lemma and a proposition but the proof of which is lend to the reader + The context is borrowed from the book \textit{Friendly Introduction to Mathematical Logic} and therefore one can check the page 30 for proofs.
+            \begin{lemma}
+                Suppose that $s_1$ and $s_2$ are variable assignment functions into a structure $\curveA$ such that $s_1(v)= s_2(v)$ for every variable $v$ in the term $t$. Then $\bar s_1(t) = \bar s_2(t)$.
+            \end{lemma} 
+            \begin{proposition}
+                Suppose that $s_1$ and $s_2$ are variable assignment functions into a structure $\curveA$ such that $s_1(v)= s_2(v)$ for every free variable $v$ in the formula $\phi$. Then $\curveA\vDash \phi[s_1]$ if and only if $\curveA\vDash \phi[s_2]$.
+            \end{proposition}
+            \begin{corollary}
+                If $\sigma$ is a sentence in the language $\curveL$ and $\curveA$ is a structure of the language, either $\curveA\vDash \sigma[s]$ for all assignment functions or for no assignment function.
+            \end{corollary}
+            And lastly we would define models:
+            \beign{define}
+                If $\phi$ is a formula in the language $\curveL$ and $\curveA$ is an $\curveL$-structure, we say that $\curveA$ is a model of $\phi$, and write $\curveA\vDash \phi$ if and only if $\curveA\vDash\phi[s]$ for every assignment function $s$. 
+            \end{define}
+            Notice that if $\sigma$ is a sentence, then $\curveA\vDash\sigma$ if and only if it is so in every possible assignment function $s$. In such a case we would say that the sentence is true in $\curveA$.
+    \section*{Substitution and Substitutability}
+        \newpoint{Substitution:}
+            Suppose that $\curveA\vDash \forall x\exists y\neg(x=y)$. This sentence is, in fact, true in any structure $\curveA$ such that $A$ has at least two elements. If we then proceed to replace the variable $x$ by variable $u$, we get the statement $\exists y\neg(u=y)$, which will still be true in $\curveA$ , no matter what value we give to the variable $u$. however if we take the formula and replace $x$ by $y$ then we got: $\exists y\neg(y=y)$, which will be false in any structure. So by a poor choice of substituting variable, we have changed the truth values of out formula. The rules of substitutability that we will discuss in this section are designed to help us avoid this problem, the problem of attemptint to substitute a term inside a quantifier that binds a variable that involved in the term.
+            \begin{define} 
+                Suppose that $u$ is a term, $x$ is a variable and $t$ is a term in language $\curveL$. We define the term $u^x_t$ (read $u$ with $x$ replaced by $t$) as follows:
+                \begin{enumerate}
+                    \item If $u$ is a variable not equal to $x$ then $u^x_t$ is $u$,
+                    \item If $u$ is $x$ then $u^x_t$ is $t$,
+                    \item If $u$ is a constant symbol, then $u^x_t$ is $u$,
+                    \item If $u:\equiv fu_1u_2\dots u_n$ then  $u^x_t :\equiv f(u_1)^x_t(u_2)^x_t\dots(u_n)^x_t$.
+                \end{enumerate}
+            \end{define}
+            And also for formulas:
+            \begin{define}
+                Suppose that $\phi$ is a formula in the langauge, $t$ is a term and $x$ is a variable. We define formula $\phi_t^x$ (read the formula $\phi$ with $x$ replaced by $t$) as follows:
+                \begin{enumerate}
+                    \item If $\phi:\equiv =u_1u_2$ then $\phi_t^x:\equiv = (u_1)_t^x(u_2)_t^x$.
+                    \item If $\phi:\equiv Ru_1\dots u_n$ then $\phi_t^x :\equiv R(u_1)_t^x\dots (u_n)_t^x$.
+                    \item If $\phi:\equiv \neg(\alpha)$ then $\phi_t^x:\equiv \neg(\alpha_t^x)$.
+                    \item If $\phi:\equiv (\alpha\lor\beta)$ the $\phi_t^x$ is $(\alpha_t^x\lor\beta_t^x)$.
+                    \item If $\phi:\equiv (\forall y)(\alpha)$ then:
+                    $$
+                    \phi_t^x = \left\{ \begin{matrix} \phi & x = y \\ (\forall y)(\alpha_t^x) &\text{otherwise}\end{matrix} \right.
+                    $$
+                \end{enumerate}
+            \end{define}
+            Having defined what we mean when we substitute a term for a variable, we will now define what it means for a term to be substitutable for a variable in a formula. The idea is that if $t$ is substitutable for $x$ in $\phi$, we will not run into the problems discussed at the beginning of this section. We will not substitute a term in such a way that a variable contained in that term is inadvertently bound by a quantifier.
+            \begin{define}
+                Suppose $\phi$ is an $\curveL$-formula, $t$ is a term, and $x$ is a variable. We say that $t$ is substitutable for $x$ in $\phi$ if:
+                \begin{enumerate}
+                    \item $\phi$ is atomic, or
+                    \item $\phi:\equiv \neg(\alpha)$ and $t$ is substitutable in $\alpha$, or
+                    \item $\phi:\equiv (\alpha\lor\beta)$ and $t$ is substitutable for $x$ in both $\alpha$ and $\beta$, or
+                    \item $\phi:\equiv (\forall y)(\alpha)$ and either $x$ is not free in $\phi$ or $y$ does not occur in $t$ and $t$ is substitutable for $x$ in $\alpha$.
+                \end{enumerate}
+            \end{define}
+        \newpoint{Logical Implication: } 
+                At first glance it seems that a large portion of mathematics can be broken down into answering questions of the form: If you know such statement is true, is it the case that this other statement is also true? In this point we would formalize this question:
+                \begin{define}
+                    Suppose that $\Delta$ and $\Gamma$ are setes of $\curveL$-formulas. We will say that $\Delta$ logically implies $\Gamma$ and write $\Delta\vDash\Gamma$ if for every $\curveL$-structure $\curveA$, if $\curveA\vDash\Delta$, then $\curveA\vDash\Gamma$.
+                \end{define}
+                This definition is a little bit tricky. It says that if $\Delta$ is true in $\curveA$, then $\Gamma$ is true in $\curveA$. 
+                \begin{define}
+                    An $\curveL$ formula $\phi$ is said to be vaild if $\not0\vDash\phi$, in other words, if $\phi$ is true in every structure of language with every assignment function $s$. In this case, we will write $\vDash \phi$.
 
 \end{document}
