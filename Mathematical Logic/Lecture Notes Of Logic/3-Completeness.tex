@@ -1,4 +1,4 @@
-\documentclass[9pt,a4paper]{article}
+\documentclass[9pt,a4paper, twocolumn]{article}
 
 
 \usepackage[utf8]{inputenc}
@@ -293,5 +293,94 @@
         \begin{center}
             If $\Sigma$ is a consistent set of sentences, then there's a model of $\Sigma$
         \end{center}
-
+        Now we will start by assuming that $\Sigma$ is a consistent set of $\curveL$-sentences and then we construct a model of $\Sigma$.
+        \newpoint{Changing the Language from $\curveL$ to $\curveL_1$:} The model that we are going to construct would have elements, which are variable-free terms of a language. This might lead to problems. For example, supose that $\curveL$ contains no constant symbol. Then there will be no variable-free terms of $\curveL$. So we have to expand our language to give us enough constant symbols to build our model. Thus we define $\curveL_1$ an extension by constants of $\curveL = \curveL_0$ as: 
+        \begin{equation}
+            \curveL_1 = \curveL_0 \cup \{ c_1,\dots\}
+        \end{equation}
+        \begin{callout}
+            A typical thing that happens in mathematics is that we develop such recursive definitions, this is called foreshadowing.
+        \end{callout}
+        One might argue that is it not clear that $\Sigma$ is still a consistent set of sentences when it's viewed as $\curveL_1$ sentences instead of $\curveL_0$. Thus:
+        \begin{lemma}
+            If $\Sigma$ is a consistent set of $\curveL$-sentences and $\curveL_1$ is an extension by constants of $\curveL$, then $\Sigma$ is consistent when viewed as a set of $\curveL_1$-sentences
+        \end{lemma}
+        \begin{proof}
+            Suppose, that $\Sigma$ is not consistent as a set of $\curveL_1$-sentences. Thus there is a deduction of $\perp$ from $\Sigma$. Let $n$ be the smallest number of new constants used in any such deduction, and let $D'$ be a deduction using exactly $n$ such sconstatns. Notice that $n>0$, as otherwise $D'$ would be a deduction of $\perp$ in $curveL_0$ iteself. We show that there is a deduction of $\perp$ using fewer than $n$ constants, thus $n\rightarrow 0$ and we are left with consistency in $curveL_0$ which is assumed.
+            \\
+            \\
+            Let $v$ be a variable that does not occur in $D'$, let $c$ be one of the new constants that occurs in $D'$, and let $D$ be the sequence of formulas that is formed by taking each formula in $D'$ and replacing all occurrences of $c$ in $\phi'_i\in D'$ by $v$. The last formula in $D$ is $\perp$, so if we can show that $D$ is a deduction we will be finished. 
+            \\
+            \\
+            So we use induction on the elements of the deduction $D'$. If $\phi_i'$ is an element of $D'$ by virtue of being an equality axiom or an element of $\Sigma$, then $\phi_i \in D = \phi_i'\in D'$. and $\phi_i$ is an element of a deduction by the same reason. If $\phi_i'$ is a quantifier axiom, then $\phi_i$ will also be a quantifier axiom . There will be no problems with substitutability of $t$ for $x$, given that $t'$ is substitutable for $x$. If $\phi'$ is an element of the deduction by virtue of being the conclusion of a rule of inference $(\Gamma',\phi')$ then $(\Gamma, \phi)$ will be a rule of inference that will justify $\phi$ this completes the argument that $D$ is a deduction of $\perp$. Since $D$ clearly uses fewer constant symbols than $D'$, we have our conradiction and our proof is complete.
+        \end{proof}
+        \\
+        \\
+        \indent Back to our proof. The constants added to the language are called \textbf{Henkin Constants}, and they serve a particular perpose. They will be the witnesses that allow us to ensure that ay time $\Sigma$ claims $\exists x\phi(x)$, then in our constructed model $\curveA$, there will be an element that $\curveA\vDash \phi(c)$.
+        \\
+        \\
+        \newpoint{Extending $\Sigma$ to Include Henkin Axioms:} Consider the collection of sentences of the form $\exists x \theta$ in the language $\curveL_0$. As the language $\curveL$ is countable, the collection of $\curveL_0$-sentences is countable, so we can list all such sentences of the form $\exists x\theta$, enumerating them by positive integers. Then we will use Henkin constants to derive 
+        \textbf{Henkin Axioms}. These axioms will ensure that every existential setence that is asserted by $\Sigma$ will have a witness in our constructed structure $\curveA$. The collection of Henkin Axiom is:
+        \begin{equation}
+            H_1 = \left\{
+                \left[
+                    \exists x \theta_i 
+                \right]\rightarrow \theta_i(c_i) | \left(
+                    \exists x\theta_i
+                \right) 
+            \text{ is an }\curveL_0 \text{ sentence}
+            \right\}
+        \end{equation}
+        Now let $\Sigma_0 = \Sigma$, we define:
+        \begin{equation}
+            \Sigma_1 = \Sigma_0 \cup H_1
+        \end{equation}
+        As $\Sigma_1$ contains many more sentences than $\Sigma_0$, it seems entirely possile that $\Sigma_1$ is no longer consistent. Fourtunately, the next lemma shows that is not the case (it is consistent).
+        \begin{lemma}
+            If $\Sigma$ is a consistent set of sentences and $\Sigma_1$ is created by adding Henkin Axioms to $\Sigma$, then $\Sigma_1$ is consistent.
+        \end{lemma}
+        \begin{proof}
+            Suppose that $\Sigma_1$ is not consistent. Let $n$ be the smallest number of Henkin Axioms used in any possible deduction from $\Sigma_1$ of $\perp$. Fix such a set of $n$ Henkin Axioms, and let $\alpha$ be one of those. So we know that:
+            \begin{equation}
+                \Sigma\cup H\cup\alpha \vdash \perp
+            \end{equation}
+            where $H$ is the collection of the other $n-1$ Henkin axioms needed in the proof. Now $\alpha$ is of the form $\exists x \phi \rightarrow \phi(c)$, where $c$ is a henkin constant. By the Deduction Theorem, as $\alpha$ is a sentence, this means that $\Sigma \cup H\vdash \neg \alpha $, so 
+            \begin{equation}
+                \Sigma\cup H\vdash \exists x\phi 
+            \end{equation}
+            and
+            \begin{equation}
+                \Sigma\cup H\vdash \neg\phi_c^x 
+            \end{equation}
+            Since $\exists x \phi$ is the same as $\neg\forall x \neg\phi$, from the first of these we know that:
+            \begin{equation}
+                \Sigma \cup H \vdash \neg\forall x \neg\phi
+            \end{equation}
+            We also know that $\Sigma \cup H\vdash \neg\phi_c^x$. If we take a deduction of $\neg\phi_c^x$ and replace each occurrence of the constant $c$ by a new variable $z$, then the result is still a deducition, thus $\Sigma \cup H\vdash \neg \phi_z^x$. Then since $\Sigma \vdash \theta \ \ iff  \ \ \Sigma\vdash \forall x\theta$ we have:
+            \begin{equation}
+                \Sigma cup H \vdash \forall z\neg\phi_z^x 
+            \end{equation}
+            Our quantifier axiom states that as long as $x$ is substitutable for $z$ in $\neg\phi_z^x$, then we may assert that $\left[\forall z\neg\phi_z^x \right]\rightarrow \neg(\phi_z^x)_x^z$. Leading us to:
+            \begin{equation}
+                \Sigma \cup H\vdash \neg(\phi_z^x)_x^z 
+            \end{equation}
+            But $(\phi_z^x)_x^z = \phi$, so $\Sigma \cup \vdash \neg\phi$ but again:
+            \begin{equation}
+                \Sigma\cup H \vdash \forall x \neg\phi 
+            \end{equation}
+            So by eq[8,13] this we see that $\Sigma\cup H \vdash \perp$. This is a contradiction, as $\Sigma\cup H$ contains only $n-1$ Henkin axioms, thus $n$ wasn't the smallest number. Thus we are led to conclude that $\Sigma_1$ is consistent.
+        \end{proof}
+        Nw we have $\Sigma_1$, a consistent set of $\curveL_1$-sentences. We can repeat this construction, building a larger language $\curveL_2$ consisting of $\curveL_1$ together with an infinite set of new Henkin constants. Then we can let $H_2$ be a new set of Henkin axioms: 
+        \begin{equation}
+            H_2 = \left\{
+                [\exists x\theta_i]\rightarrow \theta_i(k_i) | (\exists x\theta_i) \text{ is an } \curveL_1 \text{ sentence.}
+            \right\}
+        \end{equation}.
+        We continue this process to build:
+        \begin{enumerate}
+            \item $\curveL = \curveL\subseteq \curveL_1\subseteq \curveL_2\dots$, an increasing chain of languages.
+            \item $H_1,H_2,\dots$ each $H_i$ a collection of Henkin axioms in the language $\curveL_i$.
+            \item $\Sigma = \Sigma_0\subseteq\Sigma_1\subseteq \dots$, where each $\Sigma_i$ is a consistent set of $\curveL_i$-sentences.
+        \end{enumerate}
+        
 \end{document}
