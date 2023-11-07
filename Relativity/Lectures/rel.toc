@@ -1,3 +1,0 @@
-\contentsline {section}{\numberline {1}Lecture One}{1}{}%
-\contentsline {section}{\numberline {2}Lecture Two}{1}{}%
-\contentsline {section}{\numberline {3}Lecture Three: K-Calculus}{2}{}%

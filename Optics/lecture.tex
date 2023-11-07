@@ -1,0 +1,288 @@
+\documentclass[9pt,a4paper, twocolumn]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+\usepackage{fancyhdr}
+\usepackage[paperheight=29.7cm, paperwidth=21cm,% Set the height and width of the paper
+includehead,
+includefoot,
+nomarginpar,% We don't want any margin paragraphs
+textwidth=19cm,% Set \textwidth to 10cm
+textheight=24cm, % Set height
+top=5mm,
+bottom=5mm,
+headheight=10mm,% Set \headheight to 10mm
+]{geometry}
+\pagestyle{fancy}
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+\title{Information Theory \\ \large Lecture Notes for Self Learning}
+\date{\today}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran Department of Physics.}}
+
+\parskip=12pt % adds vertical space between paragraphs
+
+%Headers and Footers
+\fancyhead{} % clear all header fields
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhead[RO,LE]{\textbf{Information Theory}}
+\fancyhead[RE,LO]{\textit{\leftmark}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}
+\begin{document}
+    \maketitle
+    \section{Introduction}
+        Optics is the branch of physics that deals with the behavior and properties of light. Over the centuries, our understanding of optics has evolved significantly. In this article, we will explore the key milestones in the history of optics, starting from Ole Rømer's calculation of the speed of light to James Clerk Maxwell's wave equation.
+    \section{Ole Rømer and the Speed of Light}
+        In the 17th century, Danish astronomer Ole Rømer made a groundbreaking discovery related to the speed of light. While studying the motion of Jupiter's moon Io, Rømer noticed that the timing of its eclipses seemed to vary depending on the Earth's position in its orbit. He hypothesized that this discrepancy was due to the finite speed of light.
+    \\
+    \\
+        Rømer's observations led him to estimate the speed of light by comparing the predicted and observed timings of Io's eclipses. In 1676, he published his findings, estimating the speed of light to be approximately 220,000 kilometers per second. This was the first quantitative measurement of the speed of light and laid the foundation for future advancements in optics.
+    \section{Thomas Young and the Wave Theory of Light}
+        In the early 19th century, British scientist Thomas Young conducted experiments that provided strong evidence for the wave nature of light. Young's famous double-slit experiment demonstrated the phenomenon of interference, where light waves passing through two closely spaced slits created an interference pattern on a screen.
+    \\
+    \\
+        Young's experiments supported the wave theory of light, which proposed that light is a form of electromagnetic wave. This theory challenged the prevailing view of light as a particle, as proposed by Isaac Newton. Young's work paved the way for further investigations into the wave properties of light.
+    \section{James Clerk Maxwell and Electromagnetic Waves}
+        In the mid-19th century, Scottish physicist James Clerk Maxwell formulated a set of equations that described the behavior of electric and magnetic fields. These equations, known as Maxwell's equations, unified the laws of electricity and magnetism and predicted the existence of electromagnetic waves.
+    \\
+    \\
+        Maxwell's equations demonstrated that light is an electromagnetic wave, propagating through space at a constant speed. This revelation provided a deeper understanding of the nature of light and its connection to other forms of electromagnetic radiation, such as radio waves and X-rays.
+    \section{Maxwell's Equations}
+        Maxwell's equations in their differential form are as follows:
+        \begin{align*}
+        \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \quad \text{(Gauss's Law)} \\
+        \nabla \cdot \mathbf{B} &= 0 \quad \text{(Gauss's Law for Magnetism)} \\
+        \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \quad \text{(Faraday's Law)} \\
+        \nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \quad \text{(Ampere's Law)}
+        \end{align*}
+        where $\mathbf{E}$ represents the electric field, $\mathbf{B}$ represents the magnetic field, $\rho$ represents the charge density, $\mathbf{J}$ represents the current density, $\varepsilon_0$ is the permittivity of free space, and $\mu_0$ is the permeability of free space.
+        \section{Derivation}
+        To derive the wave equation of light, we start by taking the curl of Faraday's Law:
+        \begin{equation*}
+        \nabla \times (\nabla \times \mathbf{E}) = -\nabla \times \left(\frac{\partial \mathbf{B}}{\partial t}\right)
+        \end{equation*}
+        Using the vector identity $\nabla \times (\nabla \times \mathbf{A}) = \nabla(\nabla \cdot \mathbf{A}) - \nabla^2\mathbf{A}$, we can rewrite the left-hand side as:
+        \begin{equation*}
+        \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E} = -\nabla \times \left(\frac{\partial \mathbf{B}}{\partial t}\right)
+        \end{equation*}
+        Since $\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}$, we have:
+        \begin{equation*}
+        \nabla\left(\frac{\rho}{\varepsilon_0}\right) - \nabla^2\mathbf{E} = -\nabla \times \left(\frac{\partial \mathbf{B}}{\partial t}\right)
+        \end{equation*}
+        Using the vector identity $\nabla \times \left(\frac{\partial \mathbf{A}}{\partial t}\right) = -\frac{\partial}{\partial t}(\nabla \times \mathbf{A})$, we can rewrite the right-hand side as:
+        \begin{equation*}
+        \nabla\left(\frac{\rho}{\varepsilon_0}\right) - \nabla^2\mathbf{E} = \frac{\partial}{\partial t}(\nabla \times \mathbf{B})
+        \end{equation*}
+        Using Ampere's Law $\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0\varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$, we can further simplify the equation:
+        \begin{equation*}
+        \nabla\left(\frac{\rho}{\varepsilon_0}\right) - \nabla^2\mathbf{E} = \mu_0\varepsilon_0 \frac{\partial}{\partial t}(\nabla \times \mathbf{E}) + \mu_0 \frac{\partial \mathbf{J}}{\partial t}
+        \end{equation*}
+        Since $\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$, we can substitute this into the equation:
+        \begin{equation*}
+        \nabla\left(\frac{\rho}{\varepsilon_0}\right) - \nabla^2\mathbf{E} = -\mu_0\varepsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2} + \mu_0 \frac{\partial \mathbf{J}}{\partial t}
+        \end{equation*}
+        Finally, using the relation $\nabla^2\mathbf{E} = \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2}$, where $c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}$ is the speed of light in vacuum, we obtain the wave equation of light:
+        \begin{equation*}
+        \nabla^2\mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = -\frac{\mu_0}{\varepsilon_0} \frac{\partial \mathbf{J}}{\partial t} - \frac{\rho}{\varepsilon_0}
+        \end{equation*}
+\end{document}

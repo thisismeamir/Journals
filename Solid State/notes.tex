@@ -1,0 +1,360 @@
+\documentclass[9pt,a4paper, twocolumn]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+\usepackage[top = 1cm, bottom = 1cm, left = 0.7cm, right = 0.7cm]{geometry}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textbf{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+    \newcounter{propcount}
+    \newtcolorbox[use counter=propcount]{proposition}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Proposition}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+    \newcounter{colocount}
+    \newtcolorbox[use counter=colocount]{corollary}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Corollary}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\ \\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+\title{Lecture on Solid State}
+\date{\today}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran Department of Physics.}}
+
+\parskip=12pt % adds vertical space between paragraphs
+
+
+\begin{document}
+     \maketitle
+     \section{First Lecture}
+     In this lecture we are going to discuss the early state of solid state physics. At first let us recall the description of Heat capacity in a volume:
+     \begin{equation}
+        C_v = \frac{\partial u}{\partial T}|_V
+     \end{equation}
+     In reality the heat constant is made of two parts:
+     \begin{equation}
+        C_v = C_{\text{elec}} + C_{\text{lattice}}
+     \end{equation}
+     The lattice is the network of nuckeuses, in this section we are going to look into the lattice part. The energy of the lattice is described as below:
+     \begin{equation}
+        u_{\text{lattice}}=\sum_k\sum_p u_{kp}
+     \end{equation}
+     where $k$ is the network properties and $p$ is the polarization. Assuming that there exists a wave in the lattice there is a graph for possible $\omega$ in a $k = \frac{2\pi}{\lambda}$ since the wave can be longitudinal and transversive we can have polarizations. 
+     \\
+     \\
+     In our simplest models we can write the equation for energy as a collection of simple harmonic oscillator:
+     \begin{equation}
+        u_{\text{lattice}} = \sum_{k,p} <n_{k,p}\hbar \omega_{k,p}
+     \end{equation}    
+     $n_{k,p}$ is the average heat number of occupation, meaning that in temperature $T$ how many heat equilibrium do we have. and $\hbar \omega_{k,p}$ is the energy of oscillation with momentum $k$ and polarization $p$.  calculation of occupation number is to be left for lateer but the answer is of the form:
+     \begin{equation}
+        <n> = \frac{1}{e^{\hbar \omega}{k_B T} - 1}
+     \end{equation}
+     therefore the energy would be:
+     \begin{equation}
+        u = \sum_{k,p} \frac{\hbar \omega_{k,p}}{e^{\beta \hbar\omega_{k,p}} - 1}
+     \end{equation}
+     If the number of nodes in the lattice is big enough we can transform the summation into integral with a transformation multiplication:
+     \begin{equation}
+        \int  d_k \frac{dk}{d\omega}d\omega
+     \end{equation}
+     So the work is to find $d_k$. This is also equivalent with writing:
+     \begin{equation}
+        \int D_p(\omega)d\omega
+     \end{equation}
+     Here $D(\omega) $ the phonon density of state, therefore we write:
+     \begin{equation}
+        u = \sum_p\int d\omega D_p(\omega)\frac{\hbar \omega}{e^{\frac{\hbar\omega}{k_B T}}-1} 
+     \end{equation}
+     Then we have the heat capacity of lattice as:
+     \begin{equation}
+        C_{\text{lattice}} \equiv \frac{\partial u}{\partial T} = k_B \sum_p\int_0^\infty d\omega D(\omega)\frac{x^2 e^x}{(e^x - 1)^2}
+     \end{equation}
+     where $x = \frac{\hbar \omega}{k_B T}$. Now let us find the phonon density let us write again:
+     \begin{equation}
+        D(\omega)d\omega = d_k \frac{dk}{d\omega}d\omega
+     \end{equation}
+     We would use the periodic boundary conditions, which means that:
+     \begin{equation}
+        u(x) = u(x+L)
+     \end{equation}
+     Since tha lattice has a reoccuring shape this is a good boundary condition for first investigation. fFor this to happen the first thing we can write is of the form:
+     \begin{equation}
+        u_0 e^{kx-\omega t} = u_0 e^{k(x+L)-\omega t} 
+     \end{equation}
+     This means simply:
+     \begin{equation}
+        k = \frac{2\pi}{L}n 
+     \end{equation}
+     here $n$ is $0,\pm 1, \pm2, \dots, \pm N$ where $N$ is the number of cells. One can find the allowed $k$s of $k$-space (here 1 dimensional) with:
+     \begin{equation}
+        \text{Number of allowed } \ k \equiv \frac{\text{Volume of } \ k}{\text{Distance of nodes}} = \frac{K}{\frac{2\pi}{L}}
+     \end{equation}
+     We can easily write this for a $3$ dimensional lattice, by just having:
+     \begin{equation}
+        u(\vec x) = u(\vec x+\vec L)
+     \end{equation}
+     and for three dimensions the number of allowed $k$ are:
+     \begin{equation}
+        N_k = \frac{\frac43 \pi k^3}{\left(
+            \frac{2\pi}{L_x}
+        \right)\left(
+            \frac{2\pi}{L_y}
+        \right)\left(
+            \frac{2\pi}{L_z}
+        \right)} =\frac{\frac43 \pi k^3}{\frac{8\pi}{V}}
+     \end{equation}  
+     It is obvious that since the number of modes with a polarization $p$ between $\omega$ and $\omega +d\omega$ is as follows:
+     \begin{equation}
+        D(\omega)d\omega
+     \end{equation}
+     leading to the formula:
+     \begin{equation}
+        D(\omega) = \frac{dN}{d\omega} \rightarrow dN = d\omega D(\omega)
+     \end{equation}
+     Thus we can write :
+     \begin{align}
+        D(\omega) &= \frac{dN}{d\omega} \\
+        &= \frac{dN}{dk}\frac{dk}{d\omega} \\
+        &= \frac{4\pi k^2}{\left(\frac{2\pi}{L}\right)^3}\frac{dk}{d\omega}\\
+        D(\omega)&=\frac{Vk^2}{2\pi^2}\frac{dk}{d\omega}
+     \end{align}
+     to have $dk/d\omega$ we have to use approximation: 1. Debay approximation 2. Einsteins approximation.
+     \subsection{Debay Approximation}
+     debay noticed that The first third Dispersion Curve can be approximated linearly:
+     \begin{align}
+        \omega &\propto k \\
+        \omega &= \nu k
+     \end{align}
+     therefore $\frac{dk}{d\omega} =\frac1\nu$, and we can find the phonon density:
+     \begin{equation}
+        D(\omega) = \frac{Vk^2}{2\pi^2}\frac1\nu
+     \end{equation}
+     since this is an approximation we don't go over all $k$s, instead we would go until a known $k$ called debay's $k$, or $k_D$. therefor ethe number of all modes would be:
+     \begin{equation}
+        N = \frac{\frac43 \pi k^3_D}{(2\pi)^3/V} 
+     \end{equation} 
+     And the energy would become:
+     \begin{equation}
+        u =\int d\omega D(\omega) <n(\omega)> \hbar \omega = \int_0^{\omega_D}d\omega \left(\frac{V \omega^2}{2\pi^2 \nu^3}\right) \frac{\hbar \omega}{e^{\beta\hbar \omega} - 1}
+     \end{equation}
+     \begin{equation}
+        u = \frac{3V\hbar}{2\pi^2\nu^3}\int_0^{\omega_D}d\omega\frac{\omega^3}{e^{\beta\hbar\omega}- 1}
+     \end{equation}
+     
+\end{document}

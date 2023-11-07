@@ -1,0 +1,454 @@
+\documentclass[9pt,a4paper]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+\usepackage[top = 1cm, bottom = 1cm, left = 0.7cm, right = 0.7cm]{geometry}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textbf{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+    \newcounter{propcount}
+    \newtcolorbox[use counter=propcount]{proposition}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Proposition}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+    \newcounter{colocount}
+    \newtcolorbox[use counter=colocount]{corollary}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Corollary}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\ \\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+\title{Lectures On Mathematical Logic\\ \large Lecture Two - Deductions}
+\date{\today}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran Department of Physics.}}
+
+\parskip=12pt % adds vertical space between paragraphs
+
+
+\begin{document}
+     \maketitle
+     \section*{Preface}
+          The Lecture notes before you are followed from courses and books that have been read by me. I would try to work and update this every once in a while. This edition is updated until \today. For any question or corrections please contact me \textit{Thisismeamir@outlook.com}.
+     \section*{Deductions}
+     The idea of this note is to define the precise notion of deductions; to understand what it means to have a mathematical proof. This would help us notice some properties in the next lectures. First off let us begin with fixing a certain language $\curveL$. Beside this let us for the moment assume the existence to entities, A set of $\curveL$-formulas $\Lambda$ called \textbf{Logical Axioms} and a set of ordered pairs $(\Gamma, \phi)$, called rules of inference. These two will be specified later. A deduction would be defined as:
+     \begin{define}
+          Suppose that $\Sigma$ is a collection of $\curveL$-formulas and $D$ is a finite sequence $(\phi_1,\phi_2,\dots,\phi_n)$ of $\curveL$-formulas. We wull say that $D$ is a deduction from $\Sigma$ if for each $i,1\leq i\leq n$, either:
+          \begin{enumerate}
+               \item $\phi_i \in \Lambda$, or 
+               \item $\phi_i \in \Sigma$, or
+               \item There is a rule of inference $(\Gamma, \phi_i)$ such that $\Gamma\subseteq \{\phi_1,\dots,\phi_{i-1}\}$
+          \end{enumerate}
+     \end{define}
+     If there is a deduction from $\Sigma$, the last line of which is the fomula $\phi$, we will call this a dedction from $\Sigma $ of $\phi$, and write $\Sigma \vdash \phi$. Consider a proof as a series of formulas, each justified via the previous formula, and using this definition the word justify here means that we are alowed to write down any $\curveL$-formula that we like, as long as that formula is either a logical axiom or is listed explicitly in a collection $\Sigma$ of nonlogical axioms. Any formula that we write in a deduction that is not an axiom must arise from previous formulas in the deduction via a rule of inference. 
+     \distinct
+     The definition we gave for deduction, defines it from it's part. Another approach would be to go top-down, by showin that we can think of the collection of deductions from $\Sigma$ (called $\thm_\Sigma$) as the closure of the collection of axioms under the application of the rules of inference.
+     \begin{proposition}
+          Fix sets of $\curveL$-formula $\Sigma$ and $\Lambda$ and a collectin of rules of inference. The set $\thm_\Sigma = \left\{ \phi | \Sigma\vdash\phi\right\}$ is the smallest set $C$ such that:
+          \begin{enumerate}
+               \item $\Sigma \subseteq C$
+               \item $Lambda \subseteq C$
+               \item If $(\Gamma, \theta)$ is a rule of inference and $\Gamma\subseteq C$ then, $\theta \in C$
+          \end{enumerate}
+          \
+          \proof This proposition makes two separate claims about the set $\thm_\Sigma$. First it satisfies the three criteria listed above, and second it is the smallest set to do so. Firstly let us look at the criteria in order, and make sure that the set satisfies them.  Certainly if $\sigma\in\Sigma$, there's a deduction from $\Sigma$ of $\sigma$ ($\Sigma\vdash\sigma$) Thus it is in the set $\thm_\Sigma$. For $\Lambda\subseteq \thm_\Sigma$, we notice that there is a one-line deduction of any $\lambda\in\Lambda$. To finish this part of proof, we must show that if $(\Gamma,\theta)$ is a rule of inference and $\Gamma\subseteq\thm_\Sigma$ therefore $\theta\in \thm_\Sigma$. But to produce a deduction-from-$\Sigma$ of $\theta$, all we have to do is write down deductions of each of the $\gamma$'s in $\Gamma$, followed by the formula $\theta$. This is a valid deduction as follows $\theta$ from $\Gamma$ by the rule of inference $(\Gamma, \theta)$ . Thus the three criteria is satisfied.
+          \\
+          \\
+          To show that $\thm_\Sigma$ is in fact the smallest set with such properties. Considering $C$, the class of sets satisfying the three criteria: If $\phi \in \thm_\Sigma$, there is a deduction from $\Sigma$ with last line $\phi$. If the entry $\phi$ is justified by virtue of $\phi$ being either logical or nonlogical axiom, then $\phi$ is explicitly included in the set $C$. If $\phi$ is justified by reference to a rule of inference, $(\Gamma, \theta)$, then each $\gamma\in\Gamma$ is an element of $C$, and thus by the third requirement on $C$, $\phi\in C$, as needed.
+          Since every element of $\thm_\Sigma$ would be in $C$ therefore the relation $\thm_\Sigma\subseteq C$ holds.
+     \end{proposition}
+    \section*{The Logical Axioms:}
+        In this section we are going to, given a language $\curveL$, gather a set of logical axioms $\Lambda$. Although the set of logical axioms is infinite, it is decidable, which means that given a formula $\phi$, there is way to decide whether $\phi \in \Lambda$ or $\phi \not\in \Lambda$. By a better sense there's an algorithmic process to check the membership of a formula in the set. Logical axioms are apart from the axioms in a mathematical system, which would be developed separately for a mathematical system. $\Lambda$, the set of logical axioms, will be fixed, as will the collection of rules of iference. But the set of nonlogical axioms must be specified for each deduction. 
+        \newpoint{Equality Axiom:} We have taken the route of assuming that the equality symbol $=$, is a part of the language $\curveL$. There are three groups of axioms that are designed for this symbol:
+        \begin{enumerate}
+            \item $x=x$, for each variable $x$. 
+            \item Assume that $x_i$s and $y_i$s are variables, and $f$ is an $n$-ary function symbol. 
+            \begin{equation}
+                [(x_1=y_1)\land (x_2=y_2)\land \dots\land (x_n=y_n]]\rightarrow (f(x_1x_2\dots x_n) = f(y_1y_2\dots y_n))
+            \end{equation}
+            \item Assume that $x_i$s and $y_i$s are variables, and $R$ is an $n$-ary relation symbol. 
+            \begin{equation}
+                [(x_1=y_1)\land (x_2=y_2)\land \dots\land (x_n=y_n]]\rightarrow (R(x_1x_2\dots x_n) = R(y_1y_2\dots y_n))
+            \end{equation}
+        \end{enumerate}
+        Axioms 2,3 are axioms that are designed to allow substitution of equals for equals.
+        \newpoint{Quantifier Axioms:} The quantifier axioms are designed to allow a very reasonable sort of entry in a deduction. 
+        \begin{enumerate}
+            \item $(\forall x)\phi \rightarrow \phi_t^x$, if $t$ is substitutable for $x$ in $\phi$.
+            \item $\phi_t^x \rightarrow (\exists x\phi)$, if $t$ is substitutable for $x$ in $\phi$.
+        \end{enumerate}
+        The first one is called universal instantation, while the second one is the existential generalization. The set of logical axioms is the collection of all formulas that fall into one of these categories.
+    \section*{Rules of Inference}
+        After constructing our set of logical axioms, we would fix our rules of inference. More specifically two types of rules of inference, the one dealing with propositional consequence, and one with quantifier.
+        \newpoint{Propositional Consequence:} To discuss propositional consequence in first-order logic, we will transfer our formulas to the realm of propositional logic and use the idea of tautology in that area. Given $\beta$, an $curveL$-formula of first-order logic, here is a procedure that will convert $\beta$ to a formula $\beta_P$ of propositional logic corresponding to $\beta$
+        \begin{enumerate}
+            \item Find all subformulas of $\beta$ of the form $\forall \alpha$ that are not in the scope of another quantifier. Replace them with propositional variables in a systematic fashion. This means that if $\forall y Q(y,c)$ appears twice in $\beta$, it is replaced by the same letter both times, and distinct subformulas are replaced by distinct letters.
+            \item Find all atomic formulas that remain, and replace them systematically with new propositional variables.
+            \item At this point, $\beta$ will have been replaced with a propositional formula $\beta_P$
+        \end{enumerate}
+        \begin{callout}
+            Notice that if $\beta_P$ is a tautology, then $\beta$ is valid, but the converse of this statement fails. For example, if $\beta$ is:
+            \begin{equation}
+                [(\forall x)(\theta)\land(\forall x)(\theta\rightarrow \rho)]\rightarrow (\forall x)(\rho)
+            \end{equation}
+            Then $\beta$ is valid, but $\beta_P:\equiv [A\land B]\rightarrow P$ is not a tautology.
+        \end{callout}
+        \begin{define}
+            Suppose that $\Gamma$ is a set of $\curveL$-formulas and $\phi$ is an $\curveL$-formula. Then $\Gamma_P$ is a set of propositional formulas and $\phi_P$ is a propositional formula. We will say that $\phi_P$ is a \textbf{propositional consequence of $\Gamma_P$} if every truth assignment that makes each propositional formula in $\Gamma_P$ true, would also make $\phi_P$ true. Notice that $\phi_P$ is a tautology if and only if $\phi_P$ is a propositional consequence of the empty set $\emptyset$.
+        \end{define}
+        With that said one can prove the following lemma easily, I would write the proof in later editions of this note.
+        \begin{lemma}
+            If $\Gamma_P = \{\gamma_{1P}, \dots, \gamma_{nP}\}$ is a nonempty finite set of propositional formulas and $\phi_P$ is a propositional formula, then then $\phi_P$ is a propositional consequence of $\Gamma_P$ if and only if
+            \begin{equation}
+                [\gamma_{1P}\land\dots\land\gamma_nP] \rightarrow \phi_P
+            \end{equation}
+        \end{lemma} 
+        \begin{define}
+            Suppose that $\Gamma$ is a finite set of $\curveL$-formulas and $\phi$ is an $\curveL$-formula. We will say that $\phi$ is a propositional consequence of $\Gamma$ if $\phi_P$ if a propositional consequence of $\Gamma_P$, where $\phi_P$ and $\Gamma_P$ are the results of applying the procedure on the preceding page uniformly to $\phi$ and all of the formulas in $\Gamma$.
+        \end{define}
+        \begin{define}
+            If $\Gamma$ is  a finite set of $\curveL$-formulas, $\phi$ is a $\curveL$ formula, and $\phi$ is a propositional consequence of $\Gamma$ then $(\Gamma, \phi)$ is a \textbf{rule of inference of type (PC)}
+        \end{define}
+        What rule (PC) says is that if you have proved $[(\land\gamma_i)\rightarrow \phi]_P$ is a tautology, then you may conclude $\phi$. Also note that if $\phi$ is a formula such that $\phi_P$ is a tautology, rule (PC) allows us to assert $\phi$ in any deduction using $\Gamma = \emptyset$.
+        \newpoint{Quantifier Rules:} As the name suggests, the quantifier rules are to help us, in working with quantifiers in assumptions and proved statement. For example if without any particular assumption you prove $P(x)$ then it is safe to say that $\forall x P(x)$; or if by assuming $Q(x)$ you proved $R(x)$ then it is reasonable to be able to prove $R(x)$ by the assumption $\exists x Q(x)$.
+        \begin{define}
+            Suppsoe that the variable $x$ is not free in the formula $\psi$. Then both of the following are rules of inference of type (QR):
+            \begin{align}
+                (\{\psi\rightarrow\phi\}, \psi\rightarrow(\forall x\phi))\\
+                (\{\phi\rightarrow \psi\}, (\exists x\phi\rightarrow\psi))
+            \end{align}
+        \end{define}
+        \textit{The "not making any particular assumptions about $x$" comment is made formal by the requirement that $x$ not be free in $\psi$}. What these formulas are saying is that if $x$ is not free in $\psi$ then (1) From the formula $\psi\rightarrow \phi$, you may deduce $\psi\rightarrow(\forall x\phi)$ and that (2) From the formula $\phi\rightarrow \psi$, you may deduce $\exists x\phi\rightarrow \psi$.
+    \section*{Soundness}
+        It is obvious that we are trying to prove statements that are true; more precisely we would like to know that when we proved some statement. It is infact a truen statement. In other words we desire our logical system to prove only true statements. In this section we develop the so-called Soundness Theorem. In previous sections we restricted the set of logical axioms and rules of inference as follows:
+        \begin{enumerate}
+            \item There will be an algorithm that will decide, given a formula $\theta$, wheter ot not $\theta$ is a logical axiom.
+            \item There will be an algorithm that will decide, give a finite set of formulas $\Gamma$ and a formula $\theta$, whether or not $(\Gamma,\theta)$ is a rule of inference.
+            \item For each rule of inference $(\Gamma,\theta)$, $\Gamma$ will be a finite set of formulas.
+            \item Each logical axiom will be valid.
+            \item Our rules of inference wil preserve truth. In other words, for each rule of inference $(\Gamma, \theta)$, $\Gamma\vDash \theta$.
+        \end{enumerate}
+        The first three requirements are satisfied by our deduction system. The two latter would be investigated here:
+        \begin{theorem}
+            The logical axioms are valid.
+            \proof We must check both the equality axioms and the quantifier axioms. By fixing a structure $\curveA$ and an assignment function $s:Vars \rightarrow A$. We must show that:
+            \begin{equation}
+                \curveA \vDash\left(
+                    [(x_1=y_1)\land (x_2=y_2)\land \dots\land (x_n=y_n]]\rightarrow (f(x_1x_2\dots x_n) = f(y_1y_2\dots y_n))
+                \right)[s]
+            \end{equation}
+            As the formula in question is an implication, we may assume that the antecedent is satisfies by the pair $(\curveA, s)$, and thus $s(x_i) = s(y_i)$. We must prove that $\curveA\vDash(f(x_1x_2\dots x_n) = f(y_1y_2\dots y_n))[s]$. From the definition of satisfaction we know that this means:
+            \begin{equation}
+               \bar s(f(x_1x_2\dots x_n)) = \bar s(f(y_1y_2\dots y_n))
+            \end{equation}
+            Now we look at the definition of term assignment function and see that we must proove:
+            \begin{equation}
+                f^\curveA(\bar s(x_1)\bar s(x_2)\dots \bar s(x_n))=f^\curveA(\bar s(y_1)\bar s(y_2)\dots \bar s(y_n))
+            \end{equation}
+            But since $\bar s(x_i) = s(x_i) = s(y_i) = \bar s(y_i)$, and since $f^\curveA$ is a function, this is true. Thus our equality axiom is valid.
+            \\
+            \\ 
+            Now we examine the first quantifier axiom. We want to show that:
+            \begin{equation}
+                \curveA \vDash [(\forall x\phi)\rightarrow \phi_t^x][s]
+            \end{equation}
+            Once again we assume that $curveA\vDash(\forall x\phi)[s]$, and we show that $\curveA\vDash \phi_t^x[s]$. By assumption, $\curveA\vDash\phi[s[x|a]]$ for any element $a\in A$, so in particular, $\curveA\vDash\phi[s[x|\bar s(t)]]$. What this says is that $\phi$ is true in $\curveA$ with assignment function $s$, where you interpret $x$ as $\bar s(t)$. It is plausible, given our assumption that $t$ is substitutable for $x$ in $\phi$, that if we altered the formula $\phi$ by replacing $x$ by $t$, then $\phi_t^x$ would be true in $\curveA$ by the assignment function $s$. So we have proved the axiom is correct.
+        \end{theorem}
+            
+        \begin{theorem}
+            Suppose that $(\Gamma, \theta)$ is a rule of inference. Then $\Gamma\vDash \theta$. 
+            \proof Assume that $(\Gamma, \theta)$ is a rule of propositional consequence. Then $\Gamma$ is finite, and we know that:
+            \begin{equation}
+                [\gamma_{1P}\land\dots\land\gamma_{nP}]\rightarrow \theta_P
+            \end{equation}
+            is a tautology, where $\gamma_P = \{\gamma_{iP}\}$ is the set of propositional formulas corresponding to $\Gamma$, and $\theta_P$ is the propositional formula corresponding to $\theta$. This would imply that:
+            \begin{equation}
+                [\gamma_1\land\dots\land\gamma_n]\rightarrow \theta
+            \end{equation}
+            is valid, and thus $\Gamma\vDash\theta$. The other possibility is that our rule of inference is a quantifier rule. Fix a structure $\curveA$ and assume that $\curveA\vDash(\psi\rightarrow\phi)$. Thus our assumptionis that for any assignment $s$, $\curveA\vDash(\psi\rightarrow\phi)[s]$. We must show that $\curveA\vDash(\psi\rightarrow\forall x\phi)$, which means that we must show that $(\psi\rightarrow\forall \phi)$ is satisfied in $\curveA$ under every assignment function. So let an assignment function $t:Vars\rightarrow A$ be given. We must show that $\curveA\vDash(\psi\rightarrow\forall x\phi)$. If $\curveA\not \vDash \psi[t]$ we are done, so assume that $\curveA\vDash\psi[t]$. We want to prove that $\curveA\vDash\forall x\phi[t]$, which means that if $a$ is any element of $A$, we must show that $\curveA\vDash\phi[t[x|a]]$. We know, by assumption that $\curveA\vDash(\psi\rightarrow\phi)$.Furthermore, we know that $\curveA\vDash\psi[t[x|a]]$ from proposition $1$ in the first lecture, as $\curveA\vDash\psi[t]$, and $t$ and $t[x|a]$ agree on all of the free variables of $\psi$. But then, by the definiiton of satisfaction, $\curveA\vDash\phi[t[x|a]]$. We are finished.
+        \end{theorem}
+        We are now able to prove the soundness theorem. Suppose that $\Sigma$ is a set of $\curveL$-formulas and suppose that there is a deduction of $\phi$ from $\Sigma$. What the soundness theorem tells us is that in any structure $\curveA$ that makes all of the formulas of $\Sigma$ true, $\phi$ is true as well.
+        \begin{theorem}
+            If $\Sigma\vdash\phi$, then $\Sigma \vDash\phi$.
+            \proof Let $\thm_\Sigma = \{\phi|\Sigma\vdash\phi\}$, and let $C=\{\phi|\Sigma\vDash \phi\}$, we show that $\thm\subseteq C$, which proves the thorem. $C$ has the following characteristics:
+            \begin{enumerate}
+                \item $\Sigma\subseteq C$. If $\sigma \in \Sigma$, then Certainly $\Sigma\vDash\sigma$.
+                \item $\Lambda \subseteq C$. As the logical axioms are valid, they are true in any structure, Thus $\Sigma\vDash \lambda$ for any logical axiom $\lambda$, which means that if $\lambda \in \Lambda$, then $\lambda \in C$, as needed.
+                \item If $(\Gamma, \theta)$ is a rule of inferenceand $\Gamma\subseteq C$, then $\theta\in C$. So assume that $\Gamma\subseteq C$. to prove $\theta\in C$ we must show that $\Sigma\vDash \theta$. Fix a structure $\curveA$ such that $\curveA \vDash\Sigma$. We must prove that $\curveA\vDash\theta$. 
+                \\
+                If $\gamma$ is any element of $\Gamma$, then since $\Gamma\in C$, we know that $\Sigma\vDash \gamma$. Since $\curveA\vDash \Sigma$ and $\Sigma\vDash\gamma$, we know $\curveA\vDash\gamma$. But this says that $\curveA\vDash\gamma$ for each $\gamma\in\Gamma$, thus $\curveA\vDash\Gamma$. Now since $\Gamma\vDash \theta$ we can conclude $\curveA\vDash\theta$.
+            \end{enumerate}
+            Sor $C$ is a set of the type outlines in proposition 1, and by that proposition, $\thm_\Sigma\subseteq C$, as needed.
+        \end{theorem}
+        \begin{callout}
+            Notice that the Soundness Theorem begins to tie together the notions of deducibility and logical implication. It says "If there is a deduction from $\Sigma$ of $\phi$, then $\Sigma$ logically implies $\phi$." Thus the purely syntactic notion of deduction, a notion that relies only upon typographical considerations, is links to the notion of truth and logical implication, ideas that are inextricably tied to mathematical structurea=s and their properties.
+        \end{callout}
+    \section*{Properties of Our Deductive System}
+        After developing our deductive system it is now the time to show some of its properties. They will show that we can prove in our deductive system that equality is an equivalence relation.
+        \begin{theorem}
+            \begin{enumerate}
+                \item $\vdash x=x$\\
+                \proof This is a logical axiom.
+                \item $\vdash x=y \rightarrow y = x$\\
+                \proof Here is the needed deduction. Notice that the notation off to the right are listed only as an aide to the reader.
+                \begin{align}
+                    [x=y \land x=x] \rightarrow [x=x\rightarrow y=x]\\
+                    x = x \\
+                    x = y \rightarrow y=x 
+                \end{align}
+                \item $\vdash (x=y \land y = z ) \rightarrow x = z$\\
+                \proof 
+                \begin{align}
+                    [x=x\land y=z] \rightarrow [x = y \rightarrow x = z]\\
+                    x=x \\
+                    (x=y\land y=z)\rightarrow x=z
+                \end{align}
+            \end{enumerate}|
+        \end{theorem}
+        Notice that we have done a bit more than proof that equality is an equivalence relation.Rather, we've shown that our deductive system, with the axioms and rules of inference that have been outlined in this chapter, is powerful enough to prove that equality is an equivalence relation.
+        \begin{lemma}
+            $\Sigma\vdash \theta$ if and only if $\Sigma \vdash \forall x\theta$.\\
+            \proof Fist suppose that $\Sigma \vdash \theta$: Thus 
+            \begin{align}
+                \vdots & \text{Deduction of } \theta \\ 
+                \theta &  \ \\
+                [(\forall y (y = y))\lor \neg(\forall y (y=y))]\rightarrow \theta & \text{Propositional Consequence}\\
+                [(\forall y(y=y))]\lor \neg(\forall y (y=y)) \rightarrow \forall x(\theta) &\text{Quantifier Rules}\\
+                \forall \theta & \text{Propositional Consequence}
+            \end{align}
+            Now suppose that $\Sigma \vdash\forall x\theta$. Here's a deduction from $\Sigma$ of $\theta$. Since $\theta_x^x$ is $\theta$:
+            \begin{align}
+                \vdots & \text{Deduction of } \forall x\theta\\
+                \forall x\theta & \ \\
+                \forall x\theta \rightarrow \theta_x^x & \text{Universal instantation}\\
+                \theta_x^x & \text{Propositional Consequence}
+            \end{align}
+            Thus $\Sigma\vdash \theta$ if and only if $\Sigma \vdash \forall x\theta$.
+        \end{lemma}
+        Here is an example to show how strange ths lemma might seem. Suppose that $\Sigma$ consists of the single formula $x = \bar 5$. Then certainly $\Sigma \vdash x= \bar 5$ and therefore $\Sigma\vdash (\forall x) (x = \bar 5)$. You might be tempted to say that by assuming $x$ was equal to $5$ we have proved that \textit{everything} is equal to $5$. But that is not quite what is going on. If $x = \bar 5$ is true in a model $\curveA$ that means that $\curveA\vDash x = \bar5 [s]$ for every assignment function $s$. And since for every $a\in A$, there is an assignment function that $s(x) = a$, it must be true that every element of $A$ is equal to $5$, so the universe $A$ has only one element, and everythin is equal to 5. So out deduction of $(\forall x)(x=\bar 5)$ has preserved truth, but our assumption was much stronger than it appeared at first glance.
+        \begin{lemma}
+            Suppose that $\Sigma\vdash\theta$. Then if $\Sigma'$ is formed by taking any $\sigma\in \Sigma$ and adding or deleting a universal quantifier whose scope is the entire formula $\Sigma'\vdash \theta$.\\
+            \proof This comes immediately from the previous lemma. Sippose that $\forall x \sigma$ is in $\Sigma'$. By the preceding, $\Sigma'\vdash \sigma$. Then, given a deduction from $\Sigma$ of $\theta$, to produce a deduction from $\Sigma'$ of $\theta$, first write down a deduction from $\Sigma'$ of $\sigma$, and then copy your deduction from $\Sigma$ of $\theta$. Having already established $\sigma$, this deduction will be a valid deduction form $\Sigma'$. \\
+            The proof in the case that $\forall x \sigma$ is an element of $\Sigma$ and it is replaced by $\sigma$ in $\Sigma'$ is analogous.
+        \end{lemma}
+        The deductive system that we developed has the properties that would have resemblance of what mathematicians do when they're proving statements. In a sense the questions that mathematicians usually encounter is of the form If $A$ then $B$. In other words we are usually asked to prove implications! The deduction theorem states that there is a deduction of $\phi$ from the assumption $\theta$, if and only if there's a deduction of the implication $\theta\rightarrow\phi$. 
+        \begin{theorem}
+            Suppose that $\theta$ is a sentence and $\Sigma$ is a set of formulas. Then $\Sigma \cup\{\theta\}\vdash \phi$ if and only if $\Sigma\vdash \theta\rightarrow\phi$.
+            \proof First, suppose that $\Sigma\vdash (\theta\rightarrow\phi)$. Then, as the same deductionwould show that $\Sigma\cup\theta\vdash(\theta\rightarrow\phi)$, and as $\Sigma\cup\theta\vdash \theta$ by a one-line deduction and as $\phi$ is a propositional consequence of $\theta$ and $(\theta\rightarrow\phi)$, we know that $\Sigma\cup\theta\vdash\phi$.
+        \end{theorem}
+    \section*{Conclusion}
+        In this lecture we have deveolped a deductive system, with a deduction, a set of logical axioms, and another set of non-logical axioms, also we described rules of inference that would help us move forward in proofs not only using axioms but also with propositional consequences and quantifier rules. Later we proved some properties of out deductive system. In the next lectures we would work on Completeness and Compactness.
+\end{document}

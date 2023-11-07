@@ -1,0 +1,297 @@
+\documentclass[9pt,a4paper]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+\usepackage[top = 1cm, bottom = 2cm, left = 0.7cm, right = 0.7cm]{geometry}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textbf{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+    \newcounter{propcount}
+    \newtcolorbox[use counter=propcount]{proposition}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Proposition}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+    \newcounter{colocount}
+    \newtcolorbox[use counter=colocount]{corollary}
+    {center,%
+        colframe=charcoal!50,%
+        colback=white!0,
+        title={\textcolor{black}{\textbf{\textit{Corollary}} \  \thetcbcounter  \ --}},
+        coltitle=darkliver!50,
+        attach title to upper,
+        after upper ={ },
+        sharp corners,
+        enlarge by=0.5pt,
+        boxrule=2pt}
+        
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\ \\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+\title{Lectures On Mathematical Logic\\ \large Lecture Three - Completeness}
+\date{\today}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran Department of Physics.}}
+
+\parskip=12pt % adds vertical space between paragraphs
+
+
+\begin{document}
+    \maketitle
+    \section*{Preface}
+        The Lecture notes before you are followed from courses and books that have been read by me. I would try to work and update this every once in a while. This edition is updated until \today. For any question or corrections please contact me \textit{Thisismeamir@outlook.com}.
+    \section*{Introduction}
+        In the last lecture we have looked at deductive systems and developed a particular one, then we established soundness theorem which assures that our proofs lead to true statements. In this lecture we are dealing with the converse of that theorem. The Completeness theorem proves that within the language and that deductive system any true statement would have a proof. This and the soundness theorem together would result in:
+        \begin{equation}
+            \Sigma \vDash \phi \ \text{if and only if } \ \Sigma \vdash \phi
+        \end{equation}
+    \section*{Completeness}
+        We would start by defining what it means for a deductive system to be Complete. 
+        \begin{define}
+            A deductive system consisting of a collection of logical axioms $\Lambda$ and a collection of rules of inference is said to be \textbf{complete} if for every set of nonlogical axioms $\Sigma$ and every $\curveL$-formula $\phi$, 
+            \begin{equation}
+                \text{If } \Sigma\vDash\phi, \text{ then } \Sigma\vdash\phi
+            \end{equation}
+        \end{define}
+        What this suggests is that if $\phi$ is an $\curveL$-formula that is true in every model of $\Sigma$, then there will be a deduction from $\Sigma$ of $\phi$. Now let us begin the proof:
+        Let us fix a collection of nonlogical axioms, $\Sigma$. as we described earlier we want to show that if something is true, there exists a proof for it. Note that to sya that $\phi$ is true whenever $\Sigma$ is a collection of true axioms is precisely to say that $\Sigma$ logically implies $\phi$. Thus, the Completeness Theorem will say that whenever $\phi$ is logically implied by $\Sigma$, there is a deduction from $\Sigma$ of $\phi$. So the Completeness Theorem is the convers of the Soundness Theorem. 
+        \begin{define}
+            Let $\Sigma$ be a set of $\curveL$-formulas. We will say that $\Sigma$ is \textbf{inconsistent} if there's a deduction from $\Sigma$ of $\left[(\forall x)x=x \land \neg(\forall x)x=x\right]$. Otherwise we say that $\Sigma$ is \textbf{consistent}.
+        \end{define}
+        What we mean here is that a set of nonlogical axioms is inconsistent if it proves contradictory statements. Let us agree to use the symbol $\perp$, for the contradictore sentence $\left[(\forall x)x=x \land \neg(\forall x)x=x\right]$. This term is in every language and not true in every structure/
+        \begin{callout}
+            If $\Sigma$ is inconsistent then there's a deduction from $\Sigma$ for every $\curveL$-formula.
+        \end{callout}
+    \section{Proving Completeness Theorem} 
+        In this lecture note we are going to prove the completeness theorem; Then we would talk about what is means and why we indeed needed to prove completeness in order to be able to talk about Goedel's incompleteness theorems.
+        \\
+        We are dealing with this statement:
+        \begin{center}
+            Suppose that $\Sigma$ is a set of $\curveL$-formulas and $\phi$ is an $\curveL$-formula. Then:
+            \begin{equation}
+                \text{If } \ \Sigma\vDash\phi \text{, Then } \ \Sigma \vdash \phi
+            \end{equation}
+        \end{center}
+        \newpoint{Outline of the Proof:} First of all, since the proof seems a little bit complex let us have an outline for what we are going to do and why:
+        \begin{enumerate}
+            \item First we would show that $\Sigma$ is consistent, if it is not then it can easily be complete since it can prove any statement and it's negate at the same time.
+            \item Later we would start developing a model for our set $\Sigma$. We will do this by assuming that there is such set and proceed in constructing a model of $\Sigma$. To do this we will construct a model for a set $\Sigma'$ so that any true formulas would be a member of this; on the other hand we make sure that $\Sigma$ is a subset of $\Sigma'$.
+            \item For making more sense, $\Sigma'$ would be the maximal consistent extension meaning that it would be impossible to add another sentence to it without making it inconsistent.
+            \item Once we have our extended set of sentences and constructed the model we would prove that a restriction of the model to the actual language would be possible and therefore we constructed a model for $\Sigma$.
+        \end{enumerate}
+        \newpoint{Priliminary Argument: } So let us fix our setting for the rest of this proof. We are working with a given language $\curveL$ which is countable. What that means is that we can write an algorithm that goes through all the formulas in the language. In another word there's a map between natural numbers and the formulas of this language.
+        \\
+        \\
+        We are given a set of formulas $\Sigma$, and we are assuming that $\Sigma\vDash \phi$. Note that we can assume that $\phi$ is a sentence, since by the previous lectures we have derive the fact that $\Sigma \vdash \phi$ if and only if there's a deduction from $\Sigma$ of the universal closure of $\phi$. We claim that it suffices to prove the case for the contradictory case. Since if $\Sigma\vDash\perp$, then $\Sigma \vdash \perp$, and suppose we are given a sentence $\psi$ then $\Sigma \vDash \psi$ would be true simultaneously with $\Sigma\cup(\neg\psi) \vDash \perp$, as there are no models of $\Sigma (\neg\psi)$, this tells us by the lemma below that $\Sigma \vdash \phi$:
+        \begin{lemma}
+            Suppose that $\eta$ is a sentence. $\Sigma\vdash \eta$ if and only if $\Sigma \cup (\neg \eta)\vdash \perp$
+        \end{lemma} 
+        So we reduce what we were going to prove, saying if $\Sigma\vDash \perp$, then $\Sigma \vdash \perp$, for $\Sigma$ a set of $\curveL$-sentences, is equivalent to saying that if there is no model of $\Sigma$, then $\Sigma \vdash \perp$.  Working with it other way around we will prove:
+        \begin{center}
+            If $\Sigma$ is a consistent set of sentences, then there's a model of $\Sigma$
+        \end{center}
+
+\end{document}

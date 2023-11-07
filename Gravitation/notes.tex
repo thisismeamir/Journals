@@ -1,0 +1,318 @@
+\documentclass[9pt,a4paper, twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=3cm]{geometry}
+\usepackage{multicol}
+\usepackage{soul}
+
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+
+
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+
+
+% for this file
+\newcommand{\newpoint}[1]{\indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\usepackage{xepersian}
+\settextfont{Arabic Typesetting}
+\title{گرانش}
+\author{امیرحسین ابراهیم نژاد}
+\date{\today}
+
+\begin{document}
+        \maketitle
+        \tableofcontents
+        \section{نیوتن}
+            نیوتن باور داشت که فضا مستقل از ما وجود دارد، میتواند ذره‌ای وجود داشته باشد یا خیر و همچنان فضا وجود دارد. همچنین این فضا تحت حرکت شتاب دار موجب تغییراتی در قوانین نیوتن میشود. اما در مکانیک نیوتنی ذرات اثری روی فضای مطلق نمیگذارند، این خواصی هست که فضای مطلق نیوتن داره.
+            
+            به همین ترتیب زمان مطلق را تعریف میکند. زمان خارج از ذرات موجود در جهان (به تعبیر خود نیوتن مانند شارش وجود دارد) 
+            و ذرات نمیتوانند روی زمان تاثیر بگذارند.
+
+            همزمانی در فیزیک نیوتنی به معنای کامل همزمان است. برای اندازه گیری زمان به چیزی نیاز داریم که معیار زمان باشد. ما حرکت رو تغییرات موقعیت نسبت به زمان در نظر گرفتیم. در ادامه برای تعریف زمان تغییرات موقعیت را نسبت به مکان در نظر میگیریم:
+            \begin{equation}
+                |\vec v| = \left|\frac{d\vec x}{dt}\right|
+            \end{equation}
+            \begin{equation}
+                dt = \frac{|d\vec x|}{|\vec v|}
+            \end{equation}
+            حالا همانطور که برای فاصله مفاهیمی مثل متر و فوت در نظر گرفته بودیم برای زمان نیز یک حرکت مشخص را به عنوان مرجع قرار میدهیدهیم و به آن زمان میگوییم. بعد از داشتن حرکت استاندارد میتوانیم زمان را هم اندازه‌گیری میکنیم. حالا اگر دقت کنید ما داریم در فیزیک نیوتنی حرکت یک جسم را برحسب یک حرکت استاندارد مینویسیم. حالا مشکل مکانیک نیوتنی اینجا مشخص میشه برای مثال حرکت آونگ و ساعت خیلی استاندارد نیستند. چطور ما این هارا استاندارد در نظر میگیریم.
+
+            زمانی که نیوتن تصمیم به ساختن مکانیک خود داشت باید از تقارن های سیستم مختصات خود حرف میزد. زمان از ابتدا بوده و گذر زمان بر حسب یک مبدا زمانی بینا میشود. بدین ترتیب تبدیلی که برای زمان در نظر باید گرفت اهمیتی به مبدا نمیدهد.
+            \begin{equation}
+                t' = t+ t_0
+            \end{equation}
+            همچنین با تغییر مبدا مختصات نیز تغییری نخواهیم دید بدین ترتیب میتوان نوشت:
+            \begin{equation}
+                \vec x' = \vec x + \vec x_0
+            \end{equation}
+            همچنین میتوان این تبدیل را به یک دوران نیز مجهز کرد:
+            \begin{equation}
+                \vec x' = R \vec x + \vec x_0
+            \end{equation}
+            با این حال با پیشنهاد گالیله اگر سرعت دستگاه مختصات نسبت به فضای مطلق ثابت باشد، قوانین حرکت ناوردا خواهند بود.
+            \begin{equation}
+                \vec x' = R \vec x + \vec ut + \vec x_0
+            \end{equation}
+            بدین ترتیب فرم کلی تبدیلات گالیله به شکل زیر است. حالا برای مثال تبدیلات زیر را از مختصات 1 به مختصات 3 مینویسیم:
+            \begin{equation}
+                (t_1,x_1)\rightarrow (t_2,x_2) \rightarrow (t_3, x_3)
+            \end{equation}
+            تبدیلات از 1 به 2:
+            \begin{equation}
+                \left\{
+                    \begin{matrix}
+                        \vec x_2 = R_{12} \vec x_1 + \vec u_{12}t_1 + \vec x_{012}
+                        \\
+                        t_2 = t_1 + t_012
+                    \end{matrix}
+                \right.
+            \end{equation}
+            تبدیلات 2 به 3:
+            \begin{equation}
+                \left\{
+                    \begin{matrix}
+                        \vec x_3 = R_{23} \vec x_2 + \vec u_{23}t_2 + \vec x_{023}
+                        \\
+                        t_3 = t_2 + t_023
+                    \end{matrix}
+                \right.
+            \end{equation}
+            اما نکته جالب این است که میتوان یک تبدیل گالیله از 1 به3 نیز پیدا کرد با جا گذاری تبدیلات 1 به 2 در 2 به 3:
+            \begin{equation}
+                \left\{
+                    \begin{matrix}
+                        \vec x_3 = (R_{23} \cdot R_{12}) \vec x_1 + (R_{23}\vec u_{12} + u_23) t_1  + \vec x_{023} + \vec x_{12}
+                        \\
+                        t_3 = t_1 + t_023 + t_{012}
+                    \end{matrix}
+                \right.
+            \end{equation}
+
+        \section{اصل کمترین کنش}
+        این اصل بیان میکند که مسیر واقعی ذره بین دو نقطه از بین تمام مسیر های ممکن مسیریست که کنش را  اکسترمم کند:
+            \begin{equation}
+                S = \int_{t_1}^{t_2}dt \curveL(\vec x, \vec v, t)
+            \end{equation}
+            با حل تحلیل میتوان به معادلات حرکت رسید:
+            \begin{align}
+                \delta S = \int_{t_1}^{t_2}dt\left(\frac{\partial \curveL}{\partial \vec x} \cdot \delta \vec x + \frac{\partial \curveL}{\partial \vec v} \delta \vec v\right)\\
+                = \int_{t_1}^{t_2}dt\left(\frac{\partial \curveL} - \frac{d}{dt}\frac{\partial \curveL}{\partial \vec v}\right)\cdot \delta \vec x + \frac{\partial \curveL}{\partial \vec v} \cdot \vec x |_1^2\\
+                \frac{d}{dt} \frac{\partial \curveL}{\partial \vec v} = \frac{\partial \curveL}{\partial \vec x} = 0
+            \end{align}
+            اگر تقارن گالیله بخواهد برقرار باشد لاگرانژی نمیتواند به زمان بستگی داشته باشد
+            \begin{equation}
+                S = \int_{t_1}^{t_2}dt \curveL(\vec x, \vec v, \not t)
+            \end{equation}
+            وقتی به ذره این نیرو وارد شود میتوان این کنش را به صورت:
+                \begin{equation}
+                    S = \int_{t_1}^{t_2}dt \curveL(\vec x, \vec v, t) + \frac{d F}{dt} 
+                \end{equation}
+            در نتیجه همیشه میتوان مشتقی از یک تابع وابسته به مکان و زمان را نیز وارد لاگرانژی کرد.
+            حالا برای اینکه تحت boost گالیله نیز ناوردا باشد و بتوان بین دو مختصه با سرعت متفاوت تبدیل کرد مینویسیم: :
+            \begin{equation}
+                \curveL(v'2) = \curveL(v^2 + u^2 + 2\vec u\cdot \vec v)
+            \end{equation}
+            بدین ترتیب
+            \begin{align}
+                \curveL(v^2) + 2\vec u\cdot\vec v \frac{\partial \curveL}{\partial v^2}
+            \end{align}
+            برای سرعت های بسیار کمتر از $v$ حالا باید قسمت اضافه شده به لاگرانژی به فرم 16 تبدیل شود که این تنها با ثابت بودن $\frac{\partial \curveL}{\partial v^2}$ بدین ترتیب میتوان نوشت:
+            \begin{align}
+                \frac{\partial \curveL}{\partial v^2} = \frac12 m = \text{ a constant}\\
+                \curveL = \frac12 mv^2 
+            \end{align}
+                
+
+        
+\end{document}

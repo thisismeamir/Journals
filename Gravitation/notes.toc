@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}نیوتن}{1}{}%
+\contentsline {section}{\numberline {2}اصل کمترین کنش}{1}{}%
