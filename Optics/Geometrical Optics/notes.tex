@@ -1,0 +1,279 @@
+\documentclass[9pt,a4paper, twocolumn]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+\usepackage{fancyhdr}
+\usepackage[paperheight=29.7cm, paperwidth=21cm,% Set the height and width of the paper
+includehead,
+includefoot,
+nomarginpar,% We don't want any margin paragraphs
+textwidth=19cm,% Set \textwidth to 10cm
+textheight=24cm, % Set height
+top=5mm,
+bottom=5mm,
+headheight=10mm,% Set \headheight to 10mm
+]{geometry}
+\pagestyle{fancy}
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+	colframe =red!0,
+	colback=cultured,
+	title={\thetcbcounter},
+	coltitle=richblack,
+	detach title,
+	after upper={\par\hfill\tcbtitle},
+	sharpish corners,
+    enlarge by=0.5pt }
+    
+\newtcolorbox{qt}{center,
+	colframe=delectricblue,
+	colback=white!0,
+	title={\large "},
+	coltitle=delectricblue,
+	attach title to upper,
+	after upper ={\large "},
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt}
+	
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+    
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+	colframe=darkliver!50,%
+	colback=white!0,
+	title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+	coltitle=darkliver!50,
+	attach title to upper,
+	after upper ={ },
+	sharp corners,
+	enlarge by=0.5pt,
+	boxrule=0pt,
+	leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+    
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+	{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+    
+
+        
+    
+% Highlighters
+\newcommand{\hldl}[1]{%
+	\sethlcolor{lightdarkliver}%
+	\hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small\textbf{fig-\thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \label{figure}
+        \caption{\small \textbf{fig: \thefigurecounter} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+	{\begin{calloutbox}\color{charcoal}\textbf\textit}
+	{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+\title{Geometrical Optics \\ \large Lecture Notes for Self Learning}
+\date{\today}
+\author{Amir H. Ebrahimnezhad \\ \small \textit{University of Tehran Department of Physics.}}
+
+\parskip=12pt % adds vertical space between paragraphs
+
+%Headers and Footers
+\fancyhead{} % clear all header fields
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhead[RO,LE]{\textbf{Geometrical Optics}}
+\fancyhead[RE,LO]{\textit{\leftmark}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section{Introduction}
+        Having a system (measuring device, or just a system of objects), we can define a regime that the size of objects or other parts of the system is large comparde to the size of the wavelength of light that exists in such system; this regime is to be considered the one, that geometrical optics would be a good approximation in. In brief description geometrical optics is describes light as rays, with certain properties:
+        \begin{enumerate}
+            \item Propagate in straight line path as they travel in a homogeneous medium.
+            \item Bend, and in particular circumstances may split in two, at the interface between two dissimilar media
+            \item Follow curved paths in a medium in which the refractive index changes 
+            \item May be absorbed or reflected.
+        \end{enumerate}
+        Therefore one could describe geometrical optics as:
+        \begin{center}
+            Geometrical Optics is the approximation of Physical Optics in terms of light rays.
+        \end{center}
+    \section{Principles and Development of the theory}
+        In this section we will introduce the basic ideas and principles regarding the geometrical optics. Starting with the law of reflection and the law of refraction, Huygen's principle and Fermat's principle.
+        \newpoint{Law of Reflection:} The law of relfection states that when a ray of light is reflected at an interface dividing two optical media, the reflected ray remains within the plane of incidenc, and the angle of reflection $\theta_r$ equals the angle of incidence $\theta_i$, The plane of incidence is the plane containing the incident ray and the surface normal at the point of incidence.
+        \newpoint{Law of Refraction:} The law of refraction, known as the Snell's Law, states that when a ray of light is refracted at an interface dividing two transparent media, the transmitted ray remains within the plane if incidence and the sine of the angle of refraction $\theta_t$ is directly proportional to the sine fo the angle of incidence $\theta_i$.
+        \newpoint{Huygens' Principle:} Huygens imagines light as a series of pulses emitted from each point of a luminous body and propagated in realy fashion. by the particles of the ehter, an ealstic medium filling all space. Consiostent with his conception, huygnes imagined each point of a propagating disturbance an instance later. To make his model of light propagation implicable with the laws of geometrical optics he assumed some principle: 
+        \begin{enumerate}
+            \item Each point on the leading surface of a wave diturbance may be regarded as a secondary source of spherical waves, which themselves progress with the speed of light in the medium and whose envelope at a later time constitutes the new wavefront. 
+            \item Notice that the new wavefront is tangent to each wavelet at a single point.
+            \item According to Huygens, the remainder of each eavelet is to be disregarded in the application of the principle.
+        \end{enumerate}
+        \img{huygens}{0.9}{Huygens principle depicted.}
+        There where only problem as you can see, that led Huygens to have the third statement in his application. If he assumed otherwise, he couldn't derive the law of rectilinear propagation using his principle. Huygens also ignored the wavefront formedby the back half of the wavelets, since these wavefronts implied a light disturbance travelling in the opposite direction. Despite weaknesses in this model, remedied later by Fersnel and others, Huygens was able to apply his principle to prove the laws of both reflection and refraction:
+        \newpoint{Fermat's Principle of Least Time:}
+    \section{Characterizing Lenses}
+        Light rays bend as they pas through a glass lens. The angle between the new and old directions, $\theta$, is proportional to the angle $\phi$ between the surfaces of the glass \hldl{at the place where the light goes through.} (Law of refraction).
+        \newpoint{Focus:} A focus exists when rays from every point of an object,, go through various parts of a lens, and converge after a certain distance; forming an image. One could place a screen at the image position and see a \hldl{"real" image}, but sometimes, rays, only appear to be convergent at the image position but are not actually passing through it; this is called a \hldl{virtual image}.
+        \newpoint{Focal Length and object-Image Disrances:} The focal length $f$ of a lens is related to the radius of curvature $R$, and inversely to the index of refraction of the material. For out \textit{thin} lenses, $f=2R$. Doubly convex or doubly concave thin lenses will have a focal point on each side of the lens at a distance, $f$, measured from the center of the lens along the axis to the focal point. The object distance, $O$ is the distance from the object location along the axis to the center of the lens. Similarily, the distance from the center of the lens along the axis to the image location is called image distance, $I$. The relation between these three distances is given by the \hldl{thin lens formula}:
+        \begin{equation}
+            \frac{1}{O} + \frac{1}{I} = \frac{1}{f}
+        \end{equation}
+        \img{focal}{0.9}{Object distance, and image distance}
+        In working with eq[1] one has to remember the following sign convention:
+        \begin{enumerate}
+            \item A lens has an object side, determined by the location of a real object. Object distances on this side are represented as positive $(+)$ numbers.
+            \item On the image side of the lens, where images are formed, image distances are considered positive $(+)$ numbers.
+            \item If an image is formed on the object side of the lens, the image distance is denoted as a negative $(-)$ number.
+            \item Conversely, when an object is positioned on the image side of the lens, the object distance is expressed as a negative $(-)$ number. This situation can arise when using multiple lenses.
+            \item Convex or converging lenses possess positive $(+)$ focal lengths.
+            \item Concave or diverging lenses, on the other hand, have negative $(-)$ focal lengths.
+          \end{enumerate}
+          \newpoint{Virtual Image:} If the object distance is less than the focal length of a convex lens, the light rays on the image side will diverge. You will see no real image on a screen. But by extending the diverging rays backward a virtual image is found and the image distance $I$, is negative since it falls on the ovject side of the lens. This holds also for concave lenses, the light rays on the image side will always diverge, therefore only a virtual image can be seen.
+          
+
+\end{document}

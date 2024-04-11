@@ -1,0 +1,282 @@
+%! Author = kida
+%! Date = 4/11/24
+\documentclass[10pt,a4paper, twocolumn]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{graphicx, adjustbox}
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{mhchem}
+\usepackage{multicol}
+\usepackage{soul}
+
+\usepackage{fancyhdr}
+\usepackage[paperheight=29.7cm, paperwidth=21cm,% Set the height and width of the paper
+    includehead,
+    includefoot,
+    nomarginpar,% We don't want any margin paragraphs
+    textwidth=19cm,% Set \textwidth to 10cm
+    textheight=24cm, % Set height
+    top=5mm,
+    bottom=5mm,
+    headheight=10mm,% Set \headheight to 10mm
+]{geometry}
+\pagestyle{fancy}
+
+
+%Colors
+\usepackage[dvipsnames]{xcolor}
+
+
+\definecolor{black}{RGB}{0, 0, 0}
+\definecolor{richblack}{RGB}{7, 14, 13}
+\definecolor{charcoal}{RGB}{45, 67, 77}
+\definecolor{delectricblue}{RGB}{93, 117, 131}
+\definecolor{cultured}{RGB}{245, 245, 245}
+\definecolor{lightgray}{RGB}{211, 216, 218}
+\definecolor{silversand}{RGB}{190, 194, 198}
+\definecolor{spanishgray}{RGB}{148, 150, 157}
+\definecolor{darkliver}{RGB}{64, 63, 76}
+
+\colorlet{lightdelectricblue}{delectricblue!30}
+\colorlet{lightdarkliver}{darkliver!30}
+
+
+%ColorDefines
+\newcommand{\trueblack}[1]{\textcolor{black}{#1}}
+\newcommand{\rich}[1]{\textcolor{richblack}{#1}}
+\newcommand{\lightblack}[1]{\textcolor{charcoal}{#1}}
+\newcommand{\lightrich}[1]{\textcolor{delectricblue}{#1}}
+
+
+%Boxes
+\usepackage{tcolorbox}
+\usepackage{import}
+\usepackage{microtype}
+\usepackage{amstex}
+\newtcolorbox{calloutbox}{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Callout},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newtcolorbox[use counter=equation]{eq}{center,
+    colframe =red!0,
+    colback=cultured,
+    title={\thetcbcounter},
+    coltitle=richblack,
+    detach title,
+    after upper={\par\hfill\tcbtitle},
+    sharpish corners,
+    enlarge by=0.5pt }
+
+\newtcolorbox{qt}{center,
+    colframe=delectricblue,
+    colback=white!0,
+    title={\large "},
+    coltitle=delectricblue,
+    attach title to upper,
+    after upper ={\large "},
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=0pt,
+    leftrule=2pt}
+
+\newtcolorbox{exc}{center,%
+    colframe =red!0,%
+    colback=darkliver!15,
+    title={Excercise},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{theo}
+\newtcolorbox[use counter=theo]{theorem}
+{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Theorem \thetcbcounter},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+\newcounter{defcounting}
+\newtcolorbox[use counter=defcounting]{define}
+{center,%
+    colframe=darkliver!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Definition}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=0pt,
+    leftrule=2pt,
+    rightrule = 0pt}
+
+\newcounter{lemmacount}
+\newtcolorbox[use counter=lemmacount]{lemma}
+{center,%
+    colframe=charcoal!50,%
+    colback=white!0,
+    title={\textcolor{black}{\textbf{\textit{Lemma}} \  \thetcbcounter  \ --}},
+    coltitle=darkliver!50,
+    attach title to upper,
+    after upper ={ },
+    sharp corners,
+    enlarge by=0.5pt,
+    boxrule=2pt}
+
+
+\newcounter{examplecounter}
+\newtcolorbox[use counter=examplecounter]{example}
+{center,%
+    colframe =red!0,%
+    colback=cultured,
+    title={Example},
+    coltitle=richblack,
+    attach title to upper={\ ---\ },
+    sharpish corners,
+    enlarge by=0.5pt}
+
+
+
+
+
+% Highlighters
+\newcommand{\hldl}[1]{%
+    \sethlcolor{lightdarkliver}%
+    \hl{#1}
+}
+\newcommand{\hldb}[1]{%
+    \sethlcolor{lightdelectricblue}%
+    \hl{#1}%
+}
+
+
+% Images
+\newcounter{figurecounter}
+\setcounter{figurecounter}{1}
+
+\newcommand{\img}[3]{
+    \begin{figure}[h!]
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=#2\linewidth]{./img/#1}
+        \caption{\small\textbf{fig-\thefigurecounter}
+        \label{fig:#1} -- \textcolor{darkliver}{#3}}
+    \end{figure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgr}[3]{
+    \begin{wrapfigure}{r}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \caption{\small \textbf{fig: \thefigurecounter}
+        \label{fig:#1} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+\newcommand{\imgl}[3]{
+    \begin{wrapfigure}{l}{#2\textwidth}
+        \centering
+        \captionsetup{justification=centering,margin=0cm,labelformat=empty}
+        \includegraphics[width=\linewidth]{./img/#1}
+        \caption{\small \textbf{fig: \thefigurecounter}
+        \label{fig:#1} -- \textcolor{darkliver}{#3}}
+    \end{wrapfigure}
+    \addtocounter{figurecounter}{1}}
+
+% New commands
+\newenvironment{callout}
+{\begin{calloutbox}\color{charcoal}\textbf\textit}
+{\end{calloutbox}}
+
+% for this file
+\newcommand{\newpoint}[1]{\ \\ \indent$\mathsection$ \textbf{#1}}
+\newcommand{\curveL}{\mathcal{L}}
+\newcommand{\curveA}{\mathcal{A}}
+\newcommand{\curveP}{\mathcal{P}}
+\newcommand{\thm}{\text{Thm}}
+\newcommand{\proof}{\\ \ \\ $\blacktriangleright$ \textit{proof: }}
+\newcommand{\distinct}{ \\ \hrule}
+
+
+
+% Types
+%% Formal
+\newcommand{\BoolTy}{\text{BoolTy}}
+\newcommand{\BaseTy}[1]{\text{BaseTy}(#1)}
+\newcommand{\FunTy}[2]{\text{FunTy}(#1, #2)}
+\newcommand{\ProdTy}[2]{\text{ProdTy}(#1, #2)}
+%% Compact
+\newcommand{\boolty}{o}
+\newcommand{\basety}[1]{\bold{#1}}
+\newcommand{\funty}[2]{#1 \rightarrow #2}
+\newcommand{\prodty}[2]{#1 \times #2}
+
+% Expressions
+%% Formal
+\newcommand{\Expr}[2]{\bold{#1}_{#2}}
+\newcommand{\Var}[2]{\text{Var}\left(\bold{#1}, #2\right)}
+\newcommand{\Con}[2]{\text{Con}\left(\bold{#1}, #2\right)}
+\newcommand{\Eq}[2]{\text{Eq}\left(#1, #2\right)}
+\newcommand{\FunApp}[2]{\text{FunApp}\left(#1, #2\right)}
+\newcommand{\FunAbs}[2]{\text{FunAbs}\left(#1, #2\right)}
+\newcommand{\DefDes}[2]{\text{DefDes}\left(#1, #2\right)}
+\newcommand{\OrdPair}[2]{\text{OrdPair}\left(#1, #2\right)}
+%% Compact
+\newcommand{\var}[2]{\bold{#1}: #2}
+\newcommand{\con}[2]{\bold{#1}_{#2}}
+\newcommand{\equ}[2]{#1 = #2}
+\newcommand{\funapp}[2]{#1 #2}
+\newcommand{\funabs}[3]{\lambda \bold{#1}: {#2} . #3}
+\newcommand{\defdes}[3]{\text{I}\bold{#1}: {#2} . #3}
+\newcommand{\ordpair}[2]{#1,#2}
+
+
+\parskip=12pt % adds vertical space between paragraphs
+
+%Headers and Footers
+\fancyhead{} % clear all header fields
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhead[RO,LE]{\textbf{Type Theory}}
+\fancyhead[RE,LO]{\textit{\leftmark}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}
+
+
+
+
+\begin{document}
+    \title{Type Theory Journal}
+    \author{Amir H. Ebrahimnezhad}
+    \date{\today}
+    \maketitle
+    \tableofcontents
+
+    \section{Simple Type Theory}\label{sec:simple-type-theory}
+    \import{./}{simple-type-theory.tex}
+
+
+    \bibliography{main}
+    \bibliographystyle{plain}
+
+\end{document}

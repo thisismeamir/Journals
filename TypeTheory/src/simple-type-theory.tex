@@ -1,0 +1,65 @@
+\subsection{Syntax}\label{subsec:syntax}
+There are two notations for types and expressions, a formal notation based on a small number of constructors and a compact notation that resembles the notation found in mathematical practice.
+The formal notation is an internal syntax intended for machines.
+The compact notation is introduced using notational definitions and notational conventions, intended for human.
+
+A notational definition has the form $A$ stands for $B$.
+Where $A$ and $B$ are notations that represents types or expressions, if defines $A$ to be a more compact, convenient, or standard notation for presenting the type or expression that $B$ represents.
+
+\begin{define}
+    Let $S_{\text{bt}}, S_{\text{var}},$ and $S_{\text{con}}$ be fixed countably infinite sets of symbols that will serve as names of base types, variables, and constants, respectively.
+\end{define}
+
+\begin{define}
+    A \textbf{type} of Alonzo is and inductive set of strings of symbols defined by the following instructions
+    \begin{itemize}
+        \item \textit{Type of truth values:} $\BoolTy$ is a type.
+        \item \textit{Base type}: $\BaseTy{a}$ is a type.
+        \item \textit{Function Type}: $\FunTy{\alpha}{\beta}$ is a type.
+        \item \textit{Product Type}: $\ProdTy{\alpha}{\beta}$ is a type.
+    \end{itemize}
+\end{define}
+Hence, a type is a string constructed from the members of $S_{\text{bt}}$ via the constructors $\BoolTy, \BaseTy{a}, \FunTy{\alpha}{\beta}, \ProdTy{\alpha}{\beta}$.
+A type is presented in the formal notation when it is written as a string according to the definition above.
+However, we will usually present types using the compact notation defined as below.
+We might also omit parentheses when ever there's no loss of meaning.
+\begin{itemize}
+    \item $o$ stands for $\BoolTy$.
+    \item $\basety{a}$ stands for $\BaseTy{a}$.
+    \item $(\funty{\alpha}{\beta})$ stands for $\FunTy{\alpha}{\beta}$.
+    \item $(\prodty{\alpha}{\beta})$ stands for $\ProdTy{\alpha}{\beta}$.
+\end{itemize}
+
+\begin{define}
+    An \textbf{Expression of type} $\alpha$ of Alonzo is an inductive set of strings of symbols defined by the following constructors.
+    \begin{itemize}
+        \item \textit{Variable}: $\Var{x}{\alpha}$ is an expression of type $\alpha$.
+        \item \textit{Constant}: $\Con{c}{\alpha}$ is an expression of type $\alpha$.
+        \item \textit{Equality}: $\Eq{\Expr{A}{\alpha}}{\Expr{B}{\alpha}}$ is an expression of type $\alpha$.
+        \item \textit{Function Application}: $\FunApp{\Expr{F}{\FunTy{\alpha}{\beta}}}{\Expr{A}{\alpha}}$ is an expression of type $\beta$.
+        \item \textit{Function Abstraction}: $\FunAbs{\Var{x}{\alpha}}{\Expr{B}{\beta}}$ is an expression of type $\FunTy{\alpha}{\beta}$.
+        \item \textit{Definite Description}: $\DefDes{\Var{x}{\alpha}}{\Expr{A}{\boolty}}$ is an expression of type $\alpha$ where $\alpha \not = \BoolTy$.
+        \item \textit{Ordered Pair}: $\OrdPair{\Expr{A}{\alpha}}{\Expr{B}{\beta}}$ is an expression of type $\ProdTy{\alpha}{\beta}$.
+    \end{itemize}
+\end{define}
+
+Again we define our compact notation of the formal notation above:
+\begin{itemize}
+    \item $\var{x}{\alpha}$ stands for $\Var{x}{\alpha}$.
+    \item $\con{c}{\alpha}$ stands for $\Con{c}{\alpha}$.
+    \item $\equ{\Expr{A}{\alpha}}{\Expr{B}{\alpha}}$ stands for $\Eq{\Expr{A}{\alpha}}{\Expr{B}{\alpha}}$.
+    \item $\funapp{\Expr{F}{\funty{\alpha}{\beta}}}{\Expr{A}{\alpha}}$ stands for $\FunApp{\Expr{F}{\funty{\alpha}{\beta}}}{\Expr{A}{\alpha}}$.
+    \item $\funabs{x}{\alpha}{\Expr{B}{\beta}}$ stands for $\FunAbs{\Var{x}{\alpha}}{\Expr{B}{\beta}}$.
+    \item $\defdes{x}{\alpha}{\Expr{A}{\boolty}}$ stands for $\DefDes{\Var{x}{\alpha}}{\Expr{A}{\boolty}}$.
+\end{itemize}
+
+\begin{callout}
+    $\Expr{A}{\alpha} \equiv \Expr{B}{\alpha}$ means that the expressions denoted by $\Expr{A}{\alpha}$ and $\Expr{B}{\alpha}$, is identical.
+\end{callout}
+
+\begin{define}
+    An occurrence of a variable $\var x \alpha$ is \textbf{bound} if it is within a subexpression of $\Expr{B}{\beta}$ either the form $\funabs{x}{\alpha}{\Expr C\gamma}$ or the form $\defdes{x}{\alpha}{\Expr C \boolty}$
+\end{define}
+\begin{define}
+    An occurrence of a variable $\var x \alpha$ is \textbf{free} if it is not within a subexpression of $\Expr{B}{\beta}$ either the form $\funabs{x}{\alpha}{\Expr C\gamma}$ or the form $\defdes{x}{\alpha}{\Expr C \boolty}$
+\end{define}

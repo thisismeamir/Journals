@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Simple Type Theory}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Syntax}{1}{}%
